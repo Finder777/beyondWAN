@@ -6,7 +6,8 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #000;
+  background-image:radial-gradient(#1a0600, black);
+  margin: 0% 5%;
 }
 
 main {
