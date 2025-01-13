@@ -14,10 +14,16 @@ nav > .nav-links {
   display: none; /* Hide initially */
 }
 
+.nav-links.show {
+  display: block; /* Show the navigation */
+  /* Add your desired animations here (e.g., slide-in, fade-in) */
+}
+
 main {
   margin: auto;
   width: 50%;
   padding: 20px;
+  height:100vwh;
 }
 
 main > h1 {
