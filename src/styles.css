@@ -24,6 +24,7 @@ main > h1 {
   text-align: center;
   font-size: 6em;
   color: #fff;
+  font-style: uppercase;
 }
 
 main > h3 {
