@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  color:white;
 }
 
 html, body {
@@ -19,32 +20,63 @@ nav > .nav-links {
   /* Add your desired animations here (e.g., slide-in, fade-in) */
 }
 
+.hamburger-icon {
+  font-size: 2em; /* Adjust size */
+  color: white; /* Adjust color */
+  cursor: pointer; /* Change cursor to pointer */
+  position: absolute; /* Positioning */
+  top: 20px; /* Adjust top position */
+  left: 20px; /* Adjust right position */
+}
+
+.login-icon{
+  font-size: 2em; /* Adjust size */
+  color: white; /* Adjust color */
+  cursor: pointer; /* Change cursor to pointer */
+  position: absolute; /* Positioning */
+  top: 20px; /* Adjust top position */
+  right: 20px; /* Adjust right position */
+}
+
 main {
   margin: auto;
-  width: 50%;
+  width: 90%;
   padding: 20px;
   height:100vwh;
 }
 
 main > h1 {
-  text-align: center;
-  font-size: 8em;
-  color: #fff;
+  font-family: "Orbitron", serif;
   font-style: uppercase;
-  font-weight: 600;
+  font-size: 8em;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0px;
+  text-align: center;
+  max-width: none;
 }
-
+/*
+.orbitron-font {
+  font-optical-sizing: auto;
+}
+*/
 main > h3 {
   text-align: center;
-  font-size: 2em;
-  font-style: normal;
+  font-size: 4em;
   color: #fff;
+  margin-top: 0px;
+}
+
+.small-caps {
+  font-variant: small-caps;
 }
 
 main > h5 {
   text-align: center;
-  font-size: 1.75em;
+  font-size: 2em;
+  font-style: italic;
   color: #fff;
+  margin-bottom: 0px;
 }
 
 main > p {
@@ -53,7 +85,15 @@ main > p {
   color: #fff;
 }
 
-
+footer{
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+  padding: 20px;
+  position: absolute; /* Positioning for the bottom of the page*/
+  bottom: 20px; /* Adjust bottom position */
+  right: 20px; /* Adjust right position */
+}
 
 
 
