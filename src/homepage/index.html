@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Please do not mix font awesome with another icon library https://fontawesome.com/-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <!--This is the google font used in H1, please do not change this-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
       
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
 
@@ -27,24 +29,27 @@
   </nav>  
 
   <main>
+    <!-- The font is from google fonts, the link is in the header-->
     <h1 class="orbitron-font">Future Vision</h1>
     <h3 class="small-caps">ai: web app development</h3>
     <h5>Less politics, more dev</h5>
-    <p>This is a space for innovation and research into headless AI concepts<br><br>If you want to build something and contribute without BS- email: <a href="mailto:info@egr.digital">info@egr.digital</a></br> </p>
+    <p>This is a space for innovation and research into headless AI concepts<br><br>If you want to build something, contribute or just talk please email: <a href="mailto:info@egr.digital">info@egr.digital</a></br> </p>
   </main>
 
   <aside>
     <h2>Latest News</h2>
     <p>AI is the future of web development. It's time to get on board and start learning the skills you need to succeed in the industry.</p>
-    <p>AI is the future of web development. It's time to get on board and start learning the skills you need to succeed in the industry.</p>
-    <p>AI is the future of web development. It's time to get on board and start learning the skills you need to succeed in the industry.</p>
   </aside>
 
   <footer>
-    <p id="current-date"></p>
-    <i class="fas fa-bone"></i>
-    <i class="fa-thin fa-shuttle-space"></i>
-    <p>© 2021 EGR Digital</p>
+    <div class="extra-footer-content">
+      <!-- extra content is just to add style to the page with some icons from font awesome-->
+      <p id="current-date"></p>
+      <i class="fas fa-bone"></i>
+      <i class="fa-thin fa-shuttle-space"></i>
+    </div>
+    <!-- This copyright tag needs to sit in the bottom right of the page-->
+    <p id="copyright tag">© 2021 EGR Digital</p>
   </footer>
 
   <script src="main.js"></script>
