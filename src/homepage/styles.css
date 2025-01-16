@@ -1,4 +1,5 @@
 * {
+  font-size: 16px; /* 1em = 16px and p tags should sit at this*/
   font-family: Arial, Helvetica, sans-serif;
   color:white;
 }
@@ -21,7 +22,7 @@ nav > .nav-links {
 }
 
 .hamburger-icon {
-  font-size: 2em; /* Adjust size */
+  font-size: 1rem; /* Adjust size */
   color: white; /* Adjust color */
   cursor: pointer; /* Change cursor to pointer */
   position: absolute; /* Positioning */
@@ -30,7 +31,7 @@ nav > .nav-links {
 }
 
 .login-icon{
-  font-size: 2em; /* Adjust size */
+  font-size: 1rem; /* Adjust size */
   color: white; /* Adjust color */
   cursor: pointer; /* Change cursor to pointer */
   position: absolute; /* Positioning */
@@ -48,31 +49,31 @@ main {
 /* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
 @media (max-width: 600px) {
   main > h1 {
-    font-size: 6vw; /* 8vw for larger screens */
+    font-size: 2rem; /* ?rem for larger screens */
   }
 
   main > h3 {
-    font-size: 3vw; /* Larger screens are 4vw */
+    font-size: 1.75rem; /* ?rem for larger screens */
   }
 
   main > h5 {
-    font-size: 2vw; /* this is the same for larger screens*/
+    font-size:1.5rem ; /* ?rem for larger screens*/
   }
 
   main > p {
-    font-size: 2vw; /* It is 1vw for larger screens */
+    font-size: 1rem; /* ?rem for larger screens */
   }
 
   footer > p {
-    font-size: 1em; /* It is 1em for larger screens */
+    font-size: 1rem; /* ?rem for larger screens */
   }
 }
 
-
+/* this is for the view on larger screens */
 main > h1 {
   font-family: "Orbitron", serif;
   font-style: uppercase;
-  font-size: 8vw; /* Use viewport width units for responsiveness */
+  font-size: 4rem; 
   font-weight: 400;
   color: #fff;
   margin-bottom: 0px;
@@ -86,7 +87,7 @@ main > h1 {
 */
 main > h3 {
   text-align: center;
-  font-size: 4vw; /* Use viewport width units for responsiveness */
+  font-size: 2rem; 
   color: #fff;
   margin-top: 0px;
 }
@@ -97,7 +98,7 @@ main > h3 {
 
 main > h5 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-style: italic;
   color: #fff;
   margin-bottom: 0px;
@@ -105,7 +106,7 @@ main > h5 {
 
 main > p {
   text-align: center;
-  font-size: 1vw;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -118,7 +119,7 @@ main > p {
 
 footer > p {
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
   color: #fff;
   padding: 20px;
   position: absolute; /* Positioning for the bottom of the page*/
