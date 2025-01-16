@@ -110,6 +110,15 @@ main > p {
   color: #fff;
 }
 
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Positioning for the bottom of the page*/
+  bottom: 0; /* Adjust bottom position */
+  width:100%;
+}
 
 .extra-footer-content{
   position: absolute; /* Positioning for the bottom of the page*/
