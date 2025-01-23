@@ -18,12 +18,22 @@
 
   <nav>
     <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
-      
-    <ul class="nav-links">
+      <ul class="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a>servicesPage/services.html</li>
+      <li><a href="../servicesPage/services.html">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
+<!-- This is the modal that will pop up when the hamburger icon is clicked-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="../servicesPage/services.html">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 
     <i id="login" class="fas fa-user-circle login-icon"></i>
   </nav>  

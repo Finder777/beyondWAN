@@ -19,8 +19,12 @@ nav > .nav-links {
 }
 
 .nav-links.show {
-  float: right; /* Show the navigation */
-  /* Add your desired animations here (e.g., slide-in, fade-in) */
+  float: left; /* Show the navigation */
+
+}
+
+li {
+  list-style-type: none;
 }
 
 .hamburger-icon {
@@ -166,4 +170,40 @@ footer {
   color: #fff;
   padding: 20px;
 }
-  
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(128, 128, 128, 0.5); /* Grey background with transparency */
+  backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  color: white;
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

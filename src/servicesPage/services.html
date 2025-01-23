@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Please do not mix font awesome with another icon library https://fontaweso
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesom
-  <link rel="stylesheet" href="styles.css">
-  <!--This is the google font used in H1, please do not change this-->
+  <!-- Please do not mix font awesome with another icon library https://fontawesome.com/-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../homepage/styles.css">
+  <!-- This is the google font used in H1, please do not change this-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&dis
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
   <title>AI App Development: A New Dawn</title>
-
 </head>
 
 <body>
@@ -21,12 +20,30 @@
     <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
       
     <ul class="nav-links">
-      <li><a href="#">Home</a>homepage/index.html</li>
+      <li><a href="../homepage/index.html">Home</a></li> <!-- Updated path -->
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
 
     <i id="login" class="fas fa-user-circle login-icon"></i>
   </nav>  
-  
+
+
+<!--This is the site footer and must be on all pages, the styling is in the CSS-->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-icons">
+        <!-- extra content is just to add style to the page with some icons from font awesome-->
+        <p id="current-date"></p>
+        <i id="boner" class="fas fa-bone"></i>
+        <i id="spaceShipBaby" class="fa-thin fa-shuttle-space"></i>
+        </div>
+        <!-- This copyright tag needs to sit in the bottom right of the page-->
+        <p id="copyright_tag">© 2021 EGR Digital</p>
+      </div>
+    </footer>
+    
+  <script src="main.js"></script>
+
+</body>
 </html>
