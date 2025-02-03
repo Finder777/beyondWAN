@@ -1,0 +1,100 @@
+* {
+  font-size: 16px; /* 1em = 16px and p tags should sit at this*/
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+}
+
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-image:radial-gradient(#1a0600, black);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex:1;
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+  height:auto;
+}
+
+/* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
+@media (max-width: 600px) {
+  main > h1 {
+    font-size: 2rem; /* ?rem for larger screens */
+  }
+
+  main > h3 {
+    font-size: 1.75rem; /* ?rem for larger screens */
+  }
+
+  main > h5 {
+    font-size:1.5rem ; /* ?rem for larger screens*/
+  }
+
+  main > p {
+    font-size: 1rem; /* ?rem for larger screens */
+  }
+
+  footer > p {
+    font-size: 1rem; /* ?rem for larger screens */
+  }
+}
+
+/* this is for the view on larger screens */
+main > h1 {
+  font-family: "Orbitron", serif;
+  font-style: uppercase;
+  font-size: 4rem; 
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0px;
+  text-align: center;
+  max-width: none;
+}
+/*
+.orbitron-font {
+  font-optical-sizing: auto;
+}
+*/
+main > h3 {
+  text-align: center;
+  font-size: 2rem; 
+  color: #fff;
+  margin-top: 0px;
+}
+
+.small-caps {
+  font-variant: small-caps;
+  line-height:0.5rem;
+}
+
+main > h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #fff;
+  margin-top: 5rem;
+  margin-bottom: 0px;
+}
+
+main > p {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-top:10px;
+  margin-bottom:0px;
+  line-height:0.65rem;
+}
+
+.Newsblock {
+  margin:auto;
+  width:50%;
+  padding-top:40px;
+  height:auto;
+}
+ 

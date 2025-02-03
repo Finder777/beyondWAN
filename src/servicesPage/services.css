@@ -1,0 +1,27 @@
+/* Styling for h1 is different to the h1 styling on the hompage, the h1 on this page should look like the h3*/
+.mainfont {
+    font-size: 1.75rem;
+    width:100%;
+    margin-top: 100px;
+    margin-left: 4%;
+}
+
+/* Styling for section */
+section {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 4%;
+}
+
+/* Responsive styling for section */
+@media (max-width: 768px) {
+    section {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        margin-top: 10px;
+    }
+}
