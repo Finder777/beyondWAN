@@ -23,10 +23,22 @@
   <nav>
     <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
     <ul class="nav-links">
-      <li><a href="../homepage/homepage.html">Home</a></li> <!-- Updated path -->
+      <li><a href="../index.html">Home</a></li> <!-- Updated path -->
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
+
+    <!-- This is the modal that will pop up when the hamburger icon is clicked-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </div>
+    </div>
     <i id="login" class="fas fa-user-circle login-icon"></i>
   </nav>  
 
@@ -71,7 +83,7 @@
       </div>
     </footer>
     
-  <script src="main.js"></script>
+  <script src="../main.js"></script>
 
 </body>
 </html>
