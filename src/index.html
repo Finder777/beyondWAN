@@ -17,42 +17,64 @@
 </head>
 
 <body>
-
-  <nav>
-    <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
+  <header>
+    <nav>
+      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
       <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="servicespage/services.html">Services</a></li>
       <li><a href="#">Contact</a></li>
-    </ul>
-<!-- This is the modal that will pop up when the hamburger icon is clicked-->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span id="close-btn" class="close-btn">&times;</span>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="servicespage/services.html">Services</a></li>
-          <li><a href="#">Explore</a></li>
-        </ul>
+      </ul>
+
+  <!-- This is the modal that will pop up when the hamburger icon is clicked-->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-btn" class="close-btn">&times;</span>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="servicespage/services.html">Services</a></li>
+            <li><a href="#">Explore</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <i id="login" class="fas fa-user-circle login-icon"></i>
-  </nav>  
-
+      <i id="login" class="fas fa-user-circle login-icon"></i>
+    </nav>  
+  </header>
   <!-- This is the banner and main content of the page-->
   <main>
-    <!-- The font is from google fonts, the link is in the header-->
+    <!-- The font is from google fonts, the link is in the header, not local-->
     <h1 class="orbitron-font">Future Vision</h1>
-    <h3 class="small-caps">ai: web app development</h3>
-    <h5>Less politics, more dev</h5>
-    <p>This is a space for innovation and research into headless AI concepts<br><br>If you want to build something, contribute or just talk please email: <a href="mailto:info@egr.digital">info@egr.digital</a></br> </p>
+    <h3 class="small-caps">{ai: web app development}</h3>
   </main>
 
+    <!-- Add log-in form here -->
+    <div class="login-form">
+      <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" class="custom-button">
+          <i class="fas fa-sign-in-alt"></i>Log In
+        </button>
+      </form>
+    </div>
+ 
+  <!--This is the main paragraph content of this page, keep it minimal-->
+  <section class="salespitch">
+    <h5>Less politics, more dev</h5>
+    <p>This is a space for innovation and research into headless AI concepts<br><br>If you want to build something, contribute or just talk please email: <a href="mailto:info@egr.digital">info@egr.digital</a></br> </p>
+  </section>
+
+
+  <!-- News block, will change it at some point-->
   <section class="Newsblock">
     <h2>Latest News</h2>
     <p>AI is the future of innovative web development. It's time to get on board and start learning the skills you need to succeed in the industry.</p>
   </section>
+
+<!-- This is the site footer-->
 
   <footer>
     <div class="footer-content">
