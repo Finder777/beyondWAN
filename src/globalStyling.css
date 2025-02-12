@@ -1,4 +1,21 @@
-/* This is the styling for the nav bar.  It is a key part of the site and should be managed globally*/
+/* This is the styling for the nav bar, menu and footer.  It is a key part of the site and should be managed globally*/
+
+* {
+  font-size: 16px; /* 1em = 16px and p tags should sit at this*/
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+}
+
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-image:radial-gradient(#1a0600, black);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: -2;
+}
 
 /* Styling for nav element */
 nav {
