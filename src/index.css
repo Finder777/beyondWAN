@@ -1,8 +1,4 @@
-<<<<<<< HEAD:src/homepage/home.css
-/* This is the CSS for index.html */
-=======
 /* This is the CSS for the index.html page */
->>>>>>> c85743c87b8f96d6ab149c38241c9990155fbd58:src/index.css
 
 * {
   font-size: 16px; /* 1em = 16px and p tags should sit at this*/
@@ -69,6 +65,7 @@ main {
   .small-caps {
     font-variant:small-caps;
     word-wrap: break-word;
+    line-height: 2rem;
   }
 }
 
