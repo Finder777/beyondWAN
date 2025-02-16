@@ -40,36 +40,6 @@ main {
   padding: 20px;
 }
 
-/* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
-@media (max-width: 600px) {
-  main > h1 {
-    font-size: 2rem; /* ?rem for larger screens */
-  }
-
-  main > h3 {
-    font-size: 1.75rem; /* ?rem for larger screens */
-    line-height: 2rem;
-  }
-
-  main > h5 {
-    font-size:1.5rem ; /* ?rem for larger screens*/
-  }
-
-  main > p {
-    font-size: 1rem; /* ?rem for larger screens */
-  }
-
-  footer > p {
-    font-size: 1rem; /* ?rem for larger screens */
-  }
-
-  .small-caps {
-    font-variant:small-caps;
-    word-wrap: break-word;
-    line-height: 2rem;
-  }
-}
-
 /* this is for the view on larger screens */
 main > h1 {
   font-family: "Orbitron", serif;
@@ -169,6 +139,38 @@ main > h3 {
   margin-bottom:0px;
   line-height:0.65rem;
 }
+
+/* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
+@media (max-width: 600px) {
+  main > h1 {
+    font-size: 2rem; /* ?rem for larger screens */
+  }
+
+  main > h3 {
+    font-size: 1.75rem; /* ?rem for larger screens */
+    line-height: 2rem;
+  }
+
+  .small-caps {
+    font-variant:small-caps;
+    word-wrap: break-word;
+    line-height: 2rem;
+  }
+
+  main > h5 {
+    font-size:1.5rem ; /* ?rem for larger screens*/
+  }
+
+  main > p {
+    font-size: 1rem; /* ?rem for larger screens */
+  }
+
+  footer > p {
+    font-size: 1rem; /* ?rem for larger screens */
+  }
+}
+
+
 
 
 
