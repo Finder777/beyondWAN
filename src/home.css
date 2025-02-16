@@ -1,0 +1,56 @@
+/* This file contains the css for the home page */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Side nav styling */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 20px 0;
+}
+
+.side-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.side-nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Main content styling */
+main {
+  margin-left: 220px; /* Adjust based on side nav width */
+  padding: 20px;
+}
+
+.Newsblock {
+  margin-left: 220px; /* Adjust based on side nav width */
+  padding: 20px;
+}

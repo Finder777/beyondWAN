@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src/homepage/home.css
 /* This is the CSS for index.html */
+=======
+/* This is the CSS for the index.html page */
+>>>>>>> c85743c87b8f96d6ab149c38241c9990155fbd58:src/index.css
 
 * {
   font-size: 16px; /* 1em = 16px and p tags should sit at this*/
@@ -34,11 +38,10 @@ html, body {
 }
 
 main {
-  flex:1;
+  flex-basis: auto;
   margin: auto;
   width: 90%;
   padding: 20px;
-  height:auto;
 }
 
 /* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
@@ -94,14 +97,15 @@ main > h3 {
 
 .small-caps {
   font-variant: small-caps;
-  line-height:0.5rem;
+  line-height:1rem;
+  margin:0px;
 }
 
 .login-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: auto;
   margin: auto;
   background-color: silver;
 }
@@ -168,10 +172,10 @@ main > h3 {
   line-height:0.65rem;
 }
 
-.Newsblock {
-  margin:auto;
-  width:50%;
-  padding-top:40px;
-  height:auto;
-}
+
+
+
+
+
+
  
