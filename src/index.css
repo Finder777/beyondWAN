@@ -143,26 +143,41 @@ main > h3 {
 /* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
 @media (max-width: 600px) {
   main > h1 {
-    font-size: 2rem; /* ?rem for larger screens */
+    font-size: 2rem;
+    margin-top: 60px;
   }
 
   main > h3 {
-    font-size: 1.75rem; /* ?rem for larger screens */
-    line-height: 2rem;
+    font-size: 1rem; /* ?rem for larger screens */
+    line-height: 1.5rem;
+    margin-top: 30px;
   }
 
   .small-caps {
     font-variant:small-caps;
     word-wrap: break-word;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   main > h5 {
-    font-size:1.5rem ; /* ?rem for larger screens*/
+    font-size:1.5rem; /* ?rem for larger screens*/
   }
 
   main > p {
     font-size: 1rem; /* ?rem for larger screens */
+  }
+
+  .salespitch > h5 {
+    font-size: 1rem; /* ?rem for larger screens */
+    margin-top: 30px;
+    word-wrap: break-word;
+  }
+
+  .salespitch > p {
+    font-size: 1rem;
+    word-wrap: break-word;
+    margin-top: 10px;
+    line-height: 1.3rem;
   }
 
   footer > p {
