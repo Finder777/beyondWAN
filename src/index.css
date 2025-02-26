@@ -73,19 +73,22 @@ main > h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width:50vw; 
   height: auto;
   margin: auto;
   background-color: silver;
+  opacity: 0.45; /* this line to set opacity to 50% */
+  backdrop-filter: blur(10px); /*this line for Gaussian blur */
+  border:#1a0600;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-form form {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color:transparent;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-form label {
