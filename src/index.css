@@ -1,30 +1,29 @@
 /* This is the CSS for the index.html page */
 
 * {
-  font-size: 16px; /* 1em = 16px and p tags should sit at this*/
+  font-size: 16px; /* 1em = 16px and p tags should sit at this */
   font-family: Arial, Helvetica, sans-serif;
-  color:white;
+  color: white;
 }
 
 html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-image:radial-gradient(#1a0600, black);
+  background-image: linear-gradient(to top,black,#7285ec);
   height: 100%;
   display: flex;
   flex-direction: column;
-  z-index: -2;
 }
 
 .video-background {
   position: fixed;
+  opacity: 0.4;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: -1;
+  z-index: -1; /* Ensure the video is behind other content */
 }
 
 #bg-video {
@@ -33,51 +32,23 @@ html, body {
   object-fit: cover;
 }
 
-main {
-  flex-basis: auto;
-  margin: auto;
-  width: 90%;
-  padding: 20px;
+main{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* this is for the view on larger screens */
-main > h1 {
-  font-family: "Orbitron", serif;
-  font-style: uppercase;
-  font-size: 4rem; 
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 0px;
-  text-align: center;
-  max-width: none;
-}
-
-.orbitron-font {
-  font-optical-sizing: auto;
-}
-
-main > h3 {
-  text-align: center;
-  font-size: 2rem; 
-  color: #fff;
-  margin-top: 5px;
-}
-
-.small-caps {
-  font-variant: small-caps;
-  line-height:1rem;
-  margin:0px;
-}
-
 .login-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:50vw; 
+  width:80vw; 
   height: auto;
-  margin: auto;
+  margin: 10vh auto;
   background-color: silver;
-  opacity: 0.45; /* this line to set opacity to 50% */
+  opacity: 0.5; /* this line tweaks the opacity*/
   backdrop-filter: blur(10px); /*this line for Gaussian blur */
   border:#1a0600;
   border-radius: 10px;
@@ -125,75 +96,24 @@ main > h3 {
   color:#1a0600;
 }
 
-.salespitch > h5 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #fff;
-  margin-top: 5rem;
-  margin-bottom: 0px;
-}
-
-.salespitch > p {
+.login-form form > p {
   text-align: center;
   font-size: 1rem;
-  color: #fff;
+  color: black;
   margin-top:10px;
   margin-bottom:0px;
   line-height:0.65rem;
+  font-style: italic;
+}
+
+.login-form form > P > a {
+  color: black;
+  text-decoration: underline;
 }
 
 /* Media query for smaller screens, stay mobile first and double-check for changes to comments etc*/
 @media (max-width: 600px) {
-  main > h1 {
-    font-size: 2rem;
-    margin-top: 60px;
-  }
-
-  main > h3 {
-    font-size: 1rem; /* ?rem for larger screens */
-    line-height: 1.5rem;
-    margin-top: 30px;
-  }
-
-  .small-caps {
-    font-variant:small-caps;
-    word-wrap: break-word;
-    line-height: 1.5rem;
-  }
-
-  main > h5 {
-    font-size:1.5rem; /* ?rem for larger screens*/
-  }
-
-  main > p {
-    font-size: 1rem; /* ?rem for larger screens */
-  }
-
-  .salespitch > h5 {
-    font-size: 1rem; /* ?rem for larger screens */
-    margin-top: 30px;
-    word-wrap: break-word;
-  }
-
-  .salespitch > p {
-    font-size: 1rem;
-    word-wrap: break-word;
-    margin-top: 10px;
-    line-height: 1.3rem;
-  }
-
-  footer > p {
-    font-size: 1rem; /* ?rem for larger screens */
+  .login-form {
+    width: 90vw;
   }
 }
-
-
-
-
-
-
-
-
-
- 

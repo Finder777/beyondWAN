@@ -42,21 +42,20 @@
             <li><a href="#">Home</a></li>
             <li><a href="servicespage/services.html">Services</a></li>
             <li><a href="#">Explore</a></li>
+            <p id="current-date"></p>
           </ul>
         </div>
       </div>
 
+    <!-- The font is from google fonts, the link is in the header, not local-->
+    <h1 class="orbitron-font">Future Vision</h1>
+
       <i id="login" class="fas fa-user-circle login-icon"></i>
     </nav>  
   </header>
-  <!-- This is the banner and main content of the page-->
-  <main>
-    <!-- The font is from google fonts, the link is in the header, not local-->
-    <h1 class="orbitron-font">Future Vision</h1>
-    <h3 class="small-caps">{ai: web app development}</h3>
-  </main>
 
-    <!-- Add log-in form here -->
+    <!-- Log-in form here as part of main content-->
+  <main>
     <div class="login-form">
       <form action="/login" method="post">
         <label for="username">Username:</label>
@@ -66,27 +65,27 @@
         <button type="submit" class="custom-button">
           <i class="fas fa-sign-in-alt"></i>Log In
         </button>
+        <p>If you want access email: <a href="mailto:info@egr.digital">info@egr.digital</a></p>
       </form>
     </div>
- 
-  <!--This is the main paragraph content of this page, keep it minimal-->
-  <section class="salespitch">
-    <h5>Less politics, more dev</h5>
-    <p>If you want to  access email: <a href="mailto:info@egr.digital">info@egr.digital</a></br> </p>
-  </section>
+  </main>
 
 <!-- This is the site footer-->
-
-  <footer>
+  <footer class="footer">
     <div class="footer-content">
       <div class="footer-icons">
-      <!-- extra content is just to add style to the page with some icons from font awesome-->
-      <p id="current-date"></p>
-      <i id="boner" class="fas fa-bone"></i>
-      <i id="spaceShipBaby" class="fa-thin fa-shuttle-space"></i>
+       
+        <i id="bone-icon" class="fas fa-bone"></i>
+        <i id="spaceShipBaby" class="fas fa-shuttle-space"></i> <!-- Updated class -->
       </div>
-      <!-- This copyright tag needs to sit in the bottom right of the page-->
-      <p id="copyright_tag">© 2021 EGR Digital</p>
+      <!--This is our mantra-->
+      <div class="mantra">
+        <h5>Less politics, more dev</h5>
+      </div>
+      <!-- This is copyright remember-->
+      <div>
+        <p id="copyright_tag">© <span id="current-year"></span> EGR Digital</p>
+      </div>
     </div>
   </footer>
 
