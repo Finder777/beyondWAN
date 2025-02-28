@@ -10,11 +10,8 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-image: radial-gradient(#1a0600, black);
-  height: 100%;
   display: flex;
   flex-direction: column;
-  z-index: -2;
 }
 
 /* Styling for nav element */
@@ -44,6 +41,12 @@ nav > .nav-links {
 
 ul > li {
   list-style-type: none;
+}
+
+#logo-icon {
+  color:white;
+  font-size:1rem;
+  padding: 5px 10px;
 }
 
 nav > h1 {
@@ -90,7 +93,7 @@ nav > h1 {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 10%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
   color: white;
   text-align: left;
 }

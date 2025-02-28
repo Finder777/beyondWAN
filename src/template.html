@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Please do not mix font awesome with another icon library https://fontawesome.com/-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <!-- Stylesheets-->
   <link rel="stylesheet" href="globalStyling.css">
   <link rel="stylesheet" href="index.css">
@@ -27,14 +26,35 @@
   </div>
 
   <header>
-    <nav>     
-    <!-- Login and you'll see the rest. BTW dear user, the font is from google it's not local-->
-    <i id="logo-icon" class="fa-solid fa-bolt-lightning"></i>
+    <nav>
+      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
+      <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="servicespage/services.html">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+
+  <!-- This is the modal that will pop up when the hamburger icon is clicked-->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-btn" class="close-btn">&times;</span>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="servicespage/services.html">Services</a></li>
+            <li><a href="#">Explore</a></li>
+            <p id="current-date"></p>
+          </ul>
+        </div>
+      </div>
+
+    <!-- The font is from google fonts, the link is in the header, not local-->
     <h1 class="orbitron-font">Future Vision</h1>
+
+      <i id="login" class="fas fa-user-circle login-icon"></i>
     </nav>  
   </header>
 
-    <!-- Log-in form is the main content ;)-->
+    <!-- Log-in form here as part of main content-->
   <main>
     <div class="login-form">
       <form action="/login" method="post">
@@ -64,7 +84,7 @@
       </div>
       <!-- This is copyright remember-->
       <div>
-        <p id="copyright_tag">© <span id="current-year"></span> Made by EGRdigital</p>
+        <p id="copyright_tag">© <span id="current-year"></span> EGR Digital</p>
       </div>
     </div>
   </footer>
