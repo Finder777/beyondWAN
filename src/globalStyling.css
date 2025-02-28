@@ -60,6 +60,7 @@ nav > h1 {
   text-align: center;
   max-width: none;
   display:flex;
+  z-index:2;
 }
 
 .orbitron-font {
@@ -93,6 +94,7 @@ nav > h1 {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 50%; /* Could be more or less, depending on screen size */
   color: white;
   text-align: left;
@@ -106,9 +108,10 @@ nav > h1 {
 }
 
 .close-btn:hover, .close-btn:focus {
-  color: #000;
+  color: greenyellow;
   text-decoration: none;
   cursor: pointer;
+  cursor: hand; /* For older browsers */
 }
 
 .login-icon {

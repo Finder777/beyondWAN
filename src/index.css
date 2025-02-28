@@ -10,12 +10,8 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-image: linear-gradient(to top,black,#293369);
-  object-fit:cover;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  z-index:-1;
 }
 
 /* This is unique to the page*/
@@ -33,6 +29,13 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.video-filter{
+  background-image: linear-gradient(to top,black,#293369);
+  object-fit:cover;
+  height: 100%;
+  z-index:-1;
 }
 
 main {

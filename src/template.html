@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Stylesheets-->
   <link rel="stylesheet" href="globalStyling.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="template.css">
   <!-- This is the google font used in H1, please do not change this-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,22 +18,16 @@
 </head>
 
 <body>
-  <div class="video-background">
-    <video autoplay muted loop id="bg-video">
-      <source src="storm_video_V1.mp4" type="video/mp4">
-      Your browser may not support the video tag.
-    </video>
-  </div>
-
-  <header>
-    <nav>
-      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
-      <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="servicespage/services.html">Services</a></li>
-      <li><a href="#">Contact</a></li>
-      </ul>
-
+  <div class="page-background"></div>
+  <div class="page-filter"></div>
+    <header>
+      <nav>
+        <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="servicespage/services.html">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
   <!-- This is the modal that will pop up when the hamburger icon is clicked-->
       <div id="modal" class="modal">
         <div class="modal-content">
@@ -46,7 +40,6 @@
           </ul>
         </div>
       </div>
-
     <!-- The font is from google fonts, the link is in the header, not local-->
     <h1 class="orbitron-font">Future Vision</h1>
 
@@ -56,18 +49,7 @@
 
     <!-- Log-in form here as part of main content-->
   <main>
-    <div class="login-form">
-      <form action="/login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit" class="custom-button">
-          <i class="fas fa-sign-in-alt"></i>Log In
-        </button>
-        <p>If you want access email: <a href="mailto:info@egr.digital">info@egr.digital</a></p>
-      </form>
-    </div>
+    
   </main>
 
 <!-- This is the site footer-->
