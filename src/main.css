@@ -2,38 +2,12 @@
 
 /* Basic reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styling */
-html, body {
-  margin:0;
-  padding:0;
-  height:100%;
-  font-family: Arial, sans-serif;
-  display: flex;
-  background-color: black;
-}
-
-.page-background{
-  position:fixed;
-  top:0;
-  left:0;
-  height:100vh;
-  width: 100vw;
-  background-image: url('./ramshead.jpeg');
-  background-size:cover;
-  background-position: center;
-  z-index: -1;
+   box-sizing: border-box;
 }
 
 /* Side nav styling */
 .side-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: static;
   width: 200px;
   height: 100%;
   background-color: #333;
