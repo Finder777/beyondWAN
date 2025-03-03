@@ -62,7 +62,6 @@ nav > h1 {
   padding-right:15px;
   text-align: center;
   max-width: none;
-  display:flex;
   z-index:2;
 }
 
@@ -124,6 +123,24 @@ nav > h1 {
   position: absolute; /* Positioning */
   top: 20px; /* Adjust top position */
   right: 20px; /* Adjust right position */
+}
+
+/* Other typography nerd-ery */
+h2{
+  font-size: 2rem;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #888;
+  padding-left: 25px;
+  padding-right: 15px;
+  margin-bottom: 0px;
 }
 
 /* this is the footer for all pages */
