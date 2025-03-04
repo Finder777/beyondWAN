@@ -19,13 +19,23 @@ class NavComponent extends HTMLElement {
   
     addEventListeners(){
       //Add your event listeners here. Example.
-      const hamburger = this.shadowRoot.getElementById('hamburger');
-      if(hamburger){
-        hamburger.addEventListener('click', ()=>{
+      const hamburgerBtn = this.shadowRoot.getElementById('hamburger');
+      const navLinks = this.shadowRoot.querySelector('.nav-links');
+      const modal = this.shadowRoot.getElementById('modal');
+      const closeBtn = this.shadowRoot.getElementById('close-btn');
+      
+      if(hamburgerBtn){
+        hamburgerBtn.addEventListener('click', ()=>{
           console.log("hamburger was clicked");
-        })
-      }
+          navLinks.classList.toggle('show');
+          modal.classList.toggle('modal-content');
+        })};
+
+        if (closeBtn) {
+          closeBtn.addEventListener('click', () => {
+          modal.classList.remove('modal-content');
+          });}
     }
   }
   
-  customElements.define('nav-component', NavComponent);
+customElements.define('nav-component', NavComponent);

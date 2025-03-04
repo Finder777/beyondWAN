@@ -1,30 +1,7 @@
 // Path to the HTML file: /home/otacon/Dev/beyondWAN/src/index.html
 // Path to the CSS file: /home/otacon/Dev/beyondWAN/src/styles.css
 
-// This is the JS for the hamburger menu
-const hamburgerBtn = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
 
-hamburgerBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('show'); 
-});
-
-const modal = document.getElementById('modal');
-const closeBtn = document.getElementById('close-btn');
-
-hamburgerBtn.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
-
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-});
 
 // This JS is for everything else like... 
 
