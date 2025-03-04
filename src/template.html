@@ -21,36 +21,12 @@
   <div class="page-background"></div>
   <div class="page-filter"></div>
     <header>
-      <nav>
-        <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="servicespage/services.html">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-  <!-- This is the modal that will pop up when the hamburger icon is clicked-->
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span id="close-btn" class="close-btn">&times;</span>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="servicespage/services.html">Services</a></li>
-            <li><a href="#">Explore</a></li>
-            <p id="current-date"></p>
-          </ul>
-        </div>
-      </div>
-    <!-- The font is from google fonts, the link is in the header, not local-->
-    <h1 class="orbitron-font">Future Vision</h1>
-
-      <i id="login" class="fas fa-user-circle login-icon"></i>
-    </nav>  
-  </header>
+      <nav-component></nav-component>
+    </header>
 
     <!-- Log-in form here as part of main content-->
   <main>
-    
-  </main>
+    </main>
 
 <!-- This is the site footer-->
   <footer class="footer">
@@ -70,9 +46,7 @@
       </div>
     </div>
   </footer>
-
   <script src="main.js"></script>
-
+  <script src="nav.js"></script>
 </body>
-
 </html>
