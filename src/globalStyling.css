@@ -110,7 +110,20 @@ h3 {
   }
 
   h1 {
-    width:fit-content;
+  background-color: #1a1a1a;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 0px 15px;
+  text-align: center;
+  z-index:2;
+  }
+
+  .orbitron-font {
+  font-optical-sizing: auto;
+  font-family: "Orbitron", serif;
+  font-size: 2rem;
+  font-weight: 350;
+  color: #fff;
   }
 
   p {
