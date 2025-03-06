@@ -14,7 +14,30 @@ html, body {
   flex-direction: column;
 }
 
+
+
 /* Other typography nerd-ery */
+h1 {
+  font-family: "Orbitron", serif;
+  font-style: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1a1a1a;
+  margin-top: 5px;
+  margin-bottom:5px;
+  padding-left:15px;
+  padding-right:15px;
+  text-align: center;
+  max-width: none;
+  z-index:2;
+}
+
+.orbitron-font {
+  font-optical-sizing: auto;
+}
+
+
 h2{
   font-size: 2rem;
   font-weight: 400;

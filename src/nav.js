@@ -28,14 +28,16 @@ class NavComponent extends HTMLElement {
         hamburgerBtn.addEventListener('click', ()=>{
           console.log("hamburger was clicked");
           navLinks.classList.toggle('show');
-          modal.classList.toggle('modal-content');
+          modal.classList.toggle('modal');
         })};
 
         if (closeBtn) {
           closeBtn.addEventListener('click', () => {
-          modal.classList.remove('modal-content');
+          modal.classList.remove('modal');
           });}
     }
   }
   
 customElements.define('nav-component', NavComponent);
+
+
