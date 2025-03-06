@@ -4,6 +4,7 @@
 const now = new Date();
 console.log(now); 
 
+const date = now.getDate();
 // Get user's location (if permitted)
 navigator.geolocation.getCurrentPosition(
   position => {
