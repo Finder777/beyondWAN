@@ -4,7 +4,11 @@
 const now = new Date();
 console.log(now); 
 
+// Set the date to the HTML element
 const date = now.getDate();
+const dateElement = document.getElementById('current-date');
+dateElement.textContent = now.toDateString(); 
+
 // Get user's location (if permitted)
 navigator.geolocation.getCurrentPosition(
   position => {

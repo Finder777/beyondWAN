@@ -18,23 +18,20 @@ html, body {
 
 /* Other typography nerd-ery */
 h1 {
-  font-family: "Orbitron", serif;
-  font-style: uppercase;
-  font-size: 3rem;
-  font-weight: 400;
-  color: #fff;
   background-color: #1a1a1a;
-  margin-top: 5px;
-  margin-bottom:5px;
-  padding-left:15px;
-  padding-right:15px;
+  width: fit-content;
+  margin: 5px auto;
+  padding: 0px 15px;
   text-align: center;
-  max-width: none;
   z-index:2;
 }
 
 .orbitron-font {
   font-optical-sizing: auto;
+  font-family: "Orbitron", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
 }
 
 
