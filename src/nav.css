@@ -22,6 +22,7 @@ nav {
   
   .nav-links.show {
     float: left; /* Show the navigation */
+    z-index: 10;
   }
   
   ul > li {
