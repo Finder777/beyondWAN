@@ -5,26 +5,13 @@
    box-sizing: border-box;
 }
 
-.page-background {
-  position: fixed;
+header{
+  position: sticky;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-image: url('./ramshead.jpeg');
-  background-size: cover;
-  background-position: center;
-  z-index: -3;
-}
-
-.page-filter {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -2;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
 }
 
 /* Styling for nav element */
@@ -34,7 +21,41 @@ nav {
   align-items: center;
   justify-content: center; /* Center the content */
   padding: 0 20px;
-  position:relative;
+}
+
+.hamburger-icon {
+  font-size: 1.5rem;
+  color: white; 
+  cursor: pointer; /* Changed cursor to pointer because I like it */
+  position: absolute; 
+  top: 20px; 
+  left: 20px;
+  z-index: 2; 
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(128, 128, 128, 0.5); /* Grey background with transparency */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 5;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  margin: 10px auto 10px 10px;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  height: 90%;
+  width: 20%;
+  color: white;
+  text-align: left;
 }
 
 nav > .nav-links {
@@ -43,25 +64,38 @@ nav > .nav-links {
   gap: 20px;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
 .nav-links.show {
   float: left; /* Show the navigation */
-  z-index: 10;
 }
 
 ul > li {
   list-style-type: none;
 }
 
-#logo-icon {
-  color:white;
-  font-size:1rem;
-  padding: 5px 10px;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+#current-date, #language, #location, #currency {
+  color: grey;
+  font-style: italic;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover, .close-btn:focus {
+  color: greenyellow;
+  text-decoration: none;
+  cursor: hand; /* For nostalgia */
+  cursor: pointer;
 }
 
 nav > h1 {
@@ -84,55 +118,6 @@ nav > h1 {
   font-optical-sizing: auto;
 }
 
-.hamburger-icon {
-  font-size: 1.5rem;
-  color: white; 
-  cursor: pointer; /* Changed cursor to pointer because I like it */
-  position: absolute; 
-  top: 20px; 
-  left: 20px;
-  z-index: 4; 
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(128, 128, 128, 0.5); /* Grey background with transparency */
-  backdrop-filter: blur(5px); /* Blur effect */
-}
-
-.modal-content {
-  background-color: #1a1a1a;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 10px;
-  height: 50%;
-  width: 50%;
-  color: white;
-  text-align: left;
-}
-
-.close-btn {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-btn:hover, .close-btn:focus {
-  color: greenyellow;
-  text-decoration: none;
-  cursor: hand; /* For nostalgia */
-  cursor: pointer;
-}
-
 .login-icon {
   font-size: 1.5rem; /* Adjust size */
   color: white; /* Adjust color */
@@ -140,6 +125,31 @@ nav > h1 {
   position: absolute; /* Positioning */
   top: 20px; /* Adjust top position */
   right: 20px; /* Adjust right position */
+}
+
+/* The page */
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./ramshead.jpeg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  z-index: -3;
+}
+
+.page-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: -2;
 }
 
 /* Main content styling */
@@ -157,24 +167,29 @@ main {
 .side-nav {
   height: 100%;
   border-radius: 20px;
-  background-color: #333;
-  padding-top: 20px;
+  background-color: rgba(70, 69, 69, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 20px 20px;
   flex: 1;
+}
+
+.side-nav h2 {
+  color: aqua;
 }
 
 .side-nav ul {
   list-style-type: none;
-  padding: 20px;
+  padding: 0;
 }
 
 .side-nav ul li {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .side-nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   display: block;
 }
 
@@ -188,7 +203,7 @@ main {
   padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: rgba(70, 69, 69, 0.75);
+  background-color: rgba(70, 69, 69, 0.5);
   backdrop-filter: blur(5px);
 }
 
@@ -197,8 +212,8 @@ h3 {
   z-index: 3;
 }
 
-h2{
-  color: aqua;
+.Newsblock > h2{
+  color: chocolate;
 }
 
 /* For your mobile */

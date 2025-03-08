@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+<!-- This is the page that User lands on when they enter egr.digital-->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Please do not mix font awesome with another icon library https://fontawesome.com/-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Stylesheets-->
   <link rel="stylesheet" href="globalStyling.css">
   <link rel="stylesheet" href="index.css">
-  <!--fonts -->
+  <!-- This is the google font used in H1, please do not change this-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -24,11 +26,35 @@
   </div>
 
   <header>
-    <!-- The font is from google fonts not local-->
-    <h1 class="orbitron-font">Future Vision</h1>  
+    <nav>
+      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
+      <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="servicespage/services.html">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+
+  <!-- This is the modal that will pop up when the hamburger icon is clicked-->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-btn" class="close-btn">&times;</span>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="servicespage/services.html">Services</a></li>
+            <li><a href="#">Explore</a></li>
+            <p id="current-date"></p>
+          </ul>
+        </div>
+      </div>
+
+    <!-- The font is from google fonts, the link is in the header, not local-->
+    <h1 class="orbitron-font">Future Vision</h1>
+
+      <i id="login" class="fas fa-user-circle login-icon"></i>
+    </nav>  
   </header>
 
-  <!-- Log-in form here as part of main content-->
+    <!-- Log-in form here as part of main content-->
   <main>
     <div class="login-form">
       <form action="/login" method="post">
@@ -39,8 +65,7 @@
         <button type="submit" class="custom-button">
           <i class="fas fa-sign-in-alt"></i>Log In
         </button>
-        <p>If you want access email: <a id="mail" href="mailto:info@egr.digital">info@egr.digital</a></p>
-        <p><a id="skip" href="home.html">or skip and go lightweight</a></p>
+        <p>If you want access email: <a href="mailto:info@egr.digital">info@egr.digital</a></p>
       </form>
     </div>
   </main>
