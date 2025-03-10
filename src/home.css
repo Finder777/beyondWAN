@@ -66,6 +66,7 @@ nav > .nav-links {
 
 .nav-links.show {
   float: left; /* Show the navigation */
+  line-height: 1.1rem;
 }
 
 ul > li {
@@ -79,10 +80,18 @@ ul > li {
   line-height: 3rem;
 }
 
+.nav-links a:hover {
+  color: greenyellow;
+}
+
 #current-date, #language, #location, #currency {
   color: grey;
   font-style: italic;
   line-height: 1.1rem;
+}
+
+.settings > h4{
+  color: aqua;
 }
 
 .close-btn {
@@ -240,6 +249,20 @@ h3 {
     padding: 20px;
   }
 
+  .close-btn {
+    color: greenyellow;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+  .nav-links.show{
+    margin: 5px 0px;
+  }
+
+  #current-date, #language, #location, #currency {
+    font-size: 1rem;
+    margin:0px 0px;
+  }
   .side-nav {
     margin-bottom: 20px;
   }
@@ -248,4 +271,4 @@ h3 {
     margin-left: 0;
     margin-right: 0;
   }
-}
+}}
