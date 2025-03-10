@@ -82,6 +82,7 @@ ul > li {
 #current-date, #language, #location, #currency {
   color: grey;
   font-style: italic;
+  line-height: 1.1rem;
 }
 
 .close-btn {
@@ -231,7 +232,7 @@ h3 {
   .modal-content{
     width:100%;
     height: 100%;
-    margin: 0;
+    margin: 10px;
     padding: 20px;
   }
   .side-nav {
