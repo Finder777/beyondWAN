@@ -254,8 +254,9 @@ h3 {
     float: right;
     font-size: 28px;
     font-weight: bold;
+  }
 
-  .nav-links.show{
+  .nav-links.show {
     margin: 5px 0px;
   }
 
@@ -271,4 +272,4 @@ h3 {
     margin-left: 0;
     margin-right: 0;
   }
-}}
+}
