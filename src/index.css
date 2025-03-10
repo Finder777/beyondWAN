@@ -80,6 +80,17 @@ main {
   color:black
 }
 
+#email {
+  color: teal;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#skip-btn {
+  color: green;
+  font-weight: 600;
+  text-decoration: underline;
+}
 .custom-button {
   background-color: white;
   color: black;
