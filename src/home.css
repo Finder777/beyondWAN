@@ -208,7 +208,7 @@ main {
 }
 
 .Newsblock {
-  flex: 3;
+  flex: 1;
   border-radius: 20px;
   padding: 20px;
   margin-left: 20px;
@@ -258,6 +258,7 @@ h3 {
 
   .nav-links.show {
     margin: 5px 0px;
+    padding: 0px;
   }
 
   #current-date, #language, #location, #currency {
