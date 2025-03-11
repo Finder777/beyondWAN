@@ -10,7 +10,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   background-color: rgb(0, 0, 0);
 }
 
@@ -162,6 +162,69 @@ nav > h1 {
   z-index: -2;
 }
 
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  margin: 0px auto;
+}
+
+.page-nav > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 20px;
+  margin: 20px;
+}
+.page-nav > ul > li > button {
+  color: white;
+  background: grey;
+  border-radius: 10px;
+  border-color: darkgrey;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 0px;
+}
+
+.page-nav > ul > li > button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-nav > ul > li > button:hover {
+  background: #575757;
+}
+/* Banner styling */
+banner {
+  background-image: url('./forest.png');
+  width:100vw; 
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-content {
+  padding:40px;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.banner-content > h1 {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.banner-content > p {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 20px auto;
+  padding: 10px;
+
+}
 /* Main content styling */
 main {
   margin-left: 0px;
@@ -234,7 +297,7 @@ h3 {
   }
 
   nav > h1 {
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
   .modal{
