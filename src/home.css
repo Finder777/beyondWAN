@@ -331,6 +331,7 @@ h3 {
 
   .banner-content{  
     margin: 5px 5px;
+    width: fit-content;
 }
 
   .side-nav {
