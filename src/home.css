@@ -10,8 +10,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-image: url('./ramshead.jpeg');
   background-size: 60%;
   background-repeat: no-repeat;
@@ -24,15 +24,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: -2;
 }
 
 banner {
   background-image: url('./forest.png');
-  width:100vw;
+  width:100%;
   background-size: cover;
   background-position: center;
 }
@@ -63,8 +63,8 @@ banner {
 /* Main content styling */
 main {
   margin-left: 0px;
-  padding: 20px;
-  display: flex !important;
+  padding: 20px 0px;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   row-gap: 20px;
@@ -127,10 +127,16 @@ h3 {
 /* For your mobile */
 
 @media screen and (max-width: 600px) {
-  main {
-    position:static;
-    flex-direction: column;
+  .page-nav > h2{
+    font-size: 1.5rem;
   }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    column-gap: 20px;
+    }
 
   .banner-content{  
     margin: 5px 5px;
