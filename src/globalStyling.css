@@ -17,7 +17,7 @@ html, body {
 h1 {
   background-color: #1a1a1a;
   width: fit-content;
-  margin: 5px auto;
+  margin: 50px auto;
   padding: 0px 15px;
   text-align: center;
   z-index:2;
@@ -57,7 +57,7 @@ h3 {
   height: auto;
   width: 100%;
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
   gap: 10%;
 }
