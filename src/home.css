@@ -328,6 +328,11 @@ h3 {
     font-size: 1rem;
     margin:0px 0px;
   }
+
+  .banner-content{  
+    margin: 5px 5px;
+}
+
   .side-nav {
     margin-bottom: 20px;
   }

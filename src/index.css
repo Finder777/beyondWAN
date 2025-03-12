@@ -142,4 +142,8 @@ main {
   .login-form {
     width: 90vw;
   }
+
+  h1{
+    margin-top: 20px;
+  }
 }
