@@ -308,6 +308,10 @@ h3 {
     font-weight: bold;
   }
   
+.nav-links{
+  display:none;
+}
+
   .nav-links.show {
     margin: 5px 0px;
     padding: 5px 0px;
