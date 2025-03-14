@@ -326,6 +326,10 @@ h3 {
     margin:0px 0px;
   }
 
+  .page-nav > ul {
+    overflow: scroll;
+  }
+
   .footer-content {
     flex-direction: column; /* Stack items vertically */
     text-align: center;
