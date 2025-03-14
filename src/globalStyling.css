@@ -49,7 +49,6 @@ nav {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(128, 128, 128, 0.5); /* Grey background with transparency */
   backdrop-filter: blur(5px); /* Blur effect */
-  z-index: 5;
 }
 
 .modal-content {
