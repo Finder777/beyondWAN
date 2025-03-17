@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Please do not mix font awesome with another icon library https://fontawesome.com/-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="./globalStyling.css">
+  <link rel="stylesheet" href="globalStyling.css">
   <link rel="stylesheet" href="services.css">
   <!-- This is the 3rd party styling and google font used for h1, please do not change this-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +16,15 @@
 </head>
 
 <body>
-
-
-
+  <div class="video-background"></div>
+    <video autoplay muted loop id="background-video">
+      <source src="storm_video_V1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 <!--This is the main content for the page-->
 <main>
-
   <h1 class="mainfont">Our Services</h1>
-  
   <section class="services-section">
     <div class="service">
       <i class="fas fa-robot service-icon"></i>
@@ -44,14 +45,28 @@
     </div>
   </section>
 
-  <div class="video-background"></div>
-    <video autoplay muted loop id="background-video">
-      <source src="storm_video_V1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+    <!-- from us to you-->
+    <section class="Newsblock">
+      <h2>Latest News</h2>
+      <p><em>28th Feb 2024</em></p>
+      <p>AI is the future of innovative web development. I'm working on an AI project and stacking LLMs for future use and development.  I may add it to this page but check back for updates here.
+      </p>
+    </section>
+  
+    <div class="side-nav">
+      <h2 id="title">Demo Sites</h2>
+      <p>These are a few projects built in different ways. Sometimes you can go no code on the frontend, other times you will need a more sophisticated
+        approach.  It all depends on what you are trying to achieve.  I can help you with that.  I have experience in both.  I have worked with Wix, Wordpress, Azure AI and eCommerce B2C.  I can help you with your project so contact me today.
+      </p>
+      <ol>
+        <li><a href="https://edagramirez.wixsite.com/egrdigitaldesign">Wix Sites</a></li>
+        <li><a href="https://whitehorseresearch.wordpress.com/">Wordpress Sites</a></li>
+        <li><a href="#">Azure AI Projects</a></li>
+        <li><a href="https://lowrance.com">eCommerce B2C experience</a></li>
+      </ol>
+    </div>
 
-<!--This is the site footer and must be on all pages, the styling is in the CSS-->
+<!--credit is where credit is due. Do you remember sitting in the cinema watching these just because it meant you could stay at the cinema?-->
     <footer>
       <div class="footer-content">
         <div class="footer-icons">

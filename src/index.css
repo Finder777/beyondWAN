@@ -71,11 +71,12 @@ a:active {
 
 .one {
     background-color: red;
+    text-decoration:none;
 }
 
 .one:hover{
     background-color: orange;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .two {
@@ -84,7 +85,7 @@ a:active {
 
 .two:hover{
     background-color: aqua;
-    text-decoration: none;
+    text-decoration: underline;
     color:darkgreen;
 }
 
