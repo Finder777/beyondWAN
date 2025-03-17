@@ -43,6 +43,10 @@ h1 {
     padding: 0px auto;
 }
 
+p {
+    font-size: 18px;
+}
+
 a {
     display:inline-block;
     text-decoration:none;
@@ -86,10 +90,18 @@ a:active {
 
 @media screen and (max-width: 600px) {
     a {
-    display:block;
-    text-decoration:none;
-    color: whitesmoke;
-    font-size: 2rem;
-    margin-top: 20px;
+        display:block;
+        text-decoration:none;
+        color: whitesmoke;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    p {
+        font-size: 2rem;
     }
 }
