@@ -43,27 +43,53 @@ h1 {
     padding: 0px auto;
 }
 
-button {
-    font-size: 1rem;
-    padding: 2% 2%;
-    border-radius: 40px 40px;
-}
-
-#one {
-    background-color: red;
-    color: black;
-}
-
-a{
+a {
+    display:inline-block;
     text-decoration:none;
+    color: whitesmoke;
+    font-size: 2rem;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
-}
-
-#two {
-    background-color: blue;
     color: whitesmoke;
 }
 
+a:active {
+    color:whitesmoke;
+}
+
+.one, .two {
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 20px; 
+}
+
+.one {
+    background-color: red;
+}
+
+.one:hover{
+    background-color: orange;
+    text-decoration: none;
+}
+
+.two {
+    background-color: blue;
+}
+
+.two:hover{
+    background-color: aqua;
+    text-decoration: none;
+    color:darkgreen;
+}
+
+@media screen and (max-width: 600px) {
+    a {
+    display:block;
+    text-decoration:none;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-top: 20px;
+    }
+}
