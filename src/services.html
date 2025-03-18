@@ -16,25 +16,28 @@
 </head>
 
 <body>
-  <div class="video-background"></div>
-    <video autoplay muted loop id="background-video">
-      <source src="storm_video_V1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+
+  <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+      <source src="nature_video_V1.mp4" type="video/mp4">Your browser does not support the video tag.</source>
+      </video>
   </div>
-<!--This is the main content for the page-->
-<main>
-  <h1 class="mainfont">Our Services</h1>
+
+  <div class="video-filter"></div>
+
+<!-- Our services in a summary.  Pretty conventional but we do the requirements and design, you do the estimates and the dev-->
+  <h1 class="orbitron-font">Services</h1>
+
   <section class="services-section">
     <div class="service">
       <i class="fas fa-robot service-icon"></i>
-      <h3>AI Web App Development</h3>
+      <h2>AI Web App Development</h2>
       <p>We provide cutting-edge AI solutions to automate and enhance your business processes.</p>
     </div>
   
     <div class="service">
       <i class="fas fa-cloud service-icon"></i>
-      <h3>Cloud Integration</h3>
+      <h2>Cloud Integration</h2>
       <p>Seamlessly integrate your App  with other cloud hosted services for better scalability and performance.</p>
     </div>
   
@@ -46,12 +49,13 @@
   </section>
 
     <!-- from us to you-->
-    <section class="Newsblock">
+  <main>   
+    <div class="Newsblock">
       <h2>Latest News</h2>
       <p><em>28th Feb 2024</em></p>
       <p>AI is the future of innovative web development. I'm working on an AI project and stacking LLMs for future use and development.  I may add it to this page but check back for updates here.
       </p>
-    </section>
+    </div>
   
     <div class="side-nav">
       <h2 id="title">Demo Sites</h2>
@@ -65,6 +69,7 @@
         <li><a href="https://lowrance.com">eCommerce B2C experience</a></li>
       </ol>
     </div>
+  </main>
 
 <!--credit is where credit is due. Do you remember sitting in the cinema watching these just because it meant you could stay at the cinema?-->
     <footer>

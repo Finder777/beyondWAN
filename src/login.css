@@ -34,7 +34,6 @@ html, body {
 .video-filter{
   background-image: linear-gradient(to top,black,#293369);
   object-fit:cover;
-  height: 100%;
   z-index:-1;
 }
 
