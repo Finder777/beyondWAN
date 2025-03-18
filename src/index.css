@@ -39,8 +39,16 @@ body{
 }
 
 h1 {
-    font-size: 3rem;
     padding: 0px auto;
+    width:fit-content;
+}
+
+.orbitron-font {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-size: 4rem;
+    font-weight: 350;
+    color: #fff;
 }
 
 p {
@@ -94,15 +102,15 @@ a:active {
         display:block;
         text-decoration:none;
         color: whitesmoke;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 20px;
     }
     
     h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
     
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
