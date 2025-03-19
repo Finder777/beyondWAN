@@ -186,7 +186,7 @@ h1 {
   margin: 10px auto;
   padding: 0px 15px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: sentence-case;
   font-size: 3rem;
 }
 
@@ -224,6 +224,7 @@ h3 {
   position: static;
   bottom: 0;
   gap: 10%;
+  z-index:10;
 }
 
 .footer-content {
@@ -323,7 +324,7 @@ h3 {
   }
 
   .footer-content {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     text-align: center;
   }
 }
