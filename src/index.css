@@ -33,13 +33,15 @@ body{
 }
 
 .interlocutor{
-    background-color: #00ff0d1a;
+    background-color: #00ff0d4f;
     height:100%;
     padding: 5%;
 }
 
 h1 {
+    margin: 0px;
     padding: 0px auto;
+    line-height:3.5rem;
     width:fit-content;
 }
 
@@ -49,6 +51,11 @@ h1 {
     font-size: 4rem;
     font-weight: 350;
     color: #fff;
+}
+
+h4{
+    text-transform:uppercase;
+    margin: 10px auto;
 }
 
 p {
