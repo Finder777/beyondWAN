@@ -11,6 +11,7 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  z-index: -5;
 }
 
 header{
@@ -19,6 +20,7 @@ header{
   left: 0;
   width: auto;
   background-color: rgb(0, 0, 0);
+  z-index: 10;
 }
 
 nav {
@@ -121,12 +123,11 @@ ul > li {
 }
 /* page-nav */
 .page-nav {
+  position:relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width:100%;
-  position: relative;
-  z-index: -1;
 }
 
 .page-nav:before{
@@ -134,18 +135,24 @@ ul > li {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width:100%;
   height: 100%;
-  background-color: rgb(57 57 57 / 0.6); 
+  background-color: #00ff0d10;
   backdrop-filter: blur(5px);
-  z-index: -2;
-}
+  z-index:-1;
+  }
 
-.page-nav > h2{
+.page-nav > h2 > a {
   color:greenyellow;
   border-color: #1a1a1a;
+  font-size: 2rem;
+  text-decoration: none;
   margin-left: 20px;
   flex: 1;
+}
+
+.page-nav > h2 > a:hover {
+  cursor: hand;
 }
 
 .page-nav > ul {
@@ -186,7 +193,6 @@ h1 {
   margin: 10px auto;
   padding: 0px 15px;
   text-align: center;
-  text-transform: sentence-case;
   font-size: 3rem;
 }
 
@@ -220,6 +226,7 @@ h3 {
   flex-direction: row; /* Sets the direction of the flexbox */
   height: auto;
   width: 100%;
+  background-color: black;
   text-align: center;
   position: static;
   bottom: 0;
@@ -256,7 +263,6 @@ h3 {
   font-size: 1.5rem;
   font-style: italic;
   color: #fff;
-  background-color: #1a1a1a;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0px;

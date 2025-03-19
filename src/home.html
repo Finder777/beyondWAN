@@ -18,10 +18,11 @@
 </head>
 
 <body>
-    <header>
-      <nav>
-        <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
-      
+  <div class="page-background"></div>
+  <div class="page-filter"></div>
+  <header>
+    <nav>
+      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
       <div id="modal" class="modal">
         <div class="modal-content">
           <span id="close-btn" class="close-btn">&times;</span>
@@ -39,35 +40,63 @@
           </ul>
         </div>
       </div>
-    <h1 class="orbitron-font">@edspace</h1>
-    <i id="login" class="fas fa-user-circle login-icon"></i>
+      <h1 class="orbitron-font">@edspace</h1>
+      <i id="login" class="fas fa-user-circle login-icon"></i>
     </nav>  
+    <div class="page-nav">
+      <h2><a href="index.html">Home</a></h2>
+      <ul>
+        <li><a href="#">Listen</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><button id="shop"><a href="#">Shop</a></button></li>
+      </ul>
+    </div>
   </header>
-
-  <div class="page-background"></div>
-  <div class="page-filter"></div>
-
-<div class="content-backdrop">
-
-  <div class="page-nav">
-    <h2>Home</h2>
-    <ul>
-      <li><a href="#">Listen</a></li>
-      <li><a href="#">Stories</a></li>
-      <li><button id="shop"><a href="#">Shop</a></button></li>
-    </ul>
-  </div>
-
+  
   <banner>
     <div class="banner-content">
       <h1>Welcome to my world</h1>
       <p>This is EdSpace- an invite only mind-health app.  I built this for me and my friends. I've added audio content as someone said I should do it. So what the heck- I did.</p>
     </div>
   </banner>
-</div>
-<script src="main.js"></script>
-<script src="hamburger.js"></script>
+<!--I'm not going to bore you with endless scrolling or weird animations.  There is one main section with a few bits in it.-->
+  <main>
+    <div class="card-one">
+      <h2>What makes you different?</h2>
+      <p>Do you feel like you are swept along with the crowd sometimes?</p>
+    </div>
+    
+    <div class="card-two">
+      <h2>Escape and bask in the sun</h2>
+      <p>Sometimes it's good to watch the world go by</p>
+    </div>
+  
+    <div class="card-three">
+      <h2>Positivity</h2>
+      <p>Control your breathing with me.  I'll lead, you follow</p>
+    </div>
+  </main>
 
+  <!-- Credit to everyone who helped with this-->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-icons">
+       
+        <i id="bone-icon" class="fas fa-bone"></i>
+        <i id="spaceShipBaby" class="fas fa-shuttle-space"></i> <!-- Updated class -->
+      </div>
+      <!--This is our mantra-->
+      <div class="mantra">
+        <h5>Less politics, more dev</h5>
+      </div>
+      <!-- This is copyright remember-->
+      <div>
+        <p id="copyright_tag">© <span id="current-year"></span> EGR Digital</p>
+      </div>
+    </div>
+  </footer>
 
+  <script src="main.js"></script>
+  <script src="hamburger.js"></script>
 </body>
 </html>
