@@ -1,14 +1,16 @@
+* {
+    font-size: 16px; /* 1em = 16px and p tags should sit at this */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
 html{
-    background-color: black;
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    font-family: 'Segoe UI', sans-serif;
-    height: 100vh;
-    margin: 0px 0px;
-    color: white;
+    background-color: black; /* This is page specific */
 }
 
 .page-background {

@@ -35,7 +35,7 @@
   border-radius: 10px;
   height:50%;
   width: 50%;
-  z-index:10;
+  z-index:1;
 }
 
 .package > p {
@@ -48,16 +48,33 @@
 /* For your mobile */
 
 @media screen and (max-width: 600px) {
-  .page-nav > h2{
-    display:none;
+  
+  .page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./ramsskull.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+  }
+  .package{
+    position:relative;
+    margin: 5% 2%;
+    background-color: #575757c4;
+    border-radius: 10px;
+    height:fit-content;
+    width: fit-content;
+    z-index:1;
   }
   
-  .page-nav > ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
-    list-style-type: none;
+  .package > p {
+    font-family: monospace;
+    font-size: 3rem;
+    margin: 50px auto;
+    padding: 20px;
   }
 }

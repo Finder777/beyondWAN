@@ -4,9 +4,10 @@
   color: white;
 }
 
-html, body {
-  height: auto;
-  margin: 0;
+html, body { 
+  background-color: black;
+  height: 100vh;
+  margin: 0px 0px;
   border: 0;
   padding: 0;
   display: flex;
