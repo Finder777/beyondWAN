@@ -1,0 +1,63 @@
+/* this is the footer for all pages */
+.footer {
+    display: flex; /* Defines the container as a flexbox */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Centers the content vertically */
+    flex-direction: row; /* Sets the direction of the flexbox */
+    height: auto;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    bottom: 0;
+    gap: 10%;
+    z-index:5;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Centers the content vertically */
+    width: 100%;
+  }
+  
+  .footer-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  #bone-icon {
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  #spaceShipBaby {
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .mantra {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+  }
+  
+  #copyright_tag {
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px;
+  }
+
+  /* Media query for smaller screens */
+@media (max-width: 600px) {    
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
