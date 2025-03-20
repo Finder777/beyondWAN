@@ -5,12 +5,13 @@
 }
 
 html{
-    margin: 0px;
-    padding: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 body{
     background-color: black; /* This is page specific */
+    margin: 0px 0px;
 }
 
 .page-background {
@@ -41,7 +42,7 @@ body{
 }
 
 h1 {
-    margin: 0px;
+    margin: 0px 0px;
     padding: 0px auto;
     line-height:3.5rem;
     width:fit-content;
