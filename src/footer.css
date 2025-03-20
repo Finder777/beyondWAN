@@ -1,14 +1,14 @@
 /* this is the footer for all pages */
 .footer {
-    display: flex; /* Defines the container as a flexbox */
-    justify-content: space-between; /* Distributes space between items */
-    align-items: center; /* Centers the content vertically */
-    flex-direction: row; /* Sets the direction of the flexbox */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row;
     height: auto;
     width: 100%;
     background-color: black;
     text-align: center;
-    position:relative;
+    position: relative;
     bottom: 0;
     gap: 10%;
     z-index:5;
@@ -16,8 +16,8 @@
   
   .footer-content {
     display: flex;
-    justify-content: space-between; /* Distributes space between items */
-    align-items: center; /* Centers the content vertically */
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
   }
   
@@ -52,6 +52,7 @@
     font-size: 1rem;
     color: #fff;
     padding: 20px;
+    margin: 0px auto;
   }
 
   /* Media query for smaller screens */

@@ -39,7 +39,15 @@
 .page-nav > ul > li {
     padding-right: 20px;
 }
-  
+
+.page-nav > ul > li > a {
+    text-decoration: none;
+}
+
+.page-nav > ul > li > a:hover{
+    text-decoration: underline;
+}
+
 .page-nav > ul > li > button {
     color: aquamarine;
     background: blue;
