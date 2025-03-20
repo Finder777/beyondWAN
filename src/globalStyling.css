@@ -46,7 +46,9 @@ h3 {
   margin-bottom: 0px;
 }
 
-
+#copyright_tag{
+  margin:0px auto;
+}
 
 /* Media query for smaller screens */
 @media (max-width: 600px) { 
@@ -56,10 +58,5 @@ h3 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
-  }
-  
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
   }
 }
