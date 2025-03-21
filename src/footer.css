@@ -1,6 +1,7 @@
 /* this is the footer for all pages */
 .footer {
-    display: flex; 
+    display: flex;
+    flex:1;
     justify-content: space-between; 
     align-items: center; 
     flex-direction: row;
@@ -57,9 +58,15 @@
 
   /* Media query for smaller screens */
 @media (max-width: 600px) {    
-    .footer-content {
+  .footer{
+    height:fit-content;
+  }  
+  
+  .footer-content {
+      flex: 1;
       flex-direction: column;
       text-align: center;
     }
+
   }
   

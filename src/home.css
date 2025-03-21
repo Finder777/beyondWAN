@@ -29,24 +29,45 @@
 }
 
 main{
-  height:100vh;
+  flex:1;
+  z-index:5;
 }
 
-.package{
+.daily-message{
   position:relative;
   margin: 50px auto;
   background-color: #575757c4;
   border-radius: 10px;
   height:auto;
   width: 50%;
-  z-index:1;
 }
 
-.package > p {
+.daily-message > p {
   font-family: monospace;
   font-size: 3rem;
   margin: 50px auto;
   padding: 20px;
+}
+
+.mood-block{
+  position:relative;
+  margin: 50px auto;
+  padding:20px;
+  background-color: #575757c4;
+  border-radius: 10px;
+  height:auto;
+  width: 50%;
+}
+
+.mood-block h2{
+  font-size: 4rem;
+}
+
+.mood-block > p{
+  font-family: monospace;
+  font-size: 3rem;
+  margin: 50px auto;
+  padding: 20px;  
 }
 
 /* For your mobile */
@@ -65,7 +86,7 @@ main{
     background-color: black;
     background-position: center;
   }
-  .package{
+  .daily-message{
     position:relative;
     margin: 5% 2%;
     background-color: #575757c4;
@@ -75,10 +96,27 @@ main{
     z-index:1;
   }
   
-  .package > p {
+  .daily-message > p {
     font-family: monospace;
     font-size: 3rem;
     margin: 50px auto;
     padding: 20px;
+  }
+
+  .mood-block{
+    position:relative;
+    margin: 5% 2%;
+    background-color: #575757c4;
+    border-radius: 10px;
+    height:fit-content;
+    width: fit-content;
+    z-index:1;
+  }
+
+  .mood-block > p{
+    font-family: monospace;
+    font-size: 3rem;
+    margin: 50px auto;
+    padding: 20px;  
   }
 }
