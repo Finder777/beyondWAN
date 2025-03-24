@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/globalStyling.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/page-nav.css">
+  <link rel="stylesheet" href="css/mental-health.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <title>EdSpace Mentalist - Mood Tracker</title>
+</head>
+
+<body>
+  <div class="page-background"></div>
+  <div class="page-filter"></div>
+  
+  <header>
+    <nav>
+      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-btn" class="close-btn">&times;</span>
+          <ul class="nav-links">
+            <li><a href="index.html">#Respawn</a></li>
+            <li><a href="mental-health-dashboard.html">Dashboard</a></li>
+            <li><a href="mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <div class="settings">
+              <h4><i class="fa-solid fa-gear"></i>Settings</h4>
+              <p id="current-date"></p>
+              <p id="language">Language: English</p>
+              <p id="location">Location: UK</p>
+              <p id="logout"><a href="#" id="logout-link">Logout</a></p>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <h1 class="orbitron-font">@EdSpace Mentalist</h1>
+      <div class="nav-right">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <i id="login" class="fas fa-user-circle login-icon"></i>
+      </div>
+    </nav>
+    <div class="page-nav">
+      <ul>
+        <li><a href="mental-health-dashboard.html">Dashboard</a></li>
+        <li><a href="mood-tracker.html">Mood Tracker</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="chat.html">Chat</a></li>
+      </ul>
+    </div>
+  </header>  
+  
+  <main class="container">
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Your Mood History</h3>
+            <p class="card-text">Review your past mood entries to better understand your emotional patterns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="mood-history">
+          <!-- Mood history will be dynamically inserted here -->
+          <p>Loading your mood history...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-icons">
+        <i id="bone-icon" class="fas fa-bone"></i>
+        <i id="spaceShipBaby" class="fas fa-shuttle-space"></i>
+      </div>
+      <div class="mantra">
+        <h5>Less politics, more dev</h5>
+      </div>
+      <div>
+        <p id="copyright_tag">© <span id="current-year"></span> EGR Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/mental-health-app.js"></script>
+</body>
+</html> 
