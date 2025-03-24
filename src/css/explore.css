@@ -30,7 +30,7 @@
   }
   
 .banner-content > h1 {
-    background-color: black;
+    background-color:#575757c0;
     color: whitesmoke;
     font-size: 3rem;
     font-weight: 400;
@@ -38,44 +38,36 @@
   }
   
 .banner-content > p {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #575757c0;
+    color: whitesmoke;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 20px auto;
     padding: 10px;
 }
 
-main{
+.cards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     z-index:2;
 }
-  
+
 .card-one, .card-two, .card-three {
+    flex:3;
     padding: 0px 20px;
     margin: 10px 10px;
+    background-color: #575757c0;
+    color: whitesmoke;
     border-radius: 10px;
-    border: 3px solid whitesmoke;
+    border:2px solid whitesmoke;
 }
-  
-.card-one{
-    flex:1;
-    background-image: url(ramshead.jpeg);
-    background-position: center;
-}
-  
-.card-two{
-    flex:1;
-    background-image: url(landscape.jpg);
-}
-  
-.card-three{
-    flex:1;
-    background-image: url(storm_video_V1.mp4);
-}
-  
+
+.card-one > h2, .card-two > h2, .card-three > h2{
+    color: whitesmoke;
+} 
+
 @media screen and (max-width: 600px){
     main {
         display: flex;

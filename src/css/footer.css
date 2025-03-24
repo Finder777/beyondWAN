@@ -11,6 +11,7 @@
     text-align: center;
     position: relative;
     bottom: 0;
+    left: 0;
     gap: 10%;
     z-index:5;
   }
