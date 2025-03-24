@@ -18,8 +18,8 @@ header{
     font-size: 1.5rem;
     color: white; 
     cursor: pointer; /* Changed cursor to pointer because I like it */
-    position: relative; 
-    top: 0px; 
+    position: absolute; 
+    top: 20px; 
     left: 20px; 
   }
   
@@ -101,8 +101,8 @@ header{
     font-size: 1.5rem;
     color: white; 
     cursor: pointer; /* To be conventional again*/
-    position: relative; 
-    top: 0px;
+    position: absolute; 
+    top: 20px;
     right: 20px;
   }
   /* Media query for smaller screens */

@@ -19,12 +19,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00ff0d33;
+    background-color: #00ff1127;
     z-index:-1;
   }
 
 .banner-content {
-    padding:40px;
     width: 50%;
     margin-left: 100px;
   }
@@ -34,7 +33,8 @@
     color: whitesmoke;
     font-size: 3rem;
     font-weight: 400;
-    margin: 0px;
+    padding: 40px 40px;
+    margin: 40px;
   }
   
 .banner-content > p {
@@ -42,8 +42,8 @@
     color: whitesmoke;
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 20px auto;
-    padding: 10px;
+    padding: 40px 40px;
+    margin: 40px;  
 }
 
 .cards {
@@ -81,12 +81,28 @@
         margin: 5px 5px;
         width: fit-content;
     }
+
+    .banner-content > h1 {
+        background-color:#575757c0;
+        color: whitesmoke;
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 20px 20px;
+        margin: 20px auto;
+      }
       
-    .side-nav {
-        margin-bottom: 20px;
+    .banner-content > p {
+        background-color: #575757c0;
+        color: whitesmoke;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 20px 20px;
+        margin: 20px auto;  
     }
-    
-    .Newsblock {
-        margin: 10px 0px;
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
