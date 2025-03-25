@@ -1,5 +1,5 @@
 * {
-  font-size: 16px; /* 1em = 16px and p tags should sit at this */
+  font-size: 18px; /* 1em = 16px and p tags should sit at this */
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
@@ -19,13 +19,11 @@ body {
   margin:0px 0px;
 }
 
-
+.container{
+  padding: 5% 5%;
+}
 /* Main typography nerd-ery */
 h1 {
-  width: fit-content;
-  margin: 10px auto;
-  padding: 0px 15px;
-  text-align: center;
   font-size: 3rem;
 }
 
@@ -33,31 +31,51 @@ h1 {
   font-optical-sizing: auto;
   font-family: "Orbitron", serif;
   font-weight: 400;
-  color: #fff;
+  color: whitesmoke;
+  margin: 10px auto;
+  padding: 0px 15px;
+  text-align: center;
+  width: fit-content;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 400;
-  color: #888;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: white;
-  padding-left: 25px;
-  padding-right: 15px;
-  margin-bottom: 0px;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 600px) { 
   h1 {
-    width: fit-content;
+    font-size: 3rem;
+  }
+  .orbitron-font {
+    font-optical-sizing: auto;
+    font-family: "Orbitron", serif;
+    font-weight: 400;
+    color: whitesmoke;
+    margin: 10px auto;
     padding: 0px 15px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    width: fit-content;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size:0.8rem;
   }
 }
