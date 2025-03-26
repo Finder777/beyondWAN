@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     width:100%;
-    background-color: #00ff0d1a;
+    background-color: #051605bd;
     backdrop-filter: blur(5px);
 }
 
@@ -72,7 +72,7 @@
     }
     
     .page-nav > h2{
-        display:none;
+        font-size: 2rem;
     }
       
     .page-nav > ul {

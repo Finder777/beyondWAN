@@ -23,6 +23,7 @@
 <body>
   <div class="page-background"></div>
   <div class="page-filter"></div>
+  
   <header>
     <nav>
       <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
@@ -52,7 +53,7 @@
 <!--I wouldn't want to bore you with endless scrolling and I personally think animations are a bit weird.  Use the page-nav to decide which way you want to go--> 
   
   <div class="page-nav">
-    <h2><a href="index.html">Home</a></h2>
+    <h2><li><a href="home.html"><i class="fa-solid fa-house"></i></a></li></h2>
       <ul>
         <li><a href="explore.html">Explore</a></li>
         <li><a href="listen.html">Listen</a></li>
@@ -62,26 +63,32 @@
   </div>
 
 <!--This is my message to you-->
-<main>
-<div class="card">  
-  <p>Anxiety is a product of Fear.<br> Banish it. <br>Fear is nothing more than an unwanted fiend.<br>Return it to the Abyss and return yourself to harmony.</p>
-</div>
+  <main>
+    <div class="quote">
+      <div class="card">  
+      <p>Anxiety is a product of Fear.<br> Banish it. <br>Fear is nothing more than an unwanted fiend.<br>Return it to the Abyss and return yourself to harmony.</p>
+      </div>
+    </div>
 
-<div class="card">
-  <h2>How are you feeling today?</h2>
-        <div class="mood-selector">
-          <button class="mood-btn" data-mood="great"><i class="fas fa-laugh-beam"></i> Great</button>
-          <button class="mood-btn" data-mood="good"><i class="fas fa-smile"></i> Good</button>
-          <button class="mood-btn" data-mood="okay"><i class="fas fa-meh"></i> Okay</button>
-          <button class="mood-btn" data-mood="bad"><i class="fas fa-frown"></i> Bad</button>
-          <button class="mood-btn" data-mood="terrible"><i class="fas fa-sad-tear"></i> Terrible</button>
-        </div>
-  <p><em>You can use record how you feel and look back on it.  It may help.</em></p>
-</div>
+    <div class="contacts">
+      <div class="card"> 
+        <h3 class="card-title">My Emergency Contacts</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone"></i> Mike: <a href="tel:116123">07712 123 456</a></li>
+          <li><i class="fas fa-phone"></i> Andrea: <a href="tel:03001233393">01242 123 456</a></li>
+          <li><i class="fas fa-comment"></i> Mum:<a href="https://whatsapp/web/">07123 123 456</a></li>
+        </ul>
+      </div>
+    </div>
 
 <div class="card">
   <h2>Resources</h2>
-  <p>These are some general resources that you may find useful.  We offer more in terms of custom content but this stuff is for general context. Remember to seek advise from a Doctor should you need it.</p>
+  <p>These are some general resources that you may find useful.  We offer more in terms of custom content but this stuff is for general context. Remember to seek advice from a Doctor should you need it.</p>
+  <ul class="contact-list">
+    <li><i class="fas fa-phone"></i> Samaritans: <a href="tel:116123">116 123</a></li>
+    <li><i class="fas fa-phone"></i> Mind: <a href="tel:03001233393">0300 123 3393</a></li>
+    <li><i class="fas fa-comment"></i> Shout Crisis Text Line: Text "SHOUT" to 85258</li>
+  </ul>
 </div>
 </main>
 <!-- Credit to everyone who helped with this-->

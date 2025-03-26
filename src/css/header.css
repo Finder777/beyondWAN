@@ -12,15 +12,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 20px;
   }
   
   .hamburger-icon {
     font-size: 1.5rem;
     color: white; 
     cursor: pointer; /* Changed cursor to pointer because I like it */
-    position: absolute; 
+    /*position: absolute; 
     top: 20px; 
-    left: 20px; 
+    left: 20px; */
   }
   
   .modal {
@@ -31,7 +32,7 @@ header{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(128, 128, 128, 0.5); /* Grey background with transparency */
+    background-color: #80808080; /* Grey background with transparency */
     backdrop-filter: blur(5px); /* Blur effect */
   }
   
@@ -84,7 +85,7 @@ header{
   }
   
   .close-btn {
-    color: #aaa;
+    color: grey;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -97,14 +98,20 @@ header{
     cursor: pointer; /* Because I have to */
   }
   
+  .orbitron-font {
+    font-optical-sizing: auto;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto;
+  }
+
   .login-icon {
     font-size: 1.5rem;
     color: white; 
     cursor: pointer; /* To be conventional again*/
-    position: absolute; 
-    top: 20px;
-    right: 20px;
-  }
+    }
+
   /* Media query for smaller screens */
 @media (max-width: 600px) {
   .modal {

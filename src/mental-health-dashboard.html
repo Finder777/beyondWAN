@@ -80,50 +80,31 @@
       </div>
     </div>
 
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <div class="card quote-card">
-          <div class="card-body">
-            <h3 class="card-title">Today's Quote</h3>
-            <p id="daily-quote" class="card-text">Loading your inspirational quote...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mood-entry">
-          <div class="card-body">
-            <h3 class="card-title">How are you feeling today?</h3>
-            <div class="mood-selector">
-              <button class="mood-btn" data-mood="great"><i class="fas fa-laugh-beam"></i> Great</button>
-              <button class="mood-btn" data-mood="good"><i class="fas fa-smile"></i> Good</button>
-              <button class="mood-btn" data-mood="okay"><i class="fas fa-meh"></i> Okay</button>
-              <button class="mood-btn" data-mood="bad"><i class="fas fa-frown"></i> Bad</button>
-              <button class="mood-btn" data-mood="terrible"><i class="fas fa-sad-tear"></i> Terrible</button>
-            </div>
-            <div class="mt-3">
-              <label for="mood-journal" class="form-label">Journal your thoughts:</label>
-              <textarea id="mood-journal" class="form-control" rows="3"></textarea>
-              <button id="save-mood" class="btn btn-primary mt-2">Save</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="card quote-card">
+      <div class="card-body">
+        <h3 class="card-title">Today's Quote</h3>
+        <p id="daily-quote" class="card-text">Loading your inspirational quote...</p>
     </div>
 
-    <div class="row mb-4">
-      <div class="col-md-12">
-        <div class="card emergency-contacts">
-          <div class="card-body">
-            <h3 class="card-title">Emergency Contacts</h3>
-            <ul class="contact-list">
-              <li><i class="fas fa-phone"></i> Samaritans: <a href="tel:116123">116 123</a></li>
-              <li><i class="fas fa-phone"></i> Mind: <a href="tel:03001233393">0300 123 3393</a></li>
-              <li><i class="fas fa-comment"></i> Shout Crisis Text Line: Text "SHOUT" to 85258</li>
-            </ul>
-          </div>
+    <div class="card">
+      <h2>How are you?</h2>
+        <div class="mood-selector">
+          <button class="mood-btn" data-mood="great"><i class="fas fa-laugh-beam"></i> Great</button>
+          <button class="mood-btn" data-mood="good"><i class="fas fa-smile"></i> Good</button>
+          <button class="mood-btn" data-mood="okay"><i class="fas fa-meh"></i> Okay</button>
+          <button class="mood-btn" data-mood="bad"><i class="fas fa-frown"></i> Bad</button>
+          <button class="mood-btn" data-mood="terrible"><i class="fas fa-sad-tear"></i> Terrible</button>
         </div>
-      </div>
+      <p><em>You can record how you feel above.  In time you can look back on it.  It may help.</em></p>
     </div>
+
+      <div class="mt-3">
+        <label for="mood-journal" class="form-label">Journal your thoughts:</label>
+              <textarea id="mood-journal" class="form-control" rows="3"></textarea>
+              <button id="save-mood" class="btn btn-primary mt-2">Save</button>
+      </div>
+
+    
   </main>
 
   <footer class="footer">

@@ -25,66 +25,18 @@
   <div class="page-background"></div>
   <div class="page-filter"></div>
   
-  <header>
-    <nav>
-      <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span id="close-btn" class="close-btn">&times;</span>
-          <ul class="nav-links">
-            <li><a href="index.html">#Respawn</a></li>
-            <li><a href="mental-health-dashboard.html">Dashboard</a></li>
-            <li><a href="mood-tracker.html">Mood Tracker</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-            <li><a href="chat.html">Chat</a></li>
-            <div class="settings">
-              <h4><i class="fa-solid fa-gear"></i>Settings</h4>
-              <p id="current-date"></p>
-              <p id="language">Language: English</p>
-              <p id="location">Location: UK</p>
-              <p id="logout"><a href="#" id="logout-link">Logout</a></p>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <h1 class="orbitron-font">@EdSpace Mentalist</h1>
-      <div class="nav-right">
-        <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
-          <i class="fas fa-sun"></i>
-        </button>
-        <i id="login" class="fas fa-user-circle login-icon"></i>
-      </div>
-    </nav>
-    <div class="page-nav">
-      <ul>
-        <li><a href="mental-health-dashboard.html">Dashboard</a></li>
-        <li><a href="mood-tracker.html">Mood Tracker</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-        <li><a href="chat.html">Chat</a></li>
-      </ul>
-    </div>
-  </header>  
-  
   <main class="container">
-    <div class="row mb-4">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">Your Mood History</h3>
-            <p class="card-text">Review your past mood entries to better understand your emotional patterns.</p>
-          </div>
-        </div>
+    <div class="card">
+      <div class="card-body">
+       <h3 class="card-title">Your Mood History</h3>
+        <p class="card-text">Review your past mood entries to better understand your emotional patterns.</p>
       </div>
     </div>
-
+    
     <div class="row">
-      <div class="col-md-12">
-        <div id="mood-history">
-          <!-- Mood history will be dynamically inserted here -->
-          <p>Loading your mood history...</p>
-        </div>
+      <div id="mood-history">
+        <!-- Mood history will be dynamically inserted here -->
+        <p>Loading your mood history...</p>
       </div>
     </div>
   </main>

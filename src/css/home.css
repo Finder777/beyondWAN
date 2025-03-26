@@ -25,37 +25,64 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #00ff0d2f;
+  background-color: #0000002f;
 }
 
 main{
   flex:1;
+  display:flex;
   z-index:5;
 }
 
+.quote{
+  flex:2;
+}
+
+.contacts{
+  flex:1;
+}
 .card{
   position:relative;
   margin: 50px auto;
   padding:5px 20px;
-  background-color: #5757576b;
-  border-radius: 10px;
+  background-color: #575757e1;
+  border-radius: 20px;
   height:auto;
-  width: 50%;
+  width: 80%;
 }
 
-.card h2{
-  font-size: 4rem;
+.card > h2{
+  font-size: 2rem;
+  text-align: center;
   padding: 0px 20px;
   color:aqua;
 }
 
 .card > p {
   font-family: monospace;
-  font-size: 3rem;
+  font-size: 1rem;
   margin: 50px auto;
   padding: 20px;
 }
 
+.mood-selector{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mood-btn{
+  background-color: blue;
+  border-radius: 20px;
+  padding:10px 20px;
+}
+
+.mood-btn:hover{
+  text-decoration:underline;
+  background-color: green;
+}
 /* For your mobile */
 
 @media screen and (max-width: 600px) {
@@ -84,7 +111,7 @@ main{
   
   .card > p {
     font-family: monospace;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 50px auto;
     padding: 20px;
   }
