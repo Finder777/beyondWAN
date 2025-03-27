@@ -35,25 +35,25 @@ main{
 }
 
 .quote{
-  flex:2;
+  flex:1;
 }
 
 .contacts{
   flex:1;
 }
+
 .card{
   position:relative;
-  margin: 50px auto;
+  margin: 50px auto 10px auto;
   padding:5px 20px;
   background-color: #575757e1;
   border-radius: 20px;
   height:auto;
-  width: 80%;
+  width: 60%;
 }
 
 .card > h2{
   font-size: 2rem;
-  text-align: center;
   padding: 0px 20px;
   color:aqua;
 }
@@ -63,6 +63,28 @@ main{
   font-size: 1rem;
   margin: 50px auto;
   padding: 20px;
+}
+
+.card input[type=text]{
+  font-size: 1.5rem;
+  color:black;
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;
+  background-color:#f5f5f5a4;
+  border: solid 1px #000000;
+  border-radius: 15px;
+  margin: 10px 0px;
+  padding: 10px 10px;
+}
+
+.contact-list{
+  padding: 0px 20px;
+}
+
+.contact-list > li{
+padding: 10px 0px;
 }
 
 .mood-selector{
@@ -98,6 +120,15 @@ main{
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .contact-list > li, a{
+    font-size:1.5rem;
   }
   .card{
     position:relative;
