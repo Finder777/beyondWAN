@@ -155,7 +155,12 @@ header{
     list-style: none;
     gap: 20px;
   }
-
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
   .nav-links.show {
     float: left; /* Show the navigation */
     line-height: 1.1rem;
