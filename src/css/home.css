@@ -127,22 +127,28 @@ padding: 10px 0px;
     flex-direction: column;
   }
 
+  .contact-list > li {
+    max-width: 95%;
+    word-wrap: break-word;
+  }
+
  .contact-list > li, a{
     font-size:1.5rem;
   }
+
   .card{
     position:relative;
-    margin: 5% 2%;
+    margin: 5% auto;
     background-color: #575757c4;
     border-radius: 10px;
     height:fit-content;
-    width: fit-content;
+    width: 90%;
     z-index:1;
   }
   
   .card > p {
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 50px auto;
     padding: 20px;
   }

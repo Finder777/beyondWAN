@@ -66,13 +66,9 @@
 }
 
 /* Media query for smaller screens */
-@media (max-width: 600px) { 
-    .page-nav > ul {
-        overflow: scroll;
-    }
-    
+@media (max-width: 600px) {     
     .page-nav > h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
       
     .page-nav > ul {
@@ -82,5 +78,9 @@
         justify-content: flex-end;
         flex: 1;
         list-style-type: none;
+    }
+
+    .page-nav > ul > li > a{
+        display: none;
     }
 }

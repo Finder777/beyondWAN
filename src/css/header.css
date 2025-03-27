@@ -114,6 +114,17 @@ header{
 
   /* Media query for smaller screens */
 @media (max-width: 600px) {
+  .hamburger-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .login-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
   .modal {
     display:none;
     width: 100%;
@@ -153,6 +164,10 @@ header{
   #current-date, #language, #location, #currency {
     font-size: 1rem;
     margin:0px 0px;
+  }
+
+  .orbitron-font {
+    margin: 50px auto 10px auto;
   }
 
   .footer-content {
