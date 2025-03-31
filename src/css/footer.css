@@ -1,11 +1,10 @@
 /* this is the footer for all pages */
 .footer {
     display: flex;
-    flex:1;
     justify-content: space-between; 
     align-items: center; 
     flex-direction: row;
-    height: auto;
+    height: fit-content;
     width: 100%;
     background-color: black;
     text-align: center;
@@ -60,14 +59,14 @@
   /* Media query for smaller screens */
 @media (max-width: 600px) {    
   .footer{
-    height:fit-content;
+    height:auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
   }  
   
   .footer-content {
-      flex: 1;
       flex-direction: column;
       text-align: center;
-    }
-
   }
-  
+}
