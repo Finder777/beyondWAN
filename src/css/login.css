@@ -94,7 +94,9 @@ main {
   color: green;
   font-weight: 600;
   text-decoration: underline;
+  z-index: 100;
 }
+
 .custom-button {
   background-color: white;
   color: black;
