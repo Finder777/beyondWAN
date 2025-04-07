@@ -31,6 +31,7 @@ h1{
 @media screen and (max-width: 600px){
     main {
         display: flex;
+        flex:1;
         flex-direction: column;
         padding: 0px 10px;
         column-gap: 20px;
