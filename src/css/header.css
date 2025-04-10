@@ -172,7 +172,8 @@ header{
   }
 
   .orbitron-font {
-    margin: 50px auto 10px auto;
+    margin: 10px auto 10px auto;
+    font-size: 2rem;
   }
 
   .footer-content {
