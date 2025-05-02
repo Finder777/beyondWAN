@@ -12,8 +12,8 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url('/src/media/images/ramsskull.jpeg');
-  background-size: 60%;
+  background-image: url('/src/media/images/forest.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
   background-position: center;

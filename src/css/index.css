@@ -82,7 +82,7 @@ a:active {
     color:whitesmoke;
 }
 
-.one, .two {
+.one, .two, .three{
     border: 2px;
     border-radius: 5px;
     padding: 10px 20px; 
@@ -106,6 +106,40 @@ a:active {
     background-color: aqua;
     text-decoration: underline;
     color:darkgreen;
+}
+
+.three {
+    background-color: green;
+}
+.three:hover{
+    background-color: lightgreen;
+    text-decoration: underline;
+    color:darkgreen;
+}
+.three:active{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:focus{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:visited{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:focus-visible{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:focus-within{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
 }
 
 @media screen and (max-width: 600px) {
