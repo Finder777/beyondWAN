@@ -27,7 +27,7 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    background-image: url(/src/media/images/ramsskull.jpeg);
+    background-image: url(/src/media/images/whiterabbit.jpeg);
     background-size:80%;
     background-repeat:no-repeat;
     background-position:center;
@@ -58,7 +58,7 @@ h1 {
 
 h4{
     text-transform:uppercase;
-    margin: 10px auto;
+    margin: 40px auto;
 }
 
 p {

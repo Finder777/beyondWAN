@@ -1,0 +1,19 @@
+
+.mood-selector{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .mood-btn{
+    background-color: blue;
+    border-radius: 20px;
+    padding:10px 20px;
+  }
+  
+  .mood-btn:hover{
+    text-decoration:underline;
+    background-color: green;
+  }
