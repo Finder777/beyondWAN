@@ -1,0 +1,182 @@
+* {
+    font-size: 16px; /* 1em = 16px and p tags should sit at this */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body{
+    background-color: black; /* This is page specific */
+    margin: 0px 0px;
+}
+
+.page-background {
+    position: relative;
+    height: 100vh;
+    margin: 0px 0px;
+}
+
+.page-background::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/media/images/vrbunny.jpeg);
+    background-size:50%;
+    background-repeat:no-repeat;
+    background-position:right;
+    opacity:0.5;
+    z-index:-1;
+}
+
+.interlocutor{
+    background-color: #00ff0d1a;
+    height:100%;
+    padding: 5%;
+}
+
+h1 {
+    margin: 0px 0px;
+    padding: 0px auto;
+    line-height:3.5rem;
+    width:fit-content;
+}
+
+.orbitron-font {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-size: 4rem;
+    font-weight: 350;
+    color: #fff;
+}
+
+h4{
+    text-transform:uppercase;
+    margin: 40px auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    display:inline-block;
+    text-decoration:none;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+a:active {
+    color:whitesmoke;
+}
+
+.one, .two, .three{
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 20px; 
+}
+
+.one {
+    background-color: red;
+    text-decoration:none;
+}
+
+.one:hover{
+    background-color: orange;
+    text-decoration: underline;
+}
+
+.two {
+    background-color: blue;
+}
+
+.two:hover{
+    background-color: aqua;
+    text-decoration: underline;
+    color:darkgreen;
+}
+
+.three {
+    background-color: green;
+}
+.three:hover{
+    background-color: lightgreen;
+    text-decoration: underline;
+    color:darkgreen;
+}
+.three:active{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:focus{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:visited{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:focus-visible{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+.three:focus-within{
+    background-color: darkgreen;
+    text-decoration: underline;
+    color:whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+    a {
+        display:block;
+        text-decoration:none;
+        color: whitesmoke;
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    
+    .orbitron-font {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+
+    .page-background {
+        position: relative;
+        height: 100%;
+        margin: 0px 0px;
+    }
+
+    .page-background::before {
+        content:"";
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/src/media/images/vrbunny.jpeg);
+        background-size:70%;
+        background-repeat:no-repeat;
+        background-position:center;
+        opacity:0.5;
+        z-index:-1;
+    }
+}
