@@ -1,23 +1,34 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000c0;
+    color: whitesmoke;
+}
+
 .banner {
+    flex:1 ;
     padding: 20px 20px;
-    height: 30vh;
+    height: auto;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex: 1;
     z-index:2;
 }
 
 .card {
-    padding: 0px 20px;
+    padding: 20px 20px;
     margin: 10px 10px;
     background-color: #575757c0;
     color: whitesmoke;
     border-radius: 10px;
     border:2px solid whitesmoke;
+}
+
+.card > a {
+    padding: 10px 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -26,7 +37,6 @@
         align-items: center;
     }
     .card {
-        width: 90%;
-        margin: 10px auto;
+        width: auto;
     }
 }

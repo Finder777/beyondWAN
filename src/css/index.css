@@ -35,7 +35,7 @@ body{
     z-index:-1;
 }
 
-.interlocutor{
+.greenfilter{
     background-color: #00ff0d1a;
     height:100%;
     padding: 5%;
@@ -56,7 +56,7 @@ h1 {
     color: #fff;
 }
 
-h4{
+h3{
     text-transform:uppercase;
     margin: 40px auto;
 }
