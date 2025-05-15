@@ -27,7 +27,7 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    background-image: url(/src/media/images/vrbunny.jpeg);
+    background-image: url(../media/images/vrbunny.jpeg);
     background-size:50%;
     background-repeat:no-repeat;
     background-position:right;
