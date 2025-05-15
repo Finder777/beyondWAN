@@ -27,11 +27,11 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    background-image: url(/src/media/images/whiterabbit.jpeg);
+    background-image: url(../media/images/whiterabbit.jpeg);
     background-size:80%;
     background-repeat:no-repeat;
     background-position:center;
-    opacity:0.1;
+    opacity:0.8;
     z-index:-1;
 }
 
@@ -59,6 +59,7 @@ h1 {
 h3{
     text-transform:uppercase;
     margin: 40px auto;
+    color:aqua;
 }
 
 p {
