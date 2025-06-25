@@ -25,7 +25,8 @@
 <body>
   <div class="page-background"></div>
   <div class="page-filter"></div>
-  
+ 
+<!-- See header.css for styling -->  
   <header>
     <nav>
       <i id="hamburger" class="fas fa-bars hamburger-icon"></i> 
@@ -33,17 +34,16 @@
         <div class="modal-content">
           <span id="close-btn" class="close-btn">&times;</span>
           <ul class="nav-links">
-            <li><a href="home.html"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="explore.html">Explore</a></li>
             <li><a href="listen.html">Listen</a></li>
             <li><a href="storylist.html">Read</a></li>
-            <li><a href="index.html">#respawn</a></li>
+            <li><a href="index.html"><em>#respawn</em></a></li>
             <div class="settings">
-              <h4><i class="fa-solid fa-gear"></i> Settings</h4>
+              <h4><i class="fa-solid fa-gear"></i> Stats</h4>
               <p id="current-date"></p>
-              <p id="language">Language: English</p>
-              <p id="location">Location: UK</p>
-              <p id="currency">Currency: GBP</p>
+              <p id="language"></p>
+              <p id="location"></p>
+              <p id="timezone"></p>
             </div>
           </ul>
         </div>
@@ -105,8 +105,8 @@
     </div>
   </footer>
 
-  <script src="js/theme.js"></script>
   <script src="js/main.js"></script>
   <script src="js/hamburger.js"></script>
+
 </body>
 </html>

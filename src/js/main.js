@@ -1,13 +1,14 @@
-// This JS is for everything else like... 
+// This is what I wrote for the main bit
 
 //Get current date and time
 const now = new Date();
-console.log(now); 
 
 // Set the date to the HTML element
-const date = now.getDate();
 const dateElement = document.getElementById('current-date');
 dateElement.textContent = now.toDateString(); 
+
+//I'm adding it  to the console for debugging purposes
+console.log(now); 
 
 // Set the current year in the footer
 const currentYearElement = document.getElementById('current-year');
@@ -16,62 +17,98 @@ if (currentYearElement) {
 }
 
 // Get user's location (if permitted)
+
+const locationDisplayElement = document.getElementById('location');
+
+// Function to update the display text
+function updateLocationDisplay(text) {
+    if (locationDisplayElement) {
+        locationDisplayElement.textContent = `Location: ${text}`;
+    } else {
+        // This warning will show if the element with ID 'location' is not found
+        console.warn("location not found.");
+    }
+}
+
+// Set initial loading text
+updateLocationDisplay("Attempting to get location...");
+
+// Get user's location (this will trigger a a browser permission prompt)
 navigator.geolocation.getCurrentPosition(
   position => {
-    console.log("Latitude:", position.coords.latitude);
-    console.log("Longitude:", position.coords.longitude);
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+
+    console.log("Latitude:", lat);
+    console.log("Longitude:", lon);
+
+    // Display the latitude and longitude
+    // Using .toFixed(4) to round to 4 decimal places for better readability
+    updateLocationDisplay(`${lat.toFixed(4)}, ${lon.toFixed(4)}`);
   },
   error => {
-    console.error("Error getting location:", error);
+    // Handle errors (e.g., user denied permission, location unavailable)
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        updateLocationDisplay("Permission denied. (Please allow location access)");
+        console.error("User denied the request for Geolocation.");
+        break;
+      case error.POSITION_UNAVAILABLE:
+        updateLocationDisplay("Information unavailable.");
+        console.error("Location information is unavailable.");
+        break;
+      case error.TIMEOUT:
+        updateLocationDisplay("Request timed out.");
+        console.error("The request to get user location timed out.");
+        break;
+      case error.UNKNOWN_ERROR:
+        updateLocationDisplay("An unknown error occurred.");
+        console.error("An unknown error occurred with geolocation.");
+        break;
+      default:
+        updateLocationDisplay("Error getting location.");
+        console.error("An unexpected geolocation error occurred:", error);
+    }
+  },
+  {
+    // Optional configuration for geolocation request
+    enableHighAccuracy: true, // Request the most accurate location possible
+    timeout: 5000,           // Wait up to 5 seconds for a location
+    maximumAge: 0            // Don't use a cached position, get a fresh one
   }
 );
+
+// Timezone stuff
+const timezoneDisplayElement = document.getElementById('timezone');
+
+// Get the user's timezone
+// Intl.DateTimeFormat().resolvedOptions().timeZone returns a string like "America/New_York", "Europe/London", etc.
+const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+// Check if the element exists before trying to update its content
+if (timezoneDisplayElement) {
+  timezoneDisplayElement.textContent = `Timezone: ${userTimezone}`;
+} else {
+  // This warning will show in the console if an element with ID 'timezone' is not found
+  console.warn("Element with ID 'timezone' not found. Please ensure it exists in your HTML.");
+}
+
+// Optionally, log the timezone to the console for debugging
+console.log("Detected Timezone:", userTimezone);
+
 
 console.log("User Agent:", navigator.userAgent);
 console.log("Screen Width:", screen.width);
 console.log("Screen Height:", screen.height);
 
-// EDster this is demo users for initial testing (will be replaced with database)
-const demoUsers = [
-  { username: 'user1', password: 'password1', name: 'Demo User' },
-  { username: 'admin', password: 'admin123', name: 'Admin User' }
-];
-
-// Initialize local storage with demo users if not already set
-if (!localStorage.getItem('users')) {
-  localStorage.setItem('users', JSON.stringify(demoUsers));
+// Get the language of the browser
+const browserLanguage = navigator.language;
+const settingsLanguage = document.getElementById('language');
+if (settingsLanguage) {
+  settingsLanguage.textContent = `Language: ${browserLanguage}`;
+}
+else {
+  console.error(" Language not known");
 }
 
-// Login functionality
-const loginForm = document.querySelector('.login-form form');
-if (loginForm) {
-  loginForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    const users = JSON.parse(localStorage.getItem('users'));
-    const user = users.find(u => u.username === username && u.password === password);
-    
-    if (user) {
-      // Store logged in user in session
-      sessionStorage.setItem('currentUser', JSON.stringify(user));
-      window.location.href = 'mental-health-dashboard.html';
-    } else {
-      alert('Invalid username or password');
-    }
-  });
-}
-
-// Check if user is logged in on protected pages
-function checkAuth() {
-  const currentUser = sessionStorage.getItem('currentUser');
-  const protectedPages = ['mental-health-dashboard.html', 'mood-tracker.html', 'resources.html', 'contacts.html', 'chat.html'];
-  
-  if (!currentUser && protectedPages.some(page => window.location.href.includes(page))) {
-    window.location.href = 'login.html';
-  }
-}
-
-// Run auth check on page load
-checkAuth();
+console.log("Browser Language:", browserLanguage);
