@@ -1,7 +1,7 @@
 * {
     font-size: 16px; /* 1em = 16px and p tags should sit at this */
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: whitesmoke
 }
 
 html{
@@ -28,10 +28,10 @@ body{
     width: 100%;
     height: 100%;
     background-image: url(../media/images/whiterabbit.jpeg);
-    background-size:80%;
+    background-size:70%;
     background-repeat:no-repeat;
-    background-position:center;
-    opacity:0.8;
+    background-position:right;
+    opacity:0.5;
     z-index:-1;
 }
 
