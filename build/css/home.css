@@ -1,0 +1,137 @@
+/* This file contains the css for the mainpage */
+
+/* Basic reset */
+* {
+   box-sizing: border-box;
+}
+
+/* The page */
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url('/src/media/images/forest.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+}
+
+.page-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #0000002f;
+}
+
+main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  z-index:5;
+}
+
+.searchbar {
+  flex: 1;
+  width: 80%;
+}
+
+.searchbar input[type=text]{
+  font-size: 1.5rem;
+  color:black;
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;
+  background-color:#f5f5f5a4;
+  border: solid 1px #000000;
+  border-radius: 15px;
+  margin: 10px 0px;
+  padding: 10px 10px;
+}
+
+.card{
+  position:relative;
+  margin: 50px auto 10px auto;
+  padding:5px 20px;
+  background-color: #575757e1;
+  border-radius: 20px;
+  height:auto;
+  width:80%;
+}
+
+.card > h2{
+  font-size: 2rem;
+  padding: 0px 20px;
+  color:aqua;
+}
+
+.card > p {
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.contact-list{
+  padding: 0px 20px;
+}
+
+.contact-list > li{
+padding: 10px 0px;
+}
+
+/* For your mobile */
+
+@media screen and (max-width: 600px) {
+  
+  .page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./ramsskull.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-list > li {
+    max-width: 95%;
+    word-wrap: break-word;
+  }
+
+ .contact-list > li, a{
+    font-size:1.5rem;
+  }
+
+  .card{
+    position:relative;
+    margin: 5% auto;
+    background-color: #575757c4;
+    border-radius: 10px;
+    height:fit-content;
+    width: 90%;
+    z-index:1;
+  }
+  
+  .card > p {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin: 50px auto;
+    padding: 20px;
+  }
+}

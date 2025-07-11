@@ -1,7 +1,14 @@
 {
   "name": "vanilla-basic",
   "version": "1.0.0",
-  "scripts": { 
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+  "scripts": {
+    "start": "sirv ./src public --cors --single --no-clear --port 8000",
+    "build": "mkdir -p build && cpr src/ build/ && cp staticwebapp.config.json build/" 
+  },
+  
+  "keywords":["egrDigital"],
+  "author": "SnakeByte",
+  "devDependencies": {
+    "cpr": "^3.0.1"
   }
 }

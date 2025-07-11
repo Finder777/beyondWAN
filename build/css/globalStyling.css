@@ -1,0 +1,131 @@
+* {
+  font-size: 18px; /* 1em = 16px and p tags should sit at this */
+  font-family: Helvetica, Arial, monospace, sans-serif;
+  color: whitesmoke;
+}
+
+html { 
+  background-color: black;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  z-index: -5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin:0px 0px;
+}
+
+.container{
+  padding: 5% 5%;
+}
+
+/* Main typography nerd-ery */
+h1 {
+  font-size: 3rem;
+}
+
+.orbitron-font {
+  font-optical-sizing: auto;
+  font-family: "Orbitron";
+  font-weight: 50;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h5 {
+  font-size:0.8rem;
+}
+
+.colour-box{
+  height:30px;
+  width: 30px;
+  border: solid 1px #808080;
+  border-radius: 30px;
+}
+
+.whitesmoke{
+  background-color: whitesmoke;
+}
+
+.black{
+  background-color: black;
+}
+
+.greenyellow{
+  background-color: greenyellow;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.aqua{
+  background-color: aqua;
+}
+
+.greenfilter{
+  background-color: #00ff0d;
+}
+
+.greyfilter{
+  background-color: #808080;
+}
+
+.darkgreyfilter{
+  background-color: #1a1a1a;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) { 
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .orbitron-font {
+    font-optical-sizing: auto;
+    font-family: "Orbitron";
+    font-weight:50;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size:0.8rem;
+  }
+
+}
