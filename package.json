@@ -1,9 +1,10 @@
 {
   "name": "vanilla-basic",
   "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "start": "sirv ./src public --cors --single --no-clear --port 8000",
-    "build": "mkdir -p build && cpr src/ build/ && cp staticwebapp.config.json build/"
+    "build": "node build.js"
   },
   "keywords": [
     "egrDigital"
