@@ -2,9 +2,7 @@
   "routes": [
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"],
-      "statusCode": 401,
-      "redirect": "/.auth/login/aad"
+      "allowedRoles": ["authenticated"]
     }
   ],
   "navigationFallback": {
