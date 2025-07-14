@@ -14,7 +14,8 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "/index.html"
+    "rewrite": "/index.html",
+    "exclude": ["/*.html", "/css/*", "/js/*", "/media/*", "/images/*"]
   },
   "responseOverrides": {
     "404": {
