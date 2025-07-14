@@ -67,13 +67,6 @@ main {
   z-index: 5;
 }
 
-.third-party-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .login-form form {
   display: flex;
   flex-direction: column;
@@ -94,24 +87,29 @@ main {
   color:black
 }
 
-.third-party-login {
-  height: 30px;
-  padding: 20px;
-  background-color: grey;
-  color:aqua;
-  border-radius: 5px;
+.badge {
+  font-size: 1.5rem;
+  color: orangered;
+  margin-right: 10px;
 }
 
-.microsoft-login > i {
-  padding-right: 10px;
-}
-
-#microsoft-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
+.custom-button-inverted {
+  background-color: black;
+  color: whitesmoke;
   text-decoration: none;
+  border: 1px solid black;
+border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.custom-button-inverted:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 #email {
