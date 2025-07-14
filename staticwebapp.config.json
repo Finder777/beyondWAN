@@ -1,9 +1,12 @@
 {
   "routes": [
-
     {
       "route": "/protected/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "postLoginRoutes": {
+          "azureadb2c":"/home.html",
+          "aad":"/home.html"
+      }
     },
     {
       "route": "/*",
