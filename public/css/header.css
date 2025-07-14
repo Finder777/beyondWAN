@@ -19,9 +19,14 @@ header{
     font-size: 1.5rem;
     color: white; 
     cursor: pointer; /* Changed cursor to pointer because I like it */
+    cursor: hand; /* For nostalgia */
     /*position: absolute; 
     top: 20px; 
     left: 20px; */
+  }
+  
+  .hamburger-icon:hover {
+    color: greenyellow;
   }
   
   .modal {
@@ -74,6 +79,14 @@ header{
     color: greenyellow;
   }
   
+  .nav-links > h5 > a > em {
+    color: greenyellow;
+  }
+
+  .nav-links > h5 > a > em:hover {
+    color: whitesmoke;
+  }
+
   #current-date, #language, #location, #currency {
     color: grey;
     font-style: italic;
