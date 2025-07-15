@@ -3,7 +3,7 @@ header{
     top: 0;
     left: 0;
     width: auto;
-    background-color: #000000;
+    background-color: #0000003d;
     z-index: 10;
   }
   
@@ -116,8 +116,25 @@ header{
     font-family: "Orbitron", sans-serif;
     text-align: center;
     width: fit-content;
-    margin: 0px auto;
+    margin: auto auto auto 50px;
   }
+
+  .main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto 10px auto auto;
+  }
+
+#chat {
+    color: aquamarine;
+    background: blue;
+    border-radius: 15px;
+    border-color: darkgrey;
+    border:2px;
+    padding: 4px 15px;
+}
 
   .login-icon {
     font-size: 1.5rem;

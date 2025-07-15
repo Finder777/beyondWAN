@@ -1,86 +1,30 @@
 {
   "routes": [
     {
-      "route": "/css/*",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/js/*",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/media/*",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/index.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/preload.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/login.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/explore.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/listen.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/services.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/stories.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/storylist.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/style_guide.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/template.html",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/functionCall.html",
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/mental-health-dashboard.html",
-      "allowedRoles": ["authenticated"]
-    },
-    {"route": "/home.html",
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/Medellin.html",
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/mood-tracker.html",
-      "allowedRoles": ["authenticated"]
-    },
-    {      "route": "/story2.html",
-      "allowedRoles": ["authenticated"]
+      "route": "/protected/*",
+      "allowedRoles": ["authenticated"],
+      "postLoginRoutes": {
+          "azureadb2c":"/protected/home.html",
+          "aad":"/protected/home.html"
+      }
     },
     {
       "route": "/*",
       "allowedRoles": ["anonymous"]
     }
   ],
-
   "navigationFallback": {
-    "rewrite": "/index.html"
+    "rewrite": "/index.html",
+    "exclude": ["/*.html", "/css/*", "/js/*", "/media/*", "/images/*"]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
+  },
+  "globalHeaders": {
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
   }
 }

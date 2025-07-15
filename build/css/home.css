@@ -12,10 +12,9 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url('/src/media/images/forest.png');
+  background-image: url('/public/media/images/glencoe.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
   background-position: center;
 }
 
@@ -56,11 +55,24 @@ main {
   padding: 10px 10px;
 }
 
+.quote{
+  position:relative;
+  margin: 60px auto 10px 40px;
+  padding:5px 20px;
+  border-radius: 20px;
+  height:auto;
+  width:80%;
+}
+
+.quote > h2{
+  font-size: 4rem;
+  padding: 0px 20px;
+}
+
 .card{
   position:relative;
-  margin: 50px auto 10px auto;
+  margin: 50px auto 10px 40px;
   padding:5px 20px;
-  background-color: #575757e1;
   border-radius: 20px;
   height:auto;
   width:80%;
