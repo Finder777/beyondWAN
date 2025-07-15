@@ -4,8 +4,8 @@
       "route": "/protected/*",
       "allowedRoles": ["authenticated"],
       "postLoginRoutes": {
-          "azureadb2c":"/home.html",
-          "aad":"/home.html"
+          "azureadb2c":"protected/home.html",
+          "aad":"protected/home.html"
       }
     },
     {
