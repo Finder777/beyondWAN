@@ -194,7 +194,10 @@ header{
     margin: 10px auto 10px auto;
     font-size: 2rem;
   }
-
+  .main-menu {
+    display:none;
+  }
+  
   .footer-content {
     flex-direction: column;
     text-align: center;
