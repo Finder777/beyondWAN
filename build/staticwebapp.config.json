@@ -14,12 +14,12 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "/index.html",
+    "rewrite": "/protected/home.html",
     "exclude": ["/*.html", "/css/*", "/js/*", "/media/*", "/images/*"]
   },
   "responseOverrides": {
     "404": {
-      "rewrite": "/index.html"
+      "rewrite": "/protected/home.html"
     }
   },
   "globalHeaders": {
