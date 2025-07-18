@@ -1,3 +1,5 @@
+/* This is the header which includes the navigation bar and the logo */
+
 header{
     position: sticky;
     top: 0;
@@ -119,6 +121,12 @@ header{
     margin: auto auto auto 50px;
   }
 
+  #nav > .nunito-sans-header {
+    font-family: "Nunito Sans", sans-serif;
+    width: fit-content;
+    margin: auto auto auto 50px;
+  }
+
   .main-menu {
     display: flex;
     justify-content: center;
@@ -196,10 +204,5 @@ header{
   }
   .main-menu {
     display:none;
-  }
-  
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
   }
 }

@@ -12,7 +12,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url('/public/media/images/glencoe.jpg');
+  background-image: url('/public/media/images/wales.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +24,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #6969692f;
+  background-color: rgba(97, 19, 19, 0.082);
 }
 
 main {
@@ -109,7 +109,7 @@ padding: 10px 0px;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('/public/media/images/glencoe.jpg');
+    background-image: url('/public/media/images/wales.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;

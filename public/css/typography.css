@@ -1,3 +1,5 @@
+/* This is predominately typography and font styling */
+
 * {
   font-size: 18px; /* 1em = 16px and p tags should sit at this */
   font-family: Helvetica, Arial, monospace, sans-serif;
@@ -32,6 +34,17 @@ h1 {
   font-optical-sizing: auto;
   font-family: "Orbitron";
   font-weight: 50;
+}
+
+.nunito-sans-header {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  margin: 0px auto 0px 20px;
 }
 
 h2 {
@@ -106,6 +119,16 @@ h5 {
     font-optical-sizing: auto;
     font-family: "Orbitron";
     font-weight:50;
+  }
+
+  .nunito-sans-header {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
   }
 
   h2 {
