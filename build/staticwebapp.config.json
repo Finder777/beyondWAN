@@ -17,10 +17,10 @@
     "rewrite": "/protected/home.html",
     "exclude": [
       "/*.html",
-      "/css/*",   // Exclude CSS folder
-      "/js/*",    // Exclude JS folder
-      "/media/*", // Exclude Media folder (where your images/videos likely are)
-      "/images/*" // Keep if you also have an /images folder, otherwise remove
+      "/css/*",   
+      "/js/*",    
+      "/media/*", 
+      "/images/*"    
     ]
   },
   "responseOverrides": {
