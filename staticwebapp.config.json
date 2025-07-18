@@ -15,7 +15,13 @@
   ],
   "navigationFallback": {
     "rewrite": "/protected/home.html",
-    "exclude": ["/*.html", "/css/*", "/js/*", "/media/*", "/images/*"]
+    "exclude": [
+      "/*.html",
+      "/css/*",   // Exclude CSS folder
+      "/js/*",    // Exclude JS folder
+      "/media/*", // Exclude Media folder (where your images/videos likely are)
+      "/images/*" // Keep if you also have an /images folder, otherwise remove
+    ]
   },
   "responseOverrides": {
     "404": {
@@ -23,8 +29,33 @@
     }
   },
   "globalHeaders": {
-    "Cache-Control": "no-cache, no-store, must-revalidate",
-    "Pragma": "no-cache",
-    "Expires": "0"
+  },
+  "caching": {
+    "public": [
+      {
+        "match": "/media/**/*.{png,jpg,jpeg,gif,svg,webp,mp4,webm,ogg}", 
+        "headers": {
+          "cache-control": "max-age=2592000, public, immutable"
+        }
+      },
+      {
+        "match": "/css/*",
+        "headers": {
+          "cache-control": "max-age=604800, public"
+        }
+      },
+      {
+        "match": "/js/*",
+        "headers": {
+          "cache-control": "max-age=604800, public, immutable"
+        }
+      },
+      {
+        "match": "/**/*.{png,jpg,jpeg,gif,svg,webp}",
+        "headers": {
+          "cache-control": "max-age=31536000, public, immutable"
+        }
+      }
+    ]
   }
 }
