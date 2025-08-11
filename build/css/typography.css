@@ -2,7 +2,7 @@
 
 * {
   font-size: 18px; /* 1em = 16px and p tags should sit at this */
-  font-family: Helvetica, Arial, monospace, sans-serif;
+  font-family: "Nunito", Helvetica, monospace, sans-serif;
   color: whitesmoke;
 }
 
@@ -32,8 +32,11 @@ h1 {
 
 .orbitron-font {
   font-optical-sizing: auto;
-  font-family: "Orbitron";
+  font-family: "Orbitron", sans-serif;
   font-weight: 50;
+  text-align: center;
+  width: fit-content;
+  margin: auto auto auto 50px;
 }
 
 .nunito-sans-header {
@@ -47,9 +50,18 @@ h1 {
   margin: 0px auto 0px 20px;
 }
 
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px auto 0px 50px;
+  font-size: 3rem;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 400;
+  margin: 0px 0px 0px 0px;
 }
 
 h3 {

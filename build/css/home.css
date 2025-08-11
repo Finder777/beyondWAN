@@ -1,4 +1,4 @@
-/* This file contains the css for the mainpage */
+/* This file contains the css for the edspace homepage once a user is authenticated */
 
 /* Basic reset */
 * {
@@ -12,7 +12,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url('/media/images/wales.jpg');
+  background-image: url('../media/images/wales.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +24,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(97, 19, 19, 0.082);
+  background-color: rgba(109, 49, 0, 0.5);
 }
 
 main {
@@ -65,7 +65,7 @@ main {
 }
 
 .quote > h2{
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 0px 20px;
 }
 
@@ -85,7 +85,6 @@ main {
 }
 
 .card > p {
-  font-family: monospace;
   font-size: 1rem;
   margin: 50px auto;
   padding: 20px;

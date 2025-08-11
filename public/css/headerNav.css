@@ -5,7 +5,7 @@ header{
     top: 0;
     left: 0;
     width: auto;
-    background-color: #0000003d;
+    background-color: #0000008f;
     z-index: 10;
   }
   
@@ -117,12 +117,6 @@ header{
     font-optical-sizing: auto;
     font-family: "Orbitron", sans-serif;
     text-align: center;
-    width: fit-content;
-    margin: auto auto auto 50px;
-  }
-
-  #nav > .nunito-sans-header {
-    font-family: "Nunito Sans", sans-serif;
     width: fit-content;
     margin: auto auto auto 50px;
   }

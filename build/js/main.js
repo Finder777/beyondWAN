@@ -80,26 +80,16 @@ navigator.geolocation.getCurrentPosition(
 
 // Timezone stuff
 const timezoneDisplayElement = document.getElementById('timezone');
-
-// Get the user's timezone
-// Intl.DateTimeFormat().resolvedOptions().timeZone returns a string like "America/New_York", "Europe/London", etc.
+// Get the user's timezone, Intl.DateTimeFormat().resolvedOptions().timeZone returns a string like "America/New_York", "Europe/London", etc.
 const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 // Check if the element exists before trying to update its content
 if (timezoneDisplayElement) {
   timezoneDisplayElement.textContent = `Timezone: ${userTimezone}`;
 } else {
-  // This warning will show in the console if an element with ID 'timezone' is not found
   console.warn("Element with ID 'timezone' not found. Please ensure it exists in your HTML.");
 }
-
-// Optionally, log the timezone to the console for debugging
 console.log("Detected Timezone:", userTimezone);
-
-
-console.log("User Agent:", navigator.userAgent);
-console.log("Screen Width:", screen.width);
-console.log("Screen Height:", screen.height);
 
 // Get the language of the browser
 const browserLanguage = navigator.language;
@@ -112,3 +102,7 @@ else {
 }
 
 console.log("Browser Language:", browserLanguage);
+
+console.log("User Agent:", navigator.userAgent);
+console.log("Screen Width:", screen.width);
+console.log("Screen Height:", screen.height);
