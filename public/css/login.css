@@ -185,7 +185,8 @@ main {
   }
 
   .login-form {
-    width: 90vw;
+    margin: 10% 5%;
+    width: 80%;
   }
 
   h1{

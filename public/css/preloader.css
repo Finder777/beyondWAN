@@ -162,5 +162,6 @@ a:active {
     p {
         font-size: 1.5rem;
         width:auto;
+        max-width:90%;
     }
 }

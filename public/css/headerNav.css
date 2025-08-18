@@ -113,13 +113,7 @@ header{
     cursor: pointer; /* Because I have to */
   }
   
-  .orbitron-font {
-    font-optical-sizing: auto;
-    font-family: "Orbitron", sans-serif;
-    text-align: center;
-    width: fit-content;
-    margin: auto auto auto 50px;
-  }
+
 
   .main-menu {
     display: flex;
