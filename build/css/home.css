@@ -69,6 +69,11 @@ main {
   padding: 0px 20px;
 }
 
+.quote > p {
+  font-size: 2rem;
+  padding: 0px 20px;
+}
+
 .card{
   position:relative;
   margin: 50px auto 10px 40px;
@@ -121,14 +126,17 @@ padding: 10px 0px;
   }
 
  .quote{
-    margin: 50px 0px;
+    margin: 50px auto;
     padding: 5px 10px;
     width: 80%;
   }
 
-.quote > h2{
-    font-size: 2rem;
-    padding: 0px 10px;
+  .quote > h2{
+    font-size: 2.5rem;
+  }
+
+  .quote > p {
+    font-size: 1rem;
   }
 
   .contact-list > li {
@@ -143,6 +151,7 @@ padding: 10px 0px;
   .card{
     position:relative;
     margin: 5% auto;
+    padding: 10px 10px 10px 10px;
     background-color: #575757c4;
     border-radius: 10px;
     height:fit-content;
@@ -150,9 +159,13 @@ padding: 10px 0px;
     z-index:1;
   }
   
-  .card > p {
-    font-family: monospace;
+  .card > h2{
     font-size: 1.5rem;
+    padding: 20px 20px;
+    color:aqua;
+  }
+  .card > p {
+    font-size: 1rem;
     margin: 50px auto;
     padding: 20px;
   }
