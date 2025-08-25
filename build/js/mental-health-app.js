@@ -2,31 +2,7 @@
 
 // Initial data
 const mentalHealthData = {
-  tips: [
-    "Take a deep breath. Inhale for 4 seconds, hold for 4, exhale for 6.",
-    "Small steps matter. Focus on just one tiny thing you can do today.",
-    "Stay hydrated - it has a surprising impact on mental wellbeing.",
-    "Try the 5-4-3-2-1 technique: Name 5 things you see, 4 things you feel, 3 things you hear, 2 things you smell, and 1 thing you taste.",
-    "It's okay to not be okay sometimes. Being human means experiencing the full range of emotions.",
-    "Remember that thoughts are not facts, they're just thoughts.",
-    "When feeling overwhelmed, break tasks down into smaller, manageable parts.",
-    "Practice self-compassion - speak to yourself as you would to a good friend.",
-    "Limit news and social media consumption if it increases anxiety.",
-    "Connect with nature, even if just looking out a window or at a houseplant."
-  ],
-  quotes: [
-    "You are not alone in this journey. Many walk beside you, even when you feel most isolated.",
-    "Your existence matters. The world is better with you in it.",
-    "The darkest nights produce the brightest stars.",
-    "This moment is temporary. Your impact on the world is not.",
-    "Even the smallest light shines in the darkness.",
-    "You have survived 100% of your worst days so far.",
-    "Hope is the thing with feathers that perches in the soul.",
-    "The wound is the place where the light enters you.",
-    "Rock bottom became the solid foundation on which I rebuilt my life.",
-    "You are stronger than you think, braver than you believe, and loved more than you know."
-  ],
-  adviceTemplates: {
+    adviceTemplates: {
     "great": [
       "It's wonderful you're feeling great today! Consider journaling about what's going well so you can remember these positive feelings later.",
       "Fantastic! Use this positive energy to do something you enjoy or that brings meaning to your life."
@@ -70,10 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.setItem(`userData_${currentUser.username}`, JSON.stringify(userData));
   }
   
-  // Display daily tip and quote
-  displayDailyTip();
-  displayDailyQuote();
-  
   // Add event listeners
   setupMoodTracking();
   setupLogout();
@@ -87,32 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // when thats done will start it here
   }
 });
-
-// Display daily mental health tip
-function displayDailyTip() {
-  const tipElement = document.getElementById('daily-tip');
-  if (!tipElement) return;
-  
-  const data = JSON.parse(localStorage.getItem('mentalHealthData'));
-  const date = new Date();
-  const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-  const tipIndex = dayOfYear % data.tips.length;
-  
-  tipElement.textContent = data.tips[tipIndex];
-}
-
-// Display daily inspirational quote
-function displayDailyQuote() {
-  const quoteElement = document.getElementById('daily-quote');
-  if (!quoteElement) return;
-  
-  const data = JSON.parse(localStorage.getItem('mentalHealthData'));
-  const date = new Date();
-  const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-  const quoteIndex = dayOfYear % data.quotes.length;
-  
-  quoteElement.textContent = data.quotes[quoteIndex];
-}
 
 // Setup mood tracking functionality
 function setupMoodTracking() {
