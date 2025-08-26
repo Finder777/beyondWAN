@@ -111,7 +111,7 @@ padding: 10px 0px;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     background-image: url('/public/media/images/wales.jpg');
     background-size: 100%;
