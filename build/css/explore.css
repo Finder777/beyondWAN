@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.searchbar {
+  min-width: 70%;
+}
+
 .card {
   flex: 1 1 0%;
   padding: 20px 20px;
@@ -17,9 +21,16 @@
   background-color: #575757c0;
   color: whitesmoke;
   border-radius: 10px;
-  border:2px solid whitesmoke;
+  border:1px solid whitesmoke;
   height: auto;
   overflow: hidden;
+}
+
+#search {
+  padding: 10px;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  width: 98%;
 }
 
 @media screen and (max-width: 600px) {

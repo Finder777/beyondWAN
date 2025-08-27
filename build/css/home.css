@@ -36,25 +36,6 @@ main {
   z-index:5;
 }
 
-.searchbar {
-  flex: 1;
-  width: 80%;
-}
-
-.searchbar input[type=text]{
-  font-size: 1.5rem;
-  color:black;
-  position:relative;
-  top:0px;
-  left:0px;
-  width:100%;
-  background-color:#f5f5f5a4;
-  border: solid 1px #000000;
-  border-radius: 15px;
-  margin: 10px 0px;
-  padding: 10px 10px;
-}
-
 .quote{
   position:relative;
   margin: 60px auto 10px 40px;
@@ -76,11 +57,12 @@ main {
 
 .card{
   position:relative;
-  margin: 50px auto 10px 40px;
-  padding:5px 20px;
+  margin: 30px auto 30px 50px;
+  padding:20px 20px;
   border-radius: 20px;
   height:auto;
-  width:80%;
+  width:60%;
+  background-color: blanchedalmond;
 }
 
 .card > h2{
@@ -93,6 +75,7 @@ main {
   font-size: 1rem;
   margin: 50px auto;
   padding: 20px;
+  color:black
 }
 
 .contact-list{
@@ -100,7 +83,8 @@ main {
 }
 
 .contact-list > li{
-padding: 10px 0px;
+  padding: 10px 0px;
+  color:black;
 }
 
 /* For your mobile */
