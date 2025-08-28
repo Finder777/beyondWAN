@@ -34,18 +34,17 @@
     <!-- Log-in form here as part of main content-->
   <main>
     <div class="login-form">
-      <form action="/login" method="post">
+      <form action="#" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <button type="submit" class="custom-button">
+        <button type="button" class="custom-button">
           <i class="fas fa-sign-in-alt"></i>Log In
         </button>
+
         <p> Or use the following third-party login options:</p>
-
-
-        <a class="custom-button-inverted" href="https://egr.digital/.auth/login/aad?post_login_redirect_uri=/protected/home.html"><i class="fab fa-microsoft badge"></i>Microsoft Login</a>
+        <a class="custom-button-inverted" href="https://egr.digital/.auth/login/aad?post_login_redirect_uri=/protected/home.html" rel="noreferrer"><i class="fab fa-microsoft badge"></i>Microsoft Login</a>
 
         <p>If you need help email: <a id="email" href="mailto:info@egr.digital">info@egr.digital</a></p>
       </form>
@@ -55,16 +54,13 @@
 <!-- Credit to everyone who helped with this-->
   <footer class="footer">
     <div class="footer-content">
-      <div class="footer-icons">
-       
+      <div class="footer-icons"> 
         <i id="bone-icon" class="fas fa-bone"></i>
-        <i id="spaceShipBaby" class="fas fa-shuttle-space"></i> <!-- Updated class -->
+        <i id="spaceShipBaby" class="fas fa-shuttle-space"></i>
       </div>
-      <!--This is our mantra-->
       <div class="mantra">
         <h5>Less politics, more dev</h5>
       </div>
-      <!-- This is copyright remember-->
       <div>
         <p id="copyright_tag">© <span id="current-year"></span> EGR Digital</p>
       </div>

@@ -47,6 +47,8 @@ main {
 
 .quote > h2{
   font-size: 5rem;
+  font-weight: 800;
+  text-transform:uppercase;
   padding: 0px 20px;
 }
 
@@ -55,25 +57,30 @@ main {
   padding: 0px 20px;
 }
 
+.textWrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items:center;
+}
+
 .card{
-  position:relative;
-  margin: 30px auto 30px 50px;
+  flex: 1;
+  margin: 30px auto 30px auto;
   padding:20px 20px;
-  border-radius: 20px;
   height:auto;
-  width:60%;
   background-color: blanchedalmond;
 }
 
 .card > h2{
   font-size: 2rem;
   padding: 0px 20px;
-  color:aqua;
+  color:black;
 }
 
 .card > p {
   font-size: 1rem;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 20px;
   color:black
 }

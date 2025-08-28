@@ -1,5 +1,4 @@
-// main.js - Merged file containing all client-side logic
-
+// analytics.js
 document.addEventListener('DOMContentLoaded', async function() {
     // --- Data Collection Object ---
     const dataToSend = {};
