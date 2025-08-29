@@ -67,6 +67,11 @@ main {
   margin: 0px 20px;
 }
 
+.cta > a {
+  color: white;
+  text-decoration: none;
+}
+
 .textWrapper{
   display: flex;
   flex-direction: row-reverse;
@@ -122,46 +127,49 @@ main {
     left: 0;
     height: auto;
     width: 100%;
-    background-image: url('/public/media/images/wales.jpg');
+    background-image: url('../media/images/wales.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
     background-position: center
   }
 
+  .page-filter {
+    background-color: black;
+  }
   main{
     display: flex;
     flex-direction: column;
   }
 
  .quote{
+    font-size: 2.5rem;
     margin: 50px auto;
     padding: 5px 10px;
-    width: 80%;
+    width: 90%;
   }
 
   .quote > h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .quote > p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
-  .contact-list > li {
-    max-width: 95%;
-    word-wrap: break-word;
-  }
-
- .contact-list > li, a{
-    font-size:1.5rem;
+  .textWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+    padding: 0px 10px;
   }
 
   .card{
     position:relative;
     margin: 5% auto;
     padding: 10px 10px 10px 10px;
-    background-color: #575757c4;
+    background-color: blanchedalmond;
     border-radius: 10px;
     height:fit-content;
     width: 90%;
@@ -171,11 +179,15 @@ main {
   .card > h2{
     font-size: 1.5rem;
     padding: 20px 20px;
-    color:aqua;
   }
   .card > p {
     font-size: 1rem;
     margin: 50px auto;
     padding: 20px;
+  }
+
+   .contact-list > li {
+    max-width: 95%;
+    word-wrap: break-word;
   }
 }

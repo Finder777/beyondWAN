@@ -1,7 +1,7 @@
 /* This is predominately typography and font styling */
 
 * {
-  font-size: 18px; /* 1em = 16px and p tags should sit at this */
+  font-size: 16px; /* 1em = 18px and p tags should sit at this */
   font-family: "Nunito", Helvetica, monospace, sans-serif;
   color: whitesmoke;
 }
@@ -80,6 +80,7 @@ p{
 
 h5 {
   font-size:0.8rem;
+  margin:0px 0px 0px 0px;
 }
 
 .colour-box{
