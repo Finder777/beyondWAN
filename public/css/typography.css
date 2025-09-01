@@ -3,7 +3,6 @@
 * {
   font-size: 16px; /* 1em = 18px and p tags should sit at this */
   font-family: "Nunito", Helvetica, monospace, sans-serif;
-  color: whitesmoke;
 }
 
 html { 
@@ -30,33 +29,19 @@ h1 {
   font-size: 3rem;
 }
 
-.orbitron-font {
-  font-optical-sizing: auto;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 50;
-  text-align: center;
-  width: fit-content;
-  margin: auto auto auto 50px;
-}
-
-.nunito-sans-header {
-  font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
-  margin: 0px auto 0px 20px;
-}
-
 .pinyon-script-regular {
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
   margin: 0px auto 0px 50px;
   font-size: 3rem;
+  color: whitesmoke;
 }
+
+.nunito-sans-header {
+  font-family: "Nunito Sans Regular", sans-serif;
+  font-style: normal;
+} 
 
 h2 {
   font-size: 2rem;
@@ -81,45 +66,6 @@ p{
 h5 {
   font-size:0.8rem;
   margin:0px 0px 0px 0px;
-}
-
-.colour-box{
-  height:30px;
-  width: 30px;
-  border: solid 1px #808080;
-  border-radius: 30px;
-}
-
-.whitesmoke{
-  background-color: whitesmoke;
-}
-
-.black{
-  background-color: black;
-}
-
-.greenyellow{
-  background-color: greenyellow;
-}
-
-.grey{
-  background-color: grey;
-}
-
-.aqua{
-  background-color: aqua;
-}
-
-.greenfilter{
-  background-color: #00ff0d;
-}
-
-.greyfilter{
-  background-color: #808080;
-}
-
-.darkgreyfilter{
-  background-color: #1a1a1a;
 }
 
 /* Media query for smaller screens */

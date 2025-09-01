@@ -24,7 +24,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(109, 49, 0, 0.5);
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1));
 }
 
 main {
@@ -50,11 +50,13 @@ main {
   font-weight: 1000;
   text-transform:uppercase;
   padding: 0px 20px;
+  color: whitesmoke;
 }
 
 .quote > p {
   font-size: 2rem;
   padding: 0px 20px;
+  color:whitesmoke;
 }
 
 .cta{
@@ -125,18 +127,18 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
-    background-image: url('../media/images/wales.jpg');
-    background-size: 100%;
+    background-image: url('../media/images/walesGrey.png');
     background-repeat: no-repeat;
     background-color: black;
     background-position: center
   }
 
   .page-filter {
-    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1));
   }
+
   main{
     display: flex;
     flex-direction: column;
@@ -163,6 +165,7 @@ main {
     gap: 20px;
     align-items:center;
     padding: 0px 10px;
+    background-color: transparent;
   }
 
   .card{
@@ -189,5 +192,11 @@ main {
    .contact-list > li {
     max-width: 95%;
     word-wrap: break-word;
+  }
+
+  em{
+    color: darkslategrey;
+    font-size: 0.8rem;
+    padding: 0px 20px 20px 0px;
   }
 }
