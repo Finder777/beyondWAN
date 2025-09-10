@@ -37,7 +37,7 @@ body{
 
 .greenfilter{
     background-color: #00ff0d1a;
-    height:auto;
+    height:100vh;
     padding: 5%;
 }
 
@@ -143,7 +143,7 @@ a:active {
     color:whitesmoke;
 }
 
-.analytics > span{
+.analytics {
     font-size: 0.8rem;
     font-style: italic;
     margin-top: 50px;
@@ -170,5 +170,6 @@ a:active {
     .greenfilter {
     background-color: #00ff0d1a;
     padding: 5%;
+    height: auto;
     }
 }
