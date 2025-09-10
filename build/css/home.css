@@ -24,7 +24,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(109, 49, 0, 0.5);
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1));
 }
 
 main {
@@ -46,43 +46,64 @@ main {
 }
 
 .quote > h2{
-  font-size: 5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 1000;
   text-transform:uppercase;
   padding: 0px 20px;
+  color: whitesmoke;
 }
 
 .quote > p {
   font-size: 2rem;
   padding: 0px 20px;
+  color:whitesmoke;
+}
+
+.cta{
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 20px;
+}
+
+.cta > a {
+  color: white;
+  text-decoration: none;
 }
 
 .textWrapper{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items:center;
+  gap: 20px;
+  align-items:flex-start;
+  padding: 0px 40px;
 }
 
 .card{
   flex: 1;
-  margin: 30px auto 30px auto;
+  margin: 0px auto 30px auto;
   padding:20px 20px;
   height:auto;
   background-color: blanchedalmond;
+  border-radius: 10px;
 }
 
 .card > h2{
   font-size: 2rem;
   padding: 0px 20px;
   color:black;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .card > p {
   font-size: 1rem;
-  margin: 30px auto;
-  padding: 20px;
-  color:black
+  margin: 0px auto;
+  padding: 0px 20px 20px 20px;
+  color:black;
 }
 
 .contact-list{
@@ -94,6 +115,10 @@ main {
   color:black;
 }
 
+.icon{
+  color:blue;
+}
+
 /* For your mobile */
 
 @media screen and (max-width: 600px) {
@@ -102,13 +127,16 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
-    background-image: url('/public/media/images/wales.jpg');
-    background-size: 100%;
+    background-image: url('../media/images/walesGrey.png');
     background-repeat: no-repeat;
     background-color: black;
     background-position: center
+  }
+
+  .page-filter {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1));
   }
 
   main{
@@ -117,33 +145,34 @@ main {
   }
 
  .quote{
+    font-size: 2.5rem;
     margin: 50px auto;
     padding: 5px 10px;
-    width: 80%;
+    width: 90%;
   }
 
   .quote > h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .quote > p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
-  .contact-list > li {
-    max-width: 95%;
-    word-wrap: break-word;
-  }
-
- .contact-list > li, a{
-    font-size:1.5rem;
+  .textWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+    padding: 0px 10px;
+    background-color: transparent;
   }
 
   .card{
     position:relative;
     margin: 5% auto;
     padding: 10px 10px 10px 10px;
-    background-color: #575757c4;
+    background-color: blanchedalmond;
     border-radius: 10px;
     height:fit-content;
     width: 90%;
@@ -153,11 +182,21 @@ main {
   .card > h2{
     font-size: 1.5rem;
     padding: 20px 20px;
-    color:aqua;
   }
   .card > p {
     font-size: 1rem;
     margin: 50px auto;
     padding: 20px;
+  }
+
+   .contact-list > li {
+    max-width: 95%;
+    word-wrap: break-word;
+  }
+
+  em{
+    color: darkslategrey;
+    font-size: 0.8rem;
+    padding: 0px 20px 20px 0px;
   }
 }

@@ -1,0 +1,104 @@
+<!--Logged-in view-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/headerNav.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  <title>App</title>
+</head>
+
+<body>
+  <div class="page-background"></div>
+  <div class="page-filter"></div>
+
+<!-- See headerNav.css for styling -->  
+  <header>
+    <nav>
+      <i id="hamburger" class="fas fa-bars hamburger-icon"></i>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-btn" class="close-btn">&times;</span>
+          <ul class="nav-links">
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="listen.html">Listen</a></li>
+            <li><a href="storylist.html">Read</a></li>
+            <li><a href="#">Chat</a></li>
+            <div class="settings">
+              <h4><i class="fa-solid fa-gear"></i> Settings</h4>
+              <p id="current-date"></p>
+              <p id="language"></p>
+              <p id="location"></p>
+              <p id="timezone"></p>
+            </div>
+            <h5><a href="../index.html"><em>#egrDigital</em></a></h5>
+          </ul>
+        </div>
+      </div>
+      <h1 class="pinyon-script-regular">edsp@ce</h1>
+      <ul class="main-menu">
+        <li><a href="https://egr.digital/.auth/login/aad?post_login_redirect_uri=/protected/home.html"><i id="login" class="fas fa-user-circle login-icon"></i></a></li>
+      </ul>
+    </nav>
+  </header>  
+
+<!--Content-->
+
+  <main class="container">
+    <div class="card">
+      <h2>How are you?</h2>
+      <div class="mood-selector">
+        <button class="mood-btn" data-mood="great"><i class="fas fa-laugh-beam"></i> Great</button>
+        <button class="mood-btn" data-mood="good"><i class="fas fa-smile"></i> Good</button>
+        <button class="mood-btn" data-mood="okay"><i class="fas fa-meh"></i> Okay</button>
+        <button class="mood-btn" data-mood="bad"><i class="fas fa-frown"></i> Bad</button>
+        <button class="mood-btn" data-mood="terrible"><i class="fas fa-sad-tear"></i> Terrible</button>
+      </div>
+      <p><em>You can record how you feel above.  In time you can look back on it.  It may help.</em></p>
+      <button id="save-mood" class="btn btn-primary mt-2">Save</button>
+      <a href="mood-history.html" class="btn btn-secondary mt-2">View Mood History</a>
+    </div>
+    <div class="card">
+      <h2>Journal</h2>
+      <label for="mood-journal" class="form-label">Capture your thoughts and save them in a diary:</label>
+        <textarea id="mood-journal" class="form-control" rows="10"></textarea>
+      <p><em>Only you can see this journal unless you choose to share it.</em></p>
+      <button id="save-diary" class="btn btn-primary mt-2">Save</button>
+      <a href="diary.html" class="btn btn-secondary mt-2">View My Diary</a>
+    </div>
+  </main>
+
+  <!-- Credits--> 
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-icons">
+        <i id="bone-icon" class="fas fa-bone"></i>
+        <i id="spaceShipBaby" class="fas fa-shuttle-space"></i>
+      </div>
+      <div class="mantra">
+        <h5>Less politics, more dev</h5>
+      </div>
+      <div>
+        <p id="copyright_tag">© <span id="current-year"></span> EGR Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/hamburger.js"></script>
+  <script src="../js/mental-health-app.js"></script>
+</body>
+</html> 

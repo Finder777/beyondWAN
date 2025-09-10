@@ -113,8 +113,6 @@ header{
     cursor: pointer; /* Because I have to */
   }
   
-
-
   .main-menu {
     display: flex;
     justify-content: center;
@@ -123,14 +121,14 @@ header{
     margin: auto 10px auto auto;
   }
 
-#chat {
+  #chat {
     color: aquamarine;
     background: blue;
     border-radius: 15px;
     border-color: darkgrey;
     border:2px;
     padding: 4px 15px;
-}
+  }
 
   .login-icon {
     font-size: 1.5rem;

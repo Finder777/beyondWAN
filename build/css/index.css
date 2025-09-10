@@ -37,7 +37,7 @@ body{
 
 .greenfilter{
     background-color: #00ff0d1a;
-    height:100%;
+    height:auto;
     padding: 5%;
 }
 
@@ -141,6 +141,13 @@ a:active {
     background-color: darkgreen;
     text-decoration: underline;
     color:whitesmoke;
+}
+
+.analytics > span{
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 50px;
+    color: darkgray;
 }
 
 @media screen and (max-width: 600px) {

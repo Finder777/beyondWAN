@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
     background-image: url('../media/images/wales.jpg');
     background-size: cover;
@@ -21,7 +21,7 @@
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgba(109, 49, 0, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 1));
 }
 
 .container {
@@ -44,5 +44,47 @@
     width:100%;
 }
 
+.mood-selector {
+    display:flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin: 20px;
+    justify-content: center;
+}
 
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 100%;
+}
 
+@media screen and (max-width: 600px){
+    .container {
+        width: 90%;
+    }
+
+    .card > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:black;
+    }
+
+    .mood-selector {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 10px;
+    }
+
+    .card > p {
+    font-size: 1rem;
+    margin: auto auto;
+    padding: 20px;
+    color:black;
+    }
+}
