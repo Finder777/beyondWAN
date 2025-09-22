@@ -13,6 +13,17 @@ export function loadAnalyticsData() {
         }
         console.log("Current Date:", now);
 
+        const yearElement = document.getElementById('current-year');
+        if (yearElement) {
+            yearElement.textContent = now.getFullYear().toString();
+        }
+
+        const timeElement = document.getElementById('current-time');
+        if (timeElement) {
+            timeElement.textContent = `Time: ${now.toLocaleTimeString()}`;
+        }
+        console.log("Current Time:", now.toLocaleTimeString());
+
         // Geolocation
         const locationDisplayElement = document.getElementById('location');
         function updateLocationDisplay(text) {
