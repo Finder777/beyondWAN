@@ -16,28 +16,28 @@ body{
 
 .page-background {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px 0px;
 }
 
 .page-background::before {
     content:"";
-    position: absolute;
-    top: 0;
-    left:0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../media/images/whiterabbit.jpeg);
-    background-size:70%;
+    background-image: url(../media/images/cyborg_cropped.jpg);
+    background-size:50%;
     background-repeat:no-repeat;
     background-position:right;
-    opacity:0.5;
+    opacity:0.3;
     z-index:-1;
 }
 
 .greenfilter{
     background-color: #00ff0d1a;
-    height:auto;
+    min-height: 100vh;
     padding: 5%;
 }
 
@@ -51,7 +51,7 @@ h1 {
 .orbitron-font {
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
-    font-size: 4rem;
+    font-size: clamp(4rem, 8vw, 6rem);
     font-weight: 350;
     color: #fff;
 }
@@ -60,10 +60,11 @@ h3{
     text-transform:uppercase;
     margin: 40px auto;
     color:aqua;
+    font-size: clamp(1.5rem, 3vw, 4rem);
 }
 
 p {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 a {
@@ -143,8 +144,8 @@ a:active {
     color:whitesmoke;
 }
 
-.analytics > span{
-    font-size: 0.8rem;
+.analytics {
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
     font-style: italic;
     margin-top: 50px;
     color: darkgray;
@@ -170,5 +171,6 @@ a:active {
     .greenfilter {
     background-color: #00ff0d1a;
     padding: 5%;
+    height: auto;
     }
 }

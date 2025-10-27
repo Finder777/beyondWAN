@@ -44,7 +44,6 @@
           </ul>
         </div>
       </div>
-      <h1 class="pinyon-script-regular">edsp@ce</h1>
       <ul class="main-menu">
         <li><a href="https://egr.digital/.auth/login/aad?post_login_redirect_uri=/protected/home.html"><i id="login" class="fas fa-user-circle login-icon"></i></a></li>
       </ul>
@@ -55,34 +54,48 @@
 
   <main class="container">
     <div class="radio">
-        <div class="panel">
-            <div class="upperScreen">    
-                <div class="card otacon"></div>
-                <div class="centerScreen">
-                    <div class="card"><h2>PTT</h2></div>
-                    <div class="card">
-                        <p>equalizer</p>
-                        <h2>445Mhz</h2>
-                        <p>channel</p>
-                    </div>
-                </div>
-                <div class="card snake"></div>
-            </div>
-            
-            <div class="card">
-                <div id="chat-box" class="chat-box">
-                <p>Chat messages will appear here</p><!-- Chat messages will appear here -->
-                </div>
-            </div>
-            <div class="card">
-                <div class="transcription">
-                    <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
-                    <button id="send-btn" class="btn ">Send</button>
-                </div>
-            </div>
-    </div>
+      <div class="case">
+        <div class="upperScreen">    
+          
+          <div class="otacon">
+          </div>
 
-     </main>
+          <div class="centerScreen">
+            <h2 class="title">COMLINK</h2>
+
+            <div><p>Radio Signal Strength Indicator</p><p>-123 db</p></div>
+              
+            <div class="panel freq">
+              <div class="freqDown"><i class="fa-solid fa-caret-left"></i></div>
+              <div class="frequency"><p>Frequency</p><h2>445Mhz</h2></div>
+              <div class="freqUp"><i class="fa-solid fa-caret-right"></i></div>
+            </div>
+
+            <div class="panel channel">
+              <div class="channelDown"><i class="fa-solid fa-caret-left"></i></div>
+              <div class="channel"><p>Channel</p><h2>7</h2></div>
+              <div class="channelUp"><i class="fa-solid fa-caret-right"></i></div>
+            </div>
+
+          </div>
+
+          <div class="snake"></div>
+        </div>
+        
+        <div class="lowerScreen">
+          <div id="transcript" class="transcript">
+            <p>Snake, you have to use the AI chat to get somewhere.  If you don't you'll never move forward.</p>
+          </div>
+
+          <div class="input-container">
+            <input type="text" id="user-input" class="input" placeholder="Type your message...">
+            <button id="send-btn" class="btn ">Send</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
 
   <!-- Credits--> 
 
