@@ -10,12 +10,6 @@ dateElement.textContent = now.toDateString();
 //I'm adding it  to the console for debugging purposes
 console.log(now); 
 
-// Set the current year in the footer
-const currentYearElement = document.getElementById('current-year');
-if (currentYearElement) {
-  currentYearElement.textContent = new Date().getFullYear();
-}
-
 // Get user's location (if permitted)
 
 const locationDisplayElement = document.getElementById('location');

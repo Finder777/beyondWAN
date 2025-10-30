@@ -70,11 +70,18 @@ header{
     list-style-type: none;
   }
   
+  .profile {
+    font-size: 1rem;
+    color: white; 
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+
   .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
   
   .nav-links a:hover {
@@ -95,8 +102,9 @@ header{
     line-height: 1.1rem;
   }
   
-  .settings > h4{
+  .settings > h5{
     color: aqua;
+    padding-top: 10px;
   }
   
   .close-btn {
@@ -130,7 +138,7 @@ header{
     padding: 4px 15px;
   }
 
-  .login-icon {
+  #logout {
     font-size: 1.5rem;
     color: white; 
     cursor: pointer; /* To be conventional again*/
