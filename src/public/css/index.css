@@ -177,4 +177,8 @@ a:active {
     padding: 5%;
     height: auto;
     }
+
+    .banner {
+    height:auto;
+    }
 }
