@@ -156,20 +156,31 @@ a:active {
 }
 
 @media screen and (max-width: 600px) {
-    a {
-        display:block;
-        text-decoration:none;
-        color: whitesmoke;
-        font-size: 1.5rem;
-        margin-top: 20px;
+    .page-background::before {
+    background-image: url(../media/images/cyborgStood.png);
+    background-size:100%;
+    opacity:0.3;
+    z-index:-1;
     }
     
+    a {
+    text-decoration:none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    }
+    
+    .contact {
+    display:inline-block;
+    margin:0px auto 0px auto ;
+    }
+
     h1 {
-        font-size: 2rem;
+    font-size: 2rem;
     }
     
     p {
-        font-size: 1.5rem;
+    font-size: 1.5rem;
     }
 
     .greenfilter {
