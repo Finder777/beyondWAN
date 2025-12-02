@@ -163,6 +163,14 @@ a:active {
     z-index:-1;
     }
     
+    .orbitron-font {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-size: clamp(2rem, 4vw, 6rem);
+    font-weight: 400;
+    color: #fff;
+    }
+
     a {
     text-decoration:none;
     color: whitesmoke;
@@ -179,6 +187,10 @@ a:active {
     font-size: 2rem;
     }
     
+    h3 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    }
+
     p {
     font-size: 1.5rem;
     }
