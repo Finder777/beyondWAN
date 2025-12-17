@@ -87,6 +87,13 @@ a {
     margin: 0px auto 0px auto ;
 }
 
+.backdrop {
+    background-color: #00000079;
+    padding: 5px 15px;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
 .contact{
     font-size: 1rem;
     color:lightgray;
@@ -188,11 +195,11 @@ a:active {
     }
     
     h3 {
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 3rem);
     }
 
     p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     }
 
     .greenfilter {

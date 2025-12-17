@@ -63,6 +63,12 @@ h3{
     font-size: clamp(1.5rem, 3vw, 4rem);
 }
 
+h6{
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    max-width: 60%;
+    margin-top: 30px;
+    color:lightgray;
+}
 p {
     font-size: clamp(1rem, 2vw, 2rem);
     max-width: 50%;
