@@ -71,12 +71,16 @@ h1 {
     width:fit-content;
 }
 
-h3{
-    text-transform:uppercase;
-    margin: 20px auto 20px auto ;
-    color:aqua;
+.monospace {
+    font-family: "Courier New", Courier, monospace;
     font-size: clamp(1.5rem, 3vw, 4rem);
     font-weight: 200;
+    color:aqua;
+}
+
+h3{
+    text-transform:uppercase;
+    margin: 0px auto 0px auto ;
 }
 
 h4{
@@ -221,6 +225,12 @@ a:active {
     color: #fff;
     }
 
+    header > a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 0px;
+    }
+    
     a {
     display: block;
     text-decoration: none;
@@ -236,6 +246,13 @@ a:active {
 
     h1 {
     font-size: 2rem;
+    }
+    
+    .monospace {
+    font-family: "Courier New", Courier, monospace;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 200;
+    color:aqua;
     }
     
     h3 {
