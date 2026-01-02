@@ -60,6 +60,7 @@ body{
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
     font-size: clamp(4rem, 8vw, 6rem);
+    line-height:auto;
     font-weight: 350;
     color: #fff;
 }
@@ -67,7 +68,7 @@ body{
 h1 {
     margin: 0px 0px;
     padding: 0px auto;
-    line-height:3.5rem;
+    
     width:fit-content;
 }
 
