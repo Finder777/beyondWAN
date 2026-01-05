@@ -2,7 +2,7 @@ import { loadAnalyticsData } from '/js/analytics.js';
 
 /**
  * Applies a typewriter effect to a single HTML element.
- * @param {string} elementId The ID of the element to apply the effect to.
+ * @param {string} elementId 
  * @param {number} [speed=50] The speed of typing in milliseconds per character.
  */
 function typeWriterEffect(elementId, speed = 50) {

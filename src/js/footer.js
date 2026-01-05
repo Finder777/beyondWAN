@@ -1,4 +1,4 @@
-const currentYearElement = document.getElementById('current-year');
-if (currentYearElement) {
-  currentYearElement.textContent = new Date().getFullYear();
-}
+const yearElement = document.getElementById('current-year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear().toString();
+        }

@@ -1,20 +1,13 @@
 {
   "routes": [
-    {
-      "route": "/protected/*",
-      "allowedRoles": ["authenticated"],
-      "postLoginRoutes": {
-          "azureadb2c":"/protected/home.html",
-          "aad":"/protected/home.html"
-      }
-    },
+    
     {
       "route": "/*",
       "allowedRoles": ["anonymous"]
     }
   ],
   "navigationFallback": {
-    "rewrite": "/protected/home.html",
+    "rewrite": "/index.html",
     "exclude": [
       "/*.html",
       "/css/*",   
@@ -25,7 +18,7 @@
   },
   "responseOverrides": {
     "404": {
-      "rewrite": "/protected/home.html"
+      "rewrite": "/index.html"
     }
   },
   "globalHeaders": {
