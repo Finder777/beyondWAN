@@ -213,6 +213,13 @@ a:active {
     color:whitesmoke;
 }
 
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 .footer-content{
     display: flex;
     justify-content: center;
@@ -303,7 +310,7 @@ a:active {
     .tagline {
         font-size: clamp(1.2rem,1.5vw, 1.6rem);
         margin: 0px auto 0px 0px;
-        padding-top:20px;
+        padding-top:10px;
     }
 
     .footer-notes{
