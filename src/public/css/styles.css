@@ -311,7 +311,7 @@ a:active {
         margin: 0px auto 0px 0px;
     }
 
-    span{
+    .divider{
         display: none;
     }
 }
