@@ -53,7 +53,7 @@ body{
 .greenfilter{
     background-color: #00ff0d1a;
     min-height: 100vh;
-    padding: 5%;
+    padding: 2%;
 }
 
 .orbitron-font {
@@ -98,10 +98,11 @@ h6{
     color:lightgray;
 }
 
-p {
-    font-size: clamp(1rem, 2vw, 2rem);
+.body {
+    font-size: clamp(1.5rem, 2vw, 2rem);
     max-width: 50%;
 }
+
 .contact{
     font-size: 1rem;
     color:lightgray;
@@ -111,11 +112,11 @@ p {
     border-radius: 5px;
     width: fit-content;
 }
+
 a {
     display:inline-block;
     text-decoration:none;
     color: whitesmoke;
-    font-size: 2rem;
     margin: 0px auto 0px auto ;
 }
 
@@ -138,7 +139,8 @@ a:active {
 .one, .two, .three, .four{
     border: 2px;
     border-radius: 5px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
+    font-size: 2rem; 
 }
 
 .one {
@@ -204,13 +206,46 @@ a:active {
 .four {
     background-color: black;
 }
+
 .four:hover{
     background-color: gray;
     text-decoration: underline;
     color:whitesmoke;
 }
 
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #000000e0;
+    text-align: center;
+    padding: 1% 5%;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    color: whitesmoke;
+}
+
+.tagline {
+    margin: 0px auto 0px auto;
+}
+
+.footer-notes{
+    margin: 0px auto 0px auto;
+}
+
 @media screen and (max-width: 600px) {
+    .body {
+    font-size: 1.25rem;
+    width:auto;
+    max-width:90%;
+    }
+
+    .greenfilter {
+    background-color: #00ff0d1a;
+    padding: 5%;
+    height: auto;
+    }
+    
     .page-background::before {
     background-image: url(../media/images/cyborgStood.png);
     background-size:100%;
@@ -225,24 +260,16 @@ a:active {
     font-weight: 400;
     color: #fff;
     }
-
-    header > a {
-    text-decoration: none;
-    color: whitesmoke;
-    margin-top: 0px;
-    }
     
+    .one, .two, .three, .four{
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    }
+      
     a {
-    display: block;
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    }
-    
-    .contact {
-    display:inline-block;
-    margin:0px auto 0px auto ;
     }
 
     h1 {
@@ -260,15 +287,31 @@ a:active {
     font-size: clamp(1rem, 3vw, 3rem);
     }
 
-    p {
-    font-size: 1.25rem;
-    width:auto;
-    max-width:90%;
+    .footer-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #000000e0;
+    text-align: left;
+    padding: 1% 5%;
+    
+    color: whitesmoke;
+    line-height: 1.4;
     }
 
-    .greenfilter {
-    background-color: #00ff0d1a;
-    padding: 5%;
-    height: auto;
+    .tagline {
+        font-size: clamp(1.2rem,1.5vw, 1.6rem);
+        margin: 0px auto 0px 0px;
+        padding-top:20px;
+    }
+
+    .footer-notes{
+        font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+        margin: 0px auto 0px 0px;
+    }
+
+    span{
+        display: none;
     }
 }
