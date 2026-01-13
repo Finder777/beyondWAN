@@ -272,7 +272,8 @@ a:active {
     border: 2px;
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 1rem; 
+    font-size: 1rem;
+    margin: 0px 10px 10px 0px;
     }
       
     a {
