@@ -53,22 +53,34 @@ body{
 .greenfilter{
     background-color: #00ff0d1a;
     min-height: 100vh;
-    padding: 2%;
+    padding: 2% 2% 8% 2%;
 }
 
 .orbitron-font {
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
-    font-size: clamp(4rem, 8vw, 6rem);
+    font-size: clamp(3rem, 8vw, 6rem);
     line-height:auto;
-    font-weight: 350;
+    font-weight: 400;
     color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
+}
+
+.nav{
+    font-size: clamp(2rem, 3vw, 4rem);
+    color: whitesmoke;
 }
 
 h1 {
     margin: 0px 0px;
-    padding: 0px auto;
-    
+    padding: 0px auto;    
     width:fit-content;
 }
 
@@ -129,11 +141,34 @@ a:active {
     color:whitesmoke;
 }
 
+.target-set {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #00000079;
+    padding: 15px 15px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.live-sites-accordion summary {
+    padding-top: 10px;
+}
+
 .analytics {
-    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
     font-style: italic;
     margin-top: 50px;
     color: darkgray;
+    background-color: #00000079;
+    width: fit-content;
+    padding: 10px 10px;
+}
+
+.analytics > h3 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.analytics-data {
+   font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
 .one, .two, .three, .four{
@@ -249,7 +284,7 @@ a:active {
 
     .greenfilter {
     background-color: #00ff0d1a;
-    padding: 5%;
+    padding: 5% 5% 30% 5%;
     height: auto;
     }
     
@@ -273,7 +308,7 @@ a:active {
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1rem;
-    margin: 0px 10px 10px 0px;
+    margin: 0px 103px 10px 0px;
     }
       
     a {
@@ -285,14 +320,19 @@ a:active {
     }
     
     .monospace {
-    font-family: "Courier New", Courier, monospace;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 200;
-    color:aqua;
+        font-family: "Courier New", Courier, monospace;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-weight: 200;
+        color:aqua;
     }
     
     h3 {
-    font-size: clamp(1rem, 3vw, 3rem);
+        font-size: clamp(1rem, 3vw, 3rem);
+    }
+
+    .analytics > h3 {
+        font-size: clamp(1.2rem, 2vw, 2rem);
+        color: darkgray;
     }
 
     .footer-content{
@@ -303,7 +343,6 @@ a:active {
     background-color: #000000e0;
     text-align: left;
     padding: 1% 5%;
-    
     color: whitesmoke;
     line-height: 1.4;
     }
