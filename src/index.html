@@ -37,6 +37,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 
 <body>
@@ -51,48 +55,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
       <header class="header">
         <h1 class="orbitron-font">EGR DIGITAL</h1>
-        <nav class="nav"><i class="fa-solid fa-bars"></i></nav>
+        <nav class="nav"><i class="fa-solid fa-bars fa-md"></i></nav>
       </header>  
       
       <main class="hero">
         <h3 class="monospace">DESIGN | BUILD | SECURE | MAINTAIN</h3>
         <p class="body">Websites, webstores, web apps and pen testing for your business.</p>
-        <a href="https://api.whatsapp.com/send?phone=447469533627" class="three"><i class="fa-brands fa-whatsapp fa-lg"></i>: Whatsapp</a>
-        <a href="preloader.html" class="two"><i class="fa-solid fa-globe fa-lg"></i> : Explore</a>
+        <a href="https://api.whatsapp.com/send?phone=447469533627" class="three"><i class="fa-brands fa-whatsapp fa-md"></i></a>
+        <a href="#explore" class="two"><i class="fa-solid fa-globe fa-md"></i> : Explore</a>
       </main>
-
+      
+      <section class="options" id="explore">
+        <div class="modal-content">
+          <button id="closeModal" class="close-button" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <p> Visit some demo sites built using wix.com</p>
+          <a href="https://edagramirez.wixsite.com/egrdigital">>  Digital Design Studio</a>
+          <a href="https://edagramirez.wixsite.com/lifeontheroad">>  #LifeOnTheRoad- Webstore</a>
+        </div>
+      </section>
+      
       <section>
         <h5>Project Future Vision © <span id="current-year"></span><br>[all rights reserved]</h5>
       </section>
 
-      <section class="target-set">
-        <h3>Target Sets >></h3>
-        <details class="live-sites-accordion" open>
-          <summary>Live Sites</summary>
-            <ul>
-              <li><a href="https://www.navico.com/">Navico</a></li>
-              <li><a href="https://www.bandg.com/en-gb/">BandG</a></li>
-              <li><a href="https://www.simrad-yachting.com/en-gb/">Simrad Yachting</a></li>
-              <li><a href="https://www.lowrance.com/">Lowrance</a></li>
-              <li><a href="https://www.c-map.com/en-gb/">C-MAP</a></li>
-              <li><a href="https://www.thewayoftracking.com/">The Way of Tracking</a></li>
-              <li><a href="https://whitehorseresearch.wordpress.com/">Insights Research Site</a></li>
-            </ul>
-        </details>
+      <section class="target-sets">
+        <div class="target-set-alpha">
+          <h3>Target Set Alpha >></h3>
+          <details class="live-sites-accordion" open>
+            <summary>Live Sites</summary>
+              <ul>
+                <li><a href="https://www.navico.com/">Navico</a></li>
+                <li><a href="https://www.bandg.com/en-gb/">BandG</a></li>
+                <li><a href="https://www.simrad-yachting.com/en-gb/">Simrad Yachting</a></li>
+                <li><a href="https://www.lowrance.com/">Lowrance</a></li>
+                <li><a href="https://www.c-map.com/en-gb/">C-MAP</a></li>
+                <li><a href="https://www.thewayoftracking.com/">The Way of Tracking</a></li>
+                <li><a href="https://whitehorseresearch.wordpress.com/">Insights Research Site</a></li>
+              </ul>
+          </details>
+        </div>
         
-        <details open>
-          <summary>In Development</summary>
-          <ul>
-            <li><a href="https://annasart506704076.wordpress.com/">Anna's Art</a></li>
-            <li><a href="https://ajaccountstaxation.wordpress.com/">AJAT</a></li>
-          </ul>
-        </details>  
+        <div class="target-set-bravo">
+          <h3>Target Set Bravo >> </h3>
+          <details class="live-sites-accordion" open>
+            <summary>Beyond Line Of Sight</summary>
+              <ul>
+                <li><a href="https://www.spiraxsarco.com">SpiraxSarco</a></li>
+                <li><a href="https://www.ubs.com">UBS</a></li>
+                <li><a href="https://www.fdmgroup.com">FDM Group</a></li>
+                <li><a href="https://www.army.mod.uk/learn-and-explore/about-the-army/corps-regiments-and-units/royal-corps-of-signals/14-signal-regiment-electronic-warfare/">14 Sigs</a></li>
+                <li><a href="https://www.nato.int/en">NATO</a></li>
+                <li><a href="https://www.armadainternational.com/2020/08/bushmaster-electronic-warfare-vehicles-for-dutch-army/">RNLA EW</a></li>
+              </ul>
+          </details>
+        </div>
+      
+        <div class="target-set-charlie">
+          <h3>Target Set Charlie >></h3>
+          <details class="live-sites-accordion" open>
+              <summary>In Development</summary>
+              <ul>
+                <li><a href="https://annasart506704076.wordpress.com/">Anna's Art</a></li>
+                <li><a href="https://ajaccountstaxation.wordpress.com/">AJAT</a></li>
+                <li><a href="#">EdSpace</a></li>
+              </ul>
+            </details>  
+        </div>
       </section>
 
-
-
-      <section class="analytics" id="analytics">
-          <h3>Tracking Stats...</h3>
+      <div class="target-acquisition">
+        <section class="analytics" id="analytics">
+          <h3>Target Acquisition In Progress...</h3>
           <div class="analytics-data">
             <br><span id="current-date"></span>
             <br><span id="current-time"></span>
@@ -105,12 +140,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </section>
 
+        <section class="map-container">
+          <div id="map" style="height: 450px; width: 100%; border-radius: 15px;"></div>
+        </section>
+
+      </div> 
     </div>
   </div>
 
   <footer class="footer">
     <div class="footer-content">
-      <h2 class="tagline"><em>Less politics, more dev</em></h2>
+      <h2 class="tagline"><em>Less talk, more dev</em></h2>
       <span class="divider">|</span>
       <p class="footer-notes">Developed by EGR Digital</p>
       <span class="divider">|</span>
@@ -121,6 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script src="js/typewriter.js" type="module"></script>
+  <script src="js/page.js" type="module"></script>
 
 </body>
 </html>
