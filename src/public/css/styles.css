@@ -238,10 +238,29 @@ a:active {
     filter: grayscale(100%) invert(90%) contrast(90%);
 }
 
-.one, .two, .three, .four{
+.leaflet-bar {
+    background-color: #111 !important;
+    border: 1px solid darkgreen !important;
+}
+
+.leaflet-bar a {
+    background-color: #111 !important;
+}
+
+.leaflet-bar a:first-child {
+    border-bottom: 1px solid darkgreen !important;
+}
+
+.one, .four{
     border: 2px;
     border-radius: 5px;
     padding: 10px 20px;
+}
+
+.two, .three {
+    border: 2px;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .two, .three > i {
@@ -314,8 +333,19 @@ a:active {
 
 .four:hover{
     background-color: gray;
+    border: 1px solid black;
     text-decoration: underline;
     color:whitesmoke;
+    box-shadow: #111 0px 0px 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    top:50%;
+    z-index: 1000000;
 }
 
 .footer {
@@ -374,12 +404,8 @@ a:active {
         color: #fff;
     }
     
-    .one, .two, .three, .four{
-        border: 2px;
-        border-radius: 5px;
+    .one, .two, .three, .four {
         padding: 10px 20px;
-        font-size: 1rem;
-        margin: 0px 103px 10px 0px;
     }
       
     a {
