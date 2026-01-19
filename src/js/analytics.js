@@ -1,3 +1,4 @@
+// --- MET BRIEF ---
 function interpretWeatherCode(code) {
     if (code === 0) return "CLEAR SKIES";
     if (code <= 3) return "PARTIAL CLOUD";
@@ -57,7 +58,7 @@ function initLeafletMap(lat, lon) {
 
 export function loadAnalyticsData() {
     return new Promise((resolve, reject) => {
-        // Get current date and time
+
         const now = new Date();
         const dateElement = document.getElementById('current-date');
         if (dateElement) {
@@ -76,7 +77,6 @@ export function loadAnalyticsData() {
         }
         console.log("Current Time:", now.toLocaleTimeString());
 
-        // Geolocation
         const locationDisplayElement = document.getElementById('location');
         function updateLocationDisplay(text) {
             if (locationDisplayElement) {
@@ -117,7 +117,6 @@ export function loadAnalyticsData() {
             }
         );
 
-        // Timezone
         const timezoneDisplayElement = document.getElementById('timezone');
         const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         if (timezoneDisplayElement) {
@@ -125,7 +124,6 @@ export function loadAnalyticsData() {
         }
         console.log("Detected Timezone:", userTimezone);
 
-        // Language
         const browserLanguage = navigator.language;
         const settingsLanguage = document.getElementById('language');
         if (settingsLanguage) {
@@ -133,7 +131,6 @@ export function loadAnalyticsData() {
         }
         console.log("Browser Language:", browserLanguage);
 
-        // Screen dimensions and user agent
         const screenWidthElement = document.getElementById('screen-width');
         if (screenWidthElement) {
             screenWidthElement.textContent = `Screen Width: ${window.screen.width}`;
@@ -147,7 +144,6 @@ export function loadAnalyticsData() {
             userAgentElement.textContent = `User Agent: ${navigator.userAgent}`;
         }
 
-        // Handle cases where geolocation is not supported
         if (!("geolocation" in navigator)) {
             updateLocationDisplay("Geolocation not supported by this browser.");
             resolve();

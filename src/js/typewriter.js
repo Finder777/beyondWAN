@@ -1,58 +1,37 @@
 import { loadAnalyticsData } from '/js/analytics.js';
 
-/**
- * Applies a typewriter effect to a single HTML element.
- * @param {string} elementId 
- * @param {number} [speed=50] The speed of typing in milliseconds per character.
- */
-function typeWriterEffect(elementId, speed = 50) {
-    const element = document.getElementById(elementId);
-    if (!element) {
-        console.error(`Element with ID '${elementId}' not found.`);
-        return;
-    }
+function typeWriterEffect(elementId, speed = 200) {
+    const parent = document.getElementById(elementId);
+    if (!parent) return;
 
-    const textToType = element.innerHTML;
-    const typingChunks = [];
-    let textNode = '';
+    // 1. Get all elements that actually hold the data (spans, li, etc.)
+    const targets = parent.querySelectorAll('span, li, p');
     
-    // Regular expression to find all text nodes and HTML tags
-    const regex = /<[^>]+>|[^<]+/g;
-    let match;
-    while ((match = regex.exec(textToType)) !== null) {
-        typingChunks.push(match[0]);
-    }
+    targets.forEach((el) => {
+        // Skip elements that don't have text or are headers
+        const textToType = el.textContent.trim();
+        if (!textToType) return;
 
-    let chunkIndex = 0;
-    element.innerHTML = ''; // Clear the element's content
+        // 2. Clear the text but DO NOT delete the element itself
+        el.textContent = ''; 
+        let charIndex = 0;
 
-    const typingInterval = setInterval(() => {
-        if (chunkIndex < typingChunks.length) {
-            const currentChunk = typingChunks[chunkIndex];
-            if (currentChunk.startsWith('<')) {
-                // If it's a tag, add it all at once
-                element.innerHTML += currentChunk;
-                chunkIndex++;
+        // 3. Type directly INTO the element
+        const typingInterval = setInterval(() => {
+            if (charIndex < textToType.length) {
+                el.textContent += textToType.charAt(charIndex);
+                charIndex++;
             } else {
-                // If it's a text node, type character by character
-                element.innerHTML += currentChunk.charAt(textNode.length);
-                textNode += currentChunk.charAt(textNode.length);
-                if (textNode.length === currentChunk.length) {
-                    textNode = '';
-                    chunkIndex++;
-                }
+                clearInterval(typingInterval);
             }
-        } else {
-            clearInterval(typingInterval);
-        }
-    }, speed);
+        }, speed);
+    });
 }
 
-// Wait for the DOM to be ready and all analytics data to be loaded
+// Wait for the DOM and data
 document.addEventListener('DOMContentLoaded', () => {
-    // Call the analytics function and wait for it to complete
     loadAnalyticsData().then(() => {
-        // Once all data is loaded, apply the typewriter effect
-        typeWriterEffect('analytics');
+        // Target the parent container
+        typeWriterEffect('analytics', 200);
     });
 });
