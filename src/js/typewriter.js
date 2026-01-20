@@ -1,37 +1,43 @@
 import { loadAnalyticsData } from '/js/analytics.js';
 
-function typeWriterEffect(elementId, speed = 200) {
-    const parent = document.getElementById(elementId);
-    if (!parent) return;
+async function typeLine(el, speed) {
+    return new Promise((resolve) => {
+        // 1. Grab the text that analytics.js just put there
+        const fullText = el.textContent.trim();
+        if (!fullText) return resolve();
 
-    // 1. Get all elements that actually hold the data (spans, li, etc.)
-    const targets = parent.querySelectorAll('span, li, p');
-    
-    targets.forEach((el) => {
-        // Skip elements that don't have text or are headers
-        const textToType = el.textContent.trim();
-        if (!textToType) return;
-
-        // 2. Clear the text but DO NOT delete the element itself
+        // 2. Clear ONLY the text, leaving the <span> and its class intact
         el.textContent = ''; 
-        let charIndex = 0;
+        let i = 0;
 
-        // 3. Type directly INTO the element
-        const typingInterval = setInterval(() => {
-            if (charIndex < textToType.length) {
-                el.textContent += textToType.charAt(charIndex);
-                charIndex++;
+        const interval = setInterval(() => {
+            if (i < fullText.length) {
+                el.textContent += fullText.charAt(i);
+                i++;
             } else {
-                clearInterval(typingInterval);
+                clearInterval(interval);
+                resolve();
             }
         }, speed);
     });
 }
 
-// Wait for the DOM and data
+async function startTypewriter(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    // 3. Find every span that already exists in your HTML
+    const lines = container.querySelectorAll('span');
+
+    for (const line of lines) {
+        // This preserves the .heading or #id styles
+        await typeLine(line, 100); 
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadAnalyticsData().then(() => {
-        // Target the parent container
-        typeWriterEffect('analytics', 200);
+        // Target the parent div containing your spans
+        startTypewriter('analytics');
     });
 });

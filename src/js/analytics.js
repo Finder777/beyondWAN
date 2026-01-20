@@ -9,16 +9,37 @@ function interpretWeatherCode(code) {
 async function updateWeather(lat, lon) {
     try {
         const response = await fetch(
-            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=temperature_2m_max,weather_code&timezone=auto`
-        );
+            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=temperature_2m_max,weather_code&hourly=shortwave_radiation,visibility,cloud_cover,precipitation&precipitation_unit=mm&timezone=auto`);
         const data = await response.json();
         const temp = data.daily.temperature_2m_max[0];
         const code = data.daily.weather_code[0];
         const summary = interpretWeatherCode(code);
+        const solar = data.hourly.shortwave_radiation[0];
+        const visibility = data.hourly.visibility[0];
+        const cloud = data.hourly.cloud_cover[0];
         
         const weatherDisplay = document.getElementById('weather-summary');
         if (weatherDisplay) {
-            weatherDisplay.textContent = `CONDITIONS: ${summary} | TEMP: ${temp}°C`;
+            weatherDisplay.textContent = `CONDITIONS: ${summary}`;
+        }
+        
+        const tempDisplay = document.getElementById('temp');
+        if (tempDisplay) {
+            tempDisplay.textContent = `GROUND TEMP: ${temp}°C`;
+        }
+
+        const cloudCover = document.getElementById(`cloud-cover`);
+        if (cloudCover) {
+            cloudCover.textContent = `CLOUD COVER: ${cloud}`;
+        }
+
+        const visibilityDisplay = document.getElementById('visibility');
+        if (visibilityDisplay) {
+            visibilityDisplay.textContent = `VISIBILITY: ${visibility}`;
+        }
+        const solarDisplay = document.getElementById('solar-energy');
+        if (solarDisplay) {
+            solarDisplay.textContent = `SOLAR RADIATION: ${solar} W/m²`;
         }
     } catch (error) {
         console.error("Weather sync failed", error);
@@ -34,12 +55,11 @@ function initLeafletMap(lat, lon) {
         // Targets the #map div inside .map-container
         map = L.map('map').setView([lat, lon], 13);
 
-        // Using Dark Matter tiles for the tactical EGR Digital aesthetic
+        // Using Dark Matter tiles for the tactical EGR Digital aesthetic, don't forget it.
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; CARTO'
         }).addTo(map);
 
-        // Create the green tactical marker to match the "Green Filter" theme
         userMarker = L.circleMarker([lat, lon], {
             radius: 8,
             fillColor: "#00ff00", 
@@ -53,8 +73,6 @@ function initLeafletMap(lat, lon) {
         map.panTo([lat, lon]);
     }
 }
-
-//MAIN ANALYTICS DATA
 
 export function loadAnalyticsData() {
     return new Promise((resolve, reject) => {
@@ -80,7 +98,7 @@ export function loadAnalyticsData() {
         const locationDisplayElement = document.getElementById('location');
         function updateLocationDisplay(text) {
             if (locationDisplayElement) {
-                locationDisplayElement.textContent = `GPS Long/ Lat: ${text}`;
+                locationDisplayElement.textContent = `GPS Lat/ Long: ${text}`;
             } else {
                 console.warn("Location element not found. Check device and/ or permission.");
             }

@@ -234,6 +234,13 @@ a:active {
    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
+.heading{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
 .map-container {
     flex:2;
     border-radius: 5px;
