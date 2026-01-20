@@ -628,6 +628,11 @@ tr:nth-child(even) {
         color: darkgray;
     }
 
+    .airtracker{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     .footer-content{
         display: flex;
         justify-content: flex-start;
