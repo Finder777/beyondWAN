@@ -1,4 +1,6 @@
-// --- MET BRIEF ---
+import { updateAirspace } from './radar.js';
+
+// For the met brief
 function interpretWeatherCode(code) {
     if (code === 0) return "CLEAR SKIES";
     if (code <= 3) return "PARTIAL CLOUD";
@@ -46,7 +48,7 @@ async function updateWeather(lat, lon) {
     }
 }
 
-// --- MAP ENGINE ---
+// For the map
 let map;
 let userMarker;
 
@@ -73,6 +75,8 @@ function initLeafletMap(lat, lon) {
         map.panTo([lat, lon]);
     }
 }
+
+// For the User's stats and handling location across the app.
 
 export function loadAnalyticsData() {
     return new Promise((resolve, reject) => {
@@ -103,6 +107,7 @@ export function loadAnalyticsData() {
                 console.warn("Location element not found. Check device and/ or permission.");
             }
         }
+        
         updateLocationDisplay("Attempting to get location...");
 
         // Resolve the promise once geolocation is done or an error occurs
@@ -119,6 +124,8 @@ export function loadAnalyticsData() {
                 if (typeof updateWeather === "function") {
                     updateWeather(lat,lon);
                 }
+
+                updateAirspace(lat, lon);
 
                 console.log("Geolocation: Central Engine Success");
                 resolve();
@@ -174,7 +181,7 @@ const exploreBtn = document.querySelector('a[href="#explore"]');
 const modalSection = document.getElementById('explore');
 const closeBtn = document.getElementById('closeModal');
 
-// --- MODAL LOGIC ---
+// For the standard stuff 
 exploreBtn?.addEventListener('click', (e) => {
     e.preventDefault();
     modalSection.classList.add('show');

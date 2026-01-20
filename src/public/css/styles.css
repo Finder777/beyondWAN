@@ -271,6 +271,122 @@ a:active {
     border-bottom: 1px solid darkgreen !important;
 }
 
+.airtracker{
+    display:flex;
+    flex-direction: row;
+    row-gap: 20px;
+}
+
+.airspace-monitor{
+    flex:1;
+}
+
+.radar-header{
+    width:fit-content;
+}
+
+.traffic-log{
+    flex: 1;
+}
+
+.radar-container {
+    position: relative;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 2px solid #00ff0033;
+    background: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #00ff0022;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ring span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 8px;
+    color: #00ff0055;
+}
+
+.radar-sweep {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom left;
+    z-index: 5; 
+    animation: radar-spin 4s linear infinite;
+    border-left: 1px solid rgba(0, 255, 0, 0.3);
+    background: conic-gradient(from 180deg at bottom left, rgba(0, 255, 0, 0.4) 0%, transparent 25%);
+}
+
+@keyframes radar-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.aircraft-blip {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    border-radius: 2px; /* Square blip looks more like a radar target */
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    cursor: crosshair;
+}
+
+.traffic-log {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #00ff0033;
+    background: rgba(0, 20, 0, 0.8);
+    width: 95%;
+    max-width: 600px;
+}
+
+.log-header {
+    background: #00ff0022;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: #00ff00;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+th {
+    border-bottom: 1px solid #00ff0033;
+    color: #00ff0088;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    padding: 6px 8px;
+    color: #00ff00;
+}
+
+tr:nth-child(even) {
+    background: rgba(0, 255, 0, 0.05);
+}
+
 .one, .four{
     border: 2px;
     border-radius: 5px;
