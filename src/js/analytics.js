@@ -32,12 +32,12 @@ async function updateWeather(lat, lon) {
 
         const cloudCover = document.getElementById(`cloud-cover`);
         if (cloudCover) {
-            cloudCover.textContent = `CLOUD COVER: ${cloud}`;
+            cloudCover.textContent = `CLOUD COVER: ${cloud}%`;
         }
 
         const visibilityDisplay = document.getElementById('visibility');
         if (visibilityDisplay) {
-            visibilityDisplay.textContent = `VISIBILITY: ${visibility}`;
+            visibilityDisplay.textContent = `VISIBILITY: ${visibility}m`;
         }
         const solarDisplay = document.getElementById('solar-energy');
         if (solarDisplay) {

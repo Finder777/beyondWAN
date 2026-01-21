@@ -106,7 +106,7 @@ h1 {
 
 h3{
     text-transform:uppercase;
-    margin: 0px auto 0px auto ;
+    margin: 0px auto 0px 0px;
 }
 
 h4{
@@ -201,7 +201,7 @@ a:active {
     margin-bottom: 50px;
 }
 
-.target-set-alpha, .target-set-bravo, .target-set-charlie {
+.airspace-monitor, .target-set-alpha, .target-set-bravo, .target-set-charlie {
     flex:1;
     background-color: #00000079;
     border-radius: 5px;
@@ -272,21 +272,22 @@ a:active {
 }
 
 .airtracker{
+    margin: 20px 0px;
     display:flex;
     flex-direction: row;
     row-gap: 20px;
+
 }
 
 .airspace-monitor{
     flex:1;
+
 }
 
 .radar-header{
+    font-style: italic;
     width:fit-content;
-}
-
-.traffic-log{
-    flex: 1;
+    color:darkgray;
 }
 
 .radar-container {
@@ -349,11 +350,11 @@ a:active {
 }
 
 .traffic-log {
-    margin-top: 20px;
+    flex:1;
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid #00ff0033;
     background: rgba(0, 20, 0, 0.8);
-    width: 95%;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -365,13 +366,32 @@ a:active {
     text-align: center;
 }
 
-table {
+.table-wrapper{
+    width: 100%;
+    overflow-x: auto; /* This allows swiping left/right on the table */
+    -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
+    border: 1px solid #00ff0033;
+    margin-top: 5px;
+}
+
+#flight-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 12px;
+    min-width: 450px; /* Forces scrolling on small screens instead of squashing text */
 }
 
-th {
+#flight-table th, #flight-table td {
+    text-align: left;
+    padding: 10px 5px;
+    white-space: nowrap; /* Keeps data on a single line */
+    font-size: 0.75rem;
+    color: #00ff00;
+}
+
+#flight-table thead th {
+    background: rgba(0, 255, 0, 0.1);
+    position: sticky; 
     border-bottom: 1px solid #00ff0033;
     color: #00ff0088;
     padding: 8px;
@@ -610,7 +630,7 @@ tr:nth-child(even) {
         margin-bottom: 30px;
     }
 
-    .target-set-alpha, .target-set-bravo, .target-set-charlie {
+    .airspace-monitor, .target-set-alpha, .target-set-bravo, .target-set-charlie {
         flex:1;
         background-color: #00000079;
         border-radius: 5px;
@@ -633,6 +653,7 @@ tr:nth-child(even) {
         flex-direction: column;
         gap: 20px;
     }
+
     .footer-content{
         display: flex;
         justify-content: flex-start;
