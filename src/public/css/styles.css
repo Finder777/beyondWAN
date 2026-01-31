@@ -222,7 +222,7 @@ a:active {
     text-shadow: 0 0 5px #00ff00;
 }
 
-.target-acquisition {
+.locstat-info{
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -242,6 +242,10 @@ a:active {
 
 .analytics-data {
    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+
+.send {
+    margin-top: 20px;
 }
 
 .heading{
@@ -286,18 +290,16 @@ a:active {
     display:flex;
     flex-direction: row;
     row-gap: 20px;
-
 }
 
 .airspace-monitor{
     flex:1;
-
 }
 
 .radar-header{
     font-style: italic;
     width:fit-content;
-    color:darkgray;
+    font-size: clamp(1.2rem, 2vw, 2rem);
 }
 
 .radar-container {
@@ -647,10 +649,14 @@ tr:nth-child(even) {
         padding: 15px 15px;
     }
 
-    .target-acquisition {
+    .locstat-info {
         display: flex;
         flex-direction: column;
         gap: 50px;
+    }
+
+    .send {
+        margin-top: 20px;
     }
 
     .analytics > h3 {
@@ -664,6 +670,18 @@ tr:nth-child(even) {
         gap: 20px;
     }
 
+    .tactical-header{
+        font-size: clamp(1.2rem, 2vw, 2rem);
+        color:darkgray;
+        margin-bottom: 20px
+    }
+
+    .radar-header{
+        font-style: italic;
+        color:darkgray;
+        width:fit-content;
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
     .footer-content{
         display: flex;
         justify-content: flex-start;
