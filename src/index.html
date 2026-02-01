@@ -54,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="greenfilter">
       
       <header class="header">
-        <h1 class="orbitron-font">LOCSTAT</h1>
+        <h1 class="orbitron-font">EGR DIGITAL</h1>
         <nav class="nav"><i class="fa-solid fa-bars fa-md"></i></nav>
       </header>  
       
@@ -81,8 +81,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </section>
 
-      <main class="locstat-info">
-        <section class="analytics" id="analytics">
+      <main class="wrapper">
+        <section class="card" id="analytics">
         <h3>Location Data</h3>
           <div class="analytics-data">
             <h4 class="heading">GPS COORDS</h4>
@@ -100,11 +100,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div id="map"></div>
         </section>
         
-        <div class="analytics" id="analytics">
+        <div class="card" id="analytics">
           <h3 id="weather">Met Data</h3>
           <p>@ <span class="coord-display">LOCATING...</span></p>
           <p id="weather-summary">SCANNING ATMOSPHERE...</p>
-          <p id="temp"></p>
+          <p id="airTemp"></p>
+          <p id="maxTemp"></p>
           <p id="cloud-cover"></p>
           <p id="visibility"></p>
           <p id="solar-energy"></p>  
@@ -143,8 +144,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </section>
 
-      <section>  
-          <div class="analytics" id="analytics">
+      <section class="wrapper">  
+          <div class="card" id="analytics">
           <h3 class="heading">Your Device</h3>
             <span id="screen-width"></span>
             <br><span id="screen-height"></span>
@@ -152,11 +153,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
       </section>
 
-      <div class="video-feed-container">
-        <section>
-        <h3 class="tactical-header">REMOTE SURVEILLANCE: UKRAINE</h3>
+      <section>
+        <div class="video-feed-container">
+          <h3 class="tactical-header">REMOTE SURVEILLANCE: UKRAINE</h3>
           <div class="video-wrapper">
-              <iframe 
+            <iframe 
                   src="https://www.youtube.com/embed/I8idOXOcFZY?autoplay=1&mute=1&modestbranding=1&rel=0" 
                   title="Ukraine Live Cam Feed"
                   frameborder="0" 
@@ -165,8 +166,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </iframe>
               <div class="scanlines"></div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="cqb">
+        <h3 class="heading">Training Resources</h3>
+        <div class="wrapper">
+          <div class="card">
+              <iframe 
+                src="https://www.youtube.com/embed/GBBahcNMSDI?si=eL4mjexYs2oe1xnC" 
+                title="CQB Training Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+          </div>
+          <div class="card">
+            <iframe 
+              src="https://www.youtube.com/embed/1_k4wYrx3Jo?si=CyTDRKI4sHLSUjjA" 
+              title="CQB Training Video 2" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
 
       <section class="target-sets">
         <div class="target-set-alpha">

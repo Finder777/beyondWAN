@@ -15,10 +15,11 @@ function interpretWeatherCode(code) {
 async function updateWeather(lat, lon) {
     try {
         const response = await fetch(
-            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=temperature_2m_max,weather_code&hourly=shortwave_radiation,visibility,cloud_cover,precipitation&precipitation_unit=mm&timezone=auto`);
+            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m&daily=temperature_2m_max,weather_code&hourly=shortwave_radiation,visibility,cloud_cover,precipitation&precipitation_unit=mm&timezone=auto`);
         const data = await response.json();
         
-        const temp = data.daily.temperature_2m_max[0];
+        const airTemp = data.current.temperature_2m;
+        const maxTemp = data.daily.temperature_2m_max[0];
         const code = data.daily.weather_code[0];
         const summary = interpretWeatherCode(code);
         const solar = data.hourly.shortwave_radiation[0];
@@ -27,19 +28,22 @@ async function updateWeather(lat, lon) {
         
         // Update UI Elements
         const weatherDisplay = document.getElementById('weather-summary');
-        if (weatherDisplay) weatherDisplay.textContent = `CONDITIONS: ${summary}`;
+        if (weatherDisplay) weatherDisplay.textContent = `Summary: ${summary}`;
         
-        const tempDisplay = document.getElementById('temp');
-        if (tempDisplay) tempDisplay.textContent = `GROUND TEMP: ${temp}°C`;
+        const airTempDisplay = document.getElementById('airTemp');
+        if (airTempDisplay) airTempDisplay.textContent = `Current Air Temp: ${airTemp}°C`;
+        
+        const tempDisplay = document.getElementById('maxTemp');
+        if (tempDisplay) tempDisplay.textContent = `Max Air Temp: ${maxTemp}°C`;
 
         const cloudCover = document.getElementById('cloud-cover');
-        if (cloudCover) cloudCover.textContent = `CLOUD COVER: ${cloud}%`;
+        if (cloudCover) cloudCover.textContent = `Cloud Cover: ${cloud}%`;
 
         const visibilityDisplay = document.getElementById('visibility');
-        if (visibilityDisplay) visibilityDisplay.textContent = `VISIBILITY: ${visibility}m`;
+        if (visibilityDisplay) visibilityDisplay.textContent = `Visibility: ${visibility}m`;
 
         const solarDisplay = document.getElementById('solar-energy');
-        if (solarDisplay) solarDisplay.textContent = `SOLAR RADIATION: ${solar} W/m²`;
+        if (solarDisplay) solarDisplay.textContent = `Solar Radiation: ${solar} W/m²`;
 
     } catch (error) {
         console.error("Weather sync failed", error);

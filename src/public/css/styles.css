@@ -67,7 +67,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 10px 16px 10px 16px;
+    padding: 10px 16px 10px 30px;
     background-color: #000000e0;
 }
 
@@ -222,13 +222,14 @@ a:active {
     text-shadow: 0 0 5px #00ff00;
 }
 
-.locstat-info{
+.wrapper{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    margin-top: 20px;
 }
 
-.analytics {
+.card {
     flex:1;
     font-style: italic;
     color: darkgray;
@@ -236,8 +237,12 @@ a:active {
     padding: 10px 10px;
 }
 
-.analytics > h3 {
+.card > h3 {
   font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.card > iframe {
+    width: 100%;
 }
 
 .analytics-data {
@@ -373,7 +378,7 @@ a:active {
 .log-header {
     background: #00ff0022;
     padding: 5px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #00ff00;
     text-align: center;
 }
@@ -517,32 +522,22 @@ tr:nth-child(even) {
     z-index: 1000000;
 }
 
-.footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index:10000000;
+.cqb{
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: #00000079;
 }
 
-.footer-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #000000e0;
-    text-align: center;
-    padding: 1% 5%;
-    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
-    color: whitesmoke;
+.cqb > h3 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-style: italic;
 }
 
-.tagline {
-    margin: 0px auto 0px auto;
-}
-
-.footer-notes{
-    margin: 0px auto 0px auto;
+.mini-video-wrapper {
+    flex:1;
+    margin-top: 20px;
+    padding: 5px;
+    background: rgba(0, 20, 0, 0.8);
 }
 
 .video-feed-container {
@@ -581,6 +576,34 @@ tr:nth-child(even) {
     ), linear-gradient(90deg, rgba(255, 0, 0, 0), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0));
     background-size: 100% 4px, 3px 100%;
     pointer-events: none; /* Allows you to still click the video controls */
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index:10000000;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #000000e0;
+    text-align: center;
+    padding: 1% 5%;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    color: whitesmoke;
+}
+
+.tagline {
+    margin: 0px auto 0px auto;
+}
+
+.footer-notes{
+    margin: 0px auto 0px auto;
 }
 
 @media screen and (max-width: 600px) {
