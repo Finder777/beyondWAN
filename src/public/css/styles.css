@@ -67,7 +67,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 10px 16px 10px 30px;
+    padding: 10px 16px 10px 25px;
     background-color: #000000e0;
 }
 
@@ -672,7 +672,7 @@ tr:nth-child(even) {
         padding: 15px 15px;
     }
 
-    .locstat-info {
+    .wrapper{
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -682,7 +682,7 @@ tr:nth-child(even) {
         margin-top: 20px;
     }
 
-    .analytics > h3 {
+    .card > h3 {
         font-size: clamp(1.2rem, 2vw, 2rem);
         color: darkgray;
     }
