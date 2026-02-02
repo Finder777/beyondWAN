@@ -59,6 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </header>  
       
       <div class="hero">
+        <h1 class="orbitron-font">LOCSTAT : WEB APP</h1>
         <h3 class="monospace">DESIGN | BUILD | SECURE | MAINTAIN</h3>
         <p class="body">Websites, webstores, web apps and pen testing for your business.</p>
         <a href="#explore" class="four"><i class="fa-solid fa-globe fa-md"></i> : Explore</a>
@@ -145,12 +146,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </section>
 
       <section class="wrapper">  
-          <div class="card" id="analytics">
+        <div class="card" id="analytics">
           <h3 class="heading">Your Device</h3>
-            <span id="screen-width"></span>
-            <br><span id="screen-height"></span>
-            <br><span id="user-agent"></span>
-          </div>
+          <p><span id="screen-width"></span></p>
+          <p><span id="screen-height"></span></p>
+          <p><span id="user-agent"></span></p>
+        </div>
+      
+        <div class="card">
+          <h3 class="heading">Your Network Connection</h3>
+          <p>Hardware Connection Type: <span id="hardware-type">UNKNOWN</span></p>
+          <p>Frequency Band: <span id="frequency">UNKNOWN</span></p>
+          <p>Downlink: <span id="downlink">UNKNOWN</span></p>
+          <p>Max Downlink Capacity: <span id="max-downlink-capacity">UNKNOWN</span></p>
+          <p>Round Trip Time: <span id="rtt">UNKNOWN</span></p>
+          <p>Save Data: <span id="save-data">UNKNOWN</span></p>
+        </div>
       </section>
 
       <section>
