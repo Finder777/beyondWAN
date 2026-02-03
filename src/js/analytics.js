@@ -54,9 +54,41 @@ async function updateWeather(lat, lon) {
 let map;
 let userMarker;
 
+function requestLocation() {
+    const mapElement = document.getElementById('map');
+
+    if (!navigator.geolocation) {
+        mapElement.innerHTML = "<p>CRITICAL: GEOLOCATION NOT SUPPORTED BY HARDWARE</p>";
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            // SUCCESS: Clear any error messages and init map
+            mapElement.classList.remove('location-disabled');
+            initLeafletMap(position.coords.latitude, position.coords.longitude);
+        },
+        (error) => {
+            // FAILURE: User denied or location is off
+            mapElement.classList.add('location-disabled');
+            
+            if (error.code === error.PERMISSION_DENIED) {
+                mapElement.innerHTML = `
+                    <div class="alert">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>SIGNAL LOST: CHECK LOCATION SETTINGS</p>
+                        <small>Permissions must be granted for Tactical Mapping.</small>
+                    </div>
+                `;
+            } else {
+                mapElement.innerHTML = "<p>SIGNAL INTERFERENCE: UNABLE TO FIX COORDINATES</p>";
+            }
+        }
+    );
+}
+
 function initLeafletMap(lat, lon) {
     if (!map) {
-        // Initialize map with Dark Matter theme
         map = L.map('map').setView([lat, lon], 13);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -71,11 +103,13 @@ function initLeafletMap(lat, lon) {
             fillOpacity: 1
         }).addTo(map);
     } else {
-        // Update existing marker and center
         userMarker.setLatLng([lat, lon]);
         map.panTo([lat, lon]);
     }
 }
+
+// Start the sequence
+requestLocation();
 
 // --- CENTRAL ANALYTICS ENGINE ---
 export function loadAnalyticsData() {
@@ -246,4 +280,21 @@ document.addEventListener('DOMContentLoaded', () => {
     modalSection?.addEventListener('click', (e) => {
         if (e.target === modalSection) modalSection.classList.remove('show');
     });
+});
+
+
+const toggleBtn = document.getElementById('hero-toggle');
+const hero = document.getElementById('hero-section');
+const icon = toggleBtn.querySelector('i');
+
+toggleBtn.addEventListener('click', () => {
+    const isCollapsed = hero.classList.toggle('collapsed');
+
+    if (isCollapsed) {
+        icon.classList.remove('fa-window-minimize');
+        icon.classList.add('fa-window-restore');
+    } else {
+        icon.classList.remove('fa-window-restore');
+        icon.classList.add('fa-window-minimize');
+    }
 });

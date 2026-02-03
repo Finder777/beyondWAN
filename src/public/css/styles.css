@@ -97,6 +97,44 @@ h1 {
     margin-bottom: 20px;
 }
 
+.hero-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.toggle-btn {
+    background: transparent;
+    border: 1px solid #00ff00;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 1000001;
+}
+
+.toggle-btn:hover {
+    background: darkgreen;
+}
+
+#hero-content {
+    transition: max-height 0.4s ease-out, opacity 0.3s ease;
+    max-height: 500px; 
+    overflow: hidden;
+}
+
+.collapsed #hero-content {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+.collapsed .toggle-btn i::before {
+    content: "\f2d0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
 .monospace {
     font-family: "Courier New", Courier, monospace;
     font-size: clamp(1.2rem, 3vw, 4rem);
@@ -274,6 +312,18 @@ a:active {
 #map {
     height: 450px;
     width:100%;
+}
+
+#map.location-disabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a0a;
+    color: #ff0000;
+    font-family: 'Courier New', monospace;
+    border: 1px solid #ff0000;
+    text-align: center;
+    padding: 20px;
 }
 
 .leaflet-bar {
