@@ -654,6 +654,43 @@ tr:nth-child(even) {
     margin: 0px auto 0px auto;
 }
 
+.cookie-container {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 10, 0, 0.95);
+    border: 1px solid #00ff00;
+    padding: 20px;
+    z-index: 10000;
+}
+
+.cookie-container.hidden { display: none; }
+
+.cookie-content {
+    color: #00ff00;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cookie-actions { display: flex; gap: 10px; }
+
+.btn-accept, .btn-decline {
+    background: transparent;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn-accept:hover { background: #00ff00; color: #000; }
+.btn-decline { border-color: #ff0000; color: #ff0000; }
+
 @media screen and (max-width: 600px) {
     .body {
         font-size: 1.25rem;
