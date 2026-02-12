@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background-color: black; /* This is page specific */
+    background-color: black; 
     margin: 0px 0px;
 }
 
@@ -187,7 +187,7 @@ a:active {
     width:100%;
     height:100%;
     background-color: #00000079;
-    z-index: 1000000000;
+    z-index: 100000;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -631,7 +631,7 @@ tr:nth-child(even) {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index:10000000;
+    z-index:1000;
 }
 
 .footer-content{
@@ -656,7 +656,7 @@ tr:nth-child(even) {
 
 .cookie-container {
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -793,6 +793,7 @@ tr:nth-child(even) {
         width:fit-content;
         font-size: clamp(1.2rem, 2vw, 2rem);
     }
+
     .footer-content{
         display: flex;
         justify-content: flex-start;
@@ -818,5 +819,36 @@ tr:nth-child(even) {
 
     .divider{
         display: none;
+    }
+
+    .cookie-container {
+        top: auto; 
+        bottom: 10px;
+        width: 95%;
+        padding: 15px;
+        max-height: 80vh; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cookie-content {
+        overflow-y: auto; 
+        flex-grow: 1;
+        margin-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    .cookie-actions {
+        flex-shrink: 0; 
+        flex-direction: column;
+        gap: 10px;
+        border-top: 1px solid rgba(0, 255, 0, 0.2);
+        padding-top: 10px;
+    }
+
+    .btn-accept, .btn-decline {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
     }
 }
